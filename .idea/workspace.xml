@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e796c3b-f33e-4884-9530-f2c9c285ea71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vitamin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.tmp/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.tmp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.tmp/js/libraries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.tmp/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.tmp/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/components/footer.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/components/footer.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/components/header.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/components/header.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/sections/section.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/section.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="js.build_tools.gulp">
@@ -57,7 +54,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586262758027</updated>
-      <workItem from="1586262760255" duration="2120000" />
+      <workItem from="1586262760255" duration="2806000" />
+      <workItem from="1586265892480" duration="148000" />
     </task>
     <servers />
   </component>
@@ -69,10 +67,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1586265888773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586265888773" />
   </component>
 </project>
