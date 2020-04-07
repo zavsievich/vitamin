@@ -1,3 +1,21 @@
+@font-face {
+  font-weight: bold;
+  font-family: "Nunito";
+  font-style: normal;
+  src: url("../../fonts/HelveticaNeueLTStd-Hv.otf"); }
+
+@font-face {
+  font-weight: normal;
+  font-family: "Helvetica";
+  font-style: normal;
+  src: url("../../fonts/HelveticaNeueLTStd-Lt.otf"); }
+
+@font-face {
+  font-weight: 200;
+  font-family: "Helvetica";
+  font-style: normal;
+  src: url("../../fonts/HelveticaNeueLTStd-UltLtCn.otf"); }
+
 /*
   15px: $spacer
   30px: $spacer * 2
@@ -387,6 +405,40 @@ template {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: inherit; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none; }
+
+*:focus {
+  outline: 4px solid rgba(0, 125, 250, 0.6); }
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: 'Helvetica', sans-serif; }
+
+.container {
+  max-width: 1736px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+svg {
+  fill: currentColor; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
 
 .visible {
   visibility: visible !important; }
