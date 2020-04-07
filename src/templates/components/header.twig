@@ -1,3 +1,27 @@
-<header class="header">
-gvbbfbfbfbd
+{% if not args %}
+    {% set args = {
+        nav : [
+            {
+                title : 'Skin glow',
+            },
+            {
+                title : 'FAQs',
+            },
+            {
+                title : 'Blog',
+            },
+            {
+                title : 'Contact',
+            },
+        ]
+    } %}
+{% endif %}
+<header class="header" style="background-image: url(images/hero-bg.jpg)">
+    <nav class="header-nav">
+        <ul class="header-nav__list">
+            {% for item in args.nav %}
+                <li class="header-nav__title"><a href="#" class="header-nav__title-link">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
 </header>
