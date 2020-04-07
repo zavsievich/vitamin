@@ -1,0 +1,35 @@
+@function getFontSize($list, $key: xs) {
+    @if (type-of($list) == 'map') {
+      @if map-has-key($list, $key) {
+        @return map-get($list, $key);
+      }
+    }
+    @return $list;
+  }
+  
+  @mixin fontSizeResponsive($fontSizeList){
+    @if (type-of($fontSizeList) == 'map') {
+      @each $breakpoint in map-keys($fontSizeList) {
+        @include media-breakpoint-up( $breakpoint) {
+          font-size: map-get($fontSizeList, $breakpoint);
+        }
+      }
+    } @else {
+        font-size: $fontSizeList;
+    }
+  }
+
+@mixin fsViewportWidthResponsive($fs) {
+
+  font-size: px-to-rem($fs);
+
+  @include media-breakpoint-only(lg){
+    font-size: px-to-vw($fs, 1200);
+  }
+  @include media-breakpoint-only(md){
+    font-size: px-to-vw($fs, 768);
+  }
+  @include media-breakpoint-down(xsm){
+    font-size: px-to-vw($fs, 390);
+  }
+}

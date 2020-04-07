@@ -1,0 +1,88 @@
+{% block html_head_container %}
+
+{% if not banners %}
+{% set banners = {} %}
+{% endif %}
+
+{% if not sidebar %}
+{% set sidebar = {} %}
+{% endif %}
+
+<!doctype html>
+<!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" {{ site.language_attributes }}> <![endif]-->
+<!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" {{ site.language_attributes }}> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js no-svg" {{ site.language_attributes }}>
+<!--<![endif]-->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:400,500,700,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+	{#<link rel="author" href="{{ site.theme.link }}/humans.txt" />#}
+	{#<link rel="pingback" href="{{ site.pingback_url }}" />#}
+	{#<link rel="profile" href="http://gmpg.org/xfn/11">#}
+
+	{% if not isGulpTwig %}
+	{{function('wp_head')}}
+	{% else %}
+	<link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
+	{% endif %}
+
+
+	{% block head %}{% endblock %}
+</head>
+{% endblock %}
+
+<body class="{{body_class}}" data-template="base.twig">
+
+
+	{% block header %}
+	{% include 'components/header.twig' %}
+	{% endblock %}
+
+
+	<div id="content" class="js-content">
+		<main>
+			{% block content %}
+			{{ content }}
+			{% endblock %}
+		</main>
+	</div>
+
+
+	{% block footer %}
+	{% include 'components/footer.twig' %}
+	{% endblock %}
+
+
+
+	{% if not isGulpTwig %}
+	{{function('wp_footer')}}
+	{% else %}
+	<script src="./js/libraries.js"></script>
+	<script src="./js/scripts.js"></script>
+	<script src="./js/all.js"></script>
+	{% endif %}
+
+	<div style="display: none !important">
+		{% include './svg/sprite_inline.svg' %}
+	</div>
+
+	<svg width="0" height="0" style="position: absolute; width:0; height: 0;" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<filter id="svg-filter-shadow" x="0" y="0" width="71.351" height="95" filterunits="userSpaceOnUse">
+			<feOffset input="SourceAlpha" />
+			<feGaussianBlur stddeviation="7.5" result="blur" />
+			<feFlood />
+			<feComposite operator="in" in2="blur" />
+			<feComposite in="SourceGraphic" />
+		</filter>
+	</svg>
+</body>
+
+</html>

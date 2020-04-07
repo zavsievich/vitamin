@@ -1,0 +1,11 @@
+@function px-to-rem($px-val) {
+  $rem: $px-val/16;
+  @return #{$rem}rem;
+}
+
+@function px-to-vw($px-val, $screen) {
+
+  $newVal: 100 * $px-val/$screen;
+
+  @return #{$newVal}vw;
+}
