@@ -4,10 +4,11 @@
   background-position: 50% 50%;
   min-height: 775px;
   background-size: cover;
-
-  &-wrap {
-
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -80px;
+  padding: 0 20px;
 
   &-title {
     margin: 0;
@@ -15,5 +16,6 @@
     color: $c-white;
     width: 559px;
     font-size: 2.75em;
+    margin-left: 6em;
   }
 }

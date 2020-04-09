@@ -24,7 +24,9 @@
     <nav class="header-nav">
         <ul class="header-nav__list">
             {% for item in args.nav %}
-                <li class="header-nav__title"><a href="#" class="header-nav__title-link">{{ item.title }}</a></li>
+                <li class="header-nav__title">
+                    <a href="#" class="header-nav__title-link">{{ item.title }}</a>
+                </li>
             {% endfor %}
         </ul>
     </nav>
@@ -38,9 +40,7 @@
 </header>
 <main>
     <section class="banner" style="background-image: url({{ args.bannerBackgroundImage }})">
-        <div class="container banner-wrap">
-            <h1 class="banner-title">Uniquely natural supplements
-                designed for you, delivered to you.</h1>
-        </div>
+        <h1 class="banner-title">Uniquely natural supplements
+            designed for you, delivered to you.</h1>
     </section>
 </main>

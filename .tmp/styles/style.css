@@ -410,7 +410,6 @@ a {
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
-  background-color: black;
   height: 80px;
   font-size: 16px; }
   .header-nav {
@@ -474,13 +473,29 @@ a {
   background-position: 50% 50%;
   min-height: 775px;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -80px;
+  padding: 0 20px; }
   .banner-title {
     margin: 0;
     padding: 0;
     color: #FFFFFF;
     width: 559px;
-    font-size: 2.75em; }
+    font-size: 2.75em;
+    margin-left: 6em; }
 
 .visible {
   visibility: visible !important; }
