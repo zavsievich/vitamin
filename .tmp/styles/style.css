@@ -468,6 +468,20 @@ a {
       right: 0;
       bottom: 0; }
 
+.banner {
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: 50% 50%;
+  min-height: 775px;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .banner-title {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    width: 559px;
+    font-size: 2.75em; }
+
 .visible {
   visibility: visible !important; }
 

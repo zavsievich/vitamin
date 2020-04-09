@@ -1,0 +1,19 @@
+.banner {
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: 50% 50%;
+  min-height: 775px;
+  background-size: cover;
+
+  &-wrap {
+
+  }
+
+  &-title {
+    margin: 0;
+    padding: 0;
+    color: $c-white;
+    width: 559px;
+    font-size: 2.75em;
+  }
+}
