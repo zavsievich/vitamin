@@ -14,6 +14,7 @@
                 title : 'Contact',
             },
         ],
+        headerLogoDescr : 'Vitami',
         basketTitle : 'Basket',
         headerLogo : 'images/svg_sprite_inline/vitami.svg',
         headerBackgroundImage : 'images/hero-bg.jpg',
@@ -27,7 +28,7 @@
             {% endfor %}
         </ul>
     </nav>
-    <img src="{{ args.headerLogo }}" alt="" class="header-logo">
+    <a href="" class="header-logo"><img src="{{ args.headerLogo }}" alt="{{ args.headerLogoDescr }}"></a>
     <button class="header-basket">
         <p class="header-basket__title">{{ args.basketTitle }}</p>
         <svg class="el-icon">

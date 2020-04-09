@@ -2,11 +2,19 @@
   //background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   padding-bottom: 701px;
+  align-items: center;
+  padding-top: 10px;
+
+  &-wrap {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+  }
 
   &-nav {
+    flex: 2 0 auto;
     &__list {
       list-style-type: none;
       display: flex;
@@ -15,24 +23,29 @@
     &__title {
       &-link {
         color: $c-white;
-        padding: 20px;
         font-size: 20px;
         line-height: 24px;
         font-weight: 600;
+        padding: 20px;
       }
     }
   }
 
   &-logo {
+    flex: 2 0 auto;
+    margin-right: 150px;
   }
 
   &-basket {
+    flex: 1 0 auto;
     background: none;
     border: none;
     color: $c-white;
     display: flex;
+    justify-content: flex-end;
     height: max-content;
     position: relative;
+    margin: 20px;
 
     &__title {
       padding-right: 30px;
