@@ -1,15 +1,15 @@
 .header {
-  background-size: 100%;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  padding-bottom: 35%;
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
   max-width: 1920px;
   max-height: 745px;
   margin: 0 auto;
+  background-color: black;
+  height: 80px;
+  font-size: 16px;
 
   &-wrap {
     width: 100%;
@@ -29,17 +29,16 @@
     &__title {
       &-link {
         color: $c-white;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.2em;
+        line-height: 1em;
         font-weight: 600;
-        padding: 20px;
+        padding: 1em;
       }
     }
   }
 
   &-logo {
     flex: 2 0 auto;
-    margin-right: 150px;
   }
 
   &-basket {
@@ -51,18 +50,18 @@
     justify-content: flex-end;
     height: max-content;
     position: relative;
-    margin: 20px;
+    margin: 1.2em;
 
     &__title {
-      padding-right: 30px;
-      font-size: 20px;
-      line-height: 24px;
+      padding-right: 1.4em;
+      font-size: 1.2em;
+      line-height: 1.2em;
       font-weight: 600;
     }
 
     svg {
-      width: 20px;
-      height: 20px;
+      width: 1.2em;
+      height: 1.1em;
       position: absolute;
       right: 0;
       bottom: 0;
