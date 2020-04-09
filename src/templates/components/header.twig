@@ -21,18 +21,20 @@
     } %}
 {% endif %}
 <header class="header" style="background-image: url({{ args.headerBackgroundImage }})">
-    <nav class="header-nav">
-        <ul class="header-nav__list">
-            {% for item in args.nav %}
-                <li class="header-nav__title"><a href="#" class="header-nav__title-link">{{ item.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </nav>
-    <a href="" class="header-logo"><img src="{{ args.headerLogo }}" alt="{{ args.headerLogoDescr }}"></a>
-    <button class="header-basket">
-        <p class="header-basket__title">{{ args.basketTitle }}</p>
-        <svg class="el-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
-        </svg>
-    </button>
+    <div class="header-wrap">
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                {% for item in args.nav %}
+                    <li class="header-nav__title"><a href="#" class="header-nav__title-link">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <a href="" class="header-logo"><img src="{{ args.headerLogo }}" alt="{{ args.headerLogoDescr }}"></a>
+        <button class="header-basket">
+            <p class="header-basket__title">{{ args.basketTitle }}</p>
+            <svg class="el-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
+            </svg>
+        </button>
+    </div>
 </header>

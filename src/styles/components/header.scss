@@ -1,20 +1,26 @@
 .header {
-  //background-size: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 701px;
-  align-items: center;
+  justify-content: center;
+  padding-bottom: 35%;
   padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1920px;
+  max-height: 745px;
+  margin: 0 auto;
 
   &-wrap {
-    margin: 10px auto;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
   &-nav {
     flex: 2 0 auto;
+
     &__list {
       list-style-type: none;
       display: flex;
