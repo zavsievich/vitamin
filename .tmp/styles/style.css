@@ -393,10 +393,54 @@ a {
   color: #000000; }
 
 .header {
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
   background-repeat: no-repeat;
-  height: 745px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 701px; }
+  .header-nav__list {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .header-nav__title-link {
+    color: #FFFFFF;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600; }
+  .header-basket {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: relative; }
+    .header-basket__title {
+      padding-right: 30px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600; }
+    .header-basket svg {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      bottom: 0; }
 
 .visible {
   visibility: visible !important; }

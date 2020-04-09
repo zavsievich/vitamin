@@ -1,5 +1,52 @@
 .header {
-  background-size: 100%;
+  //background-size: 100%;
   background-repeat: no-repeat;
-  height: 745px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 701px;
+
+  &-nav {
+    &__list {
+      list-style-type: none;
+      display: flex;
+    }
+
+    &__title {
+      &-link {
+        color: $c-white;
+        padding: 20px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-logo {
+  }
+
+  &-basket {
+    background: none;
+    border: none;
+    color: $c-white;
+    display: flex;
+    height: max-content;
+    position: relative;
+
+    &__title {
+      padding-right: 30px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
 }

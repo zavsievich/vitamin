@@ -15,10 +15,11 @@
             },
         ],
         basketTitle : 'Basket',
-        headerBackgroundImg : 'images/svg_sprite_inline/vitami.svg',
+        headerLogo : 'images/svg_sprite_inline/vitami.svg',
+        headerBackgroundImage : 'images/hero-bg.jpg',
     } %}
 {% endif %}
-<header class="header" style="background-image: url(images/hero-bg.jpg)">
+<header class="header" style="background-image: url({{ args.headerBackgroundImage }})">
     <nav class="header-nav">
         <ul class="header-nav__list">
             {% for item in args.nav %}
@@ -26,7 +27,7 @@
             {% endfor %}
         </ul>
     </nav>
-    <img src="{{ args.headerBackgroundImg }}" alt="" class="header-logo">
+    <img src="{{ args.headerLogo }}" alt="" class="header-logo">
     <button class="header-basket">
         <p class="header-basket__title">{{ args.basketTitle }}</p>
         <svg class="el-icon">
