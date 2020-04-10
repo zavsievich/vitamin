@@ -513,6 +513,40 @@ a {
     margin-left: 5.3em;
     text-transform: uppercase; }
 
+.offers {
+  margin-top: 4rem; }
+  .offers-heading {
+    text-align: center; }
+    .offers-heading__title {
+      font-size: 2em;
+      color: #000000;
+      line-height: .7em;
+      font-weight: 600;
+      padding: .5rem 1rem; }
+    .offers-heading__sub-title {
+      font-size: 1.4em;
+      line-height: 1em;
+      padding: .5rem 1rem; }
+  .offers-poster__product {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 25rem;
+    height: 19rem;
+    background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+    background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+    background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%); }
+    .offers-poster__product-img {
+      height: 19rem;
+      -webkit-transform: translateY(17%);
+          -ms-transform: translateY(17%);
+              transform: translateY(17%); }
+
 .visible {
   visibility: visible !important; }
 

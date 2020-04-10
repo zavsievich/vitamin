@@ -1,0 +1,34 @@
+.offers {
+  margin-top: 4rem;
+  &-heading {
+    text-align: center;
+    &__title {
+      font-size: 2em;
+      color: $c-black;
+      line-height: .7em;
+      font-weight: 600;
+      padding: .5rem 1rem;
+    }
+
+    &__sub-title {
+      font-size: 1.4em;
+      line-height: 1em;
+      padding: .5rem 1rem;
+    }
+  }
+  
+  &-poster {
+    &__product {
+      display: flex;
+      justify-content: center;
+      width: 25rem;
+      height: 19rem;
+      background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
+
+      &-img {
+        height: 19rem;
+        transform: translateY(17%);
+      }
+    }
+  }
+}
