@@ -29,7 +29,14 @@
                     <h3 class="info-content__description-title">{{ item.title }}</h3>
                     <p class="info-content__description-text">{{ item.text }}</p>
                 </div>
-                <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="info-content__img">
+                <div class="info-content__img-wrap">
+                    <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="info-content__img">
+                    <div class="info-content__btn-wrap">
+                        <button class="info-content__btn"></button>
+                        <button class="info-content__btn"></button>
+                        <button class="info-content__btn"></button>
+                    </div>
+                </div>
             </div>
         {% endfor %}
     </div>

@@ -4,8 +4,8 @@
     <list default="true" id="1e796c3b-f33e-4884-9530-f2c9c285ea71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.tmp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.tmp/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/elements/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/elements/btn.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/sections/info.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/sections/info.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables/colors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/sections/info.tiwg" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/info.tiwg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/sections/info.tiwg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+            <state relative-caret-position="462">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/templates/components/button.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
+              <caret column="42" selection-start-column="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -67,8 +67,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/sections/info.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+            <state relative-caret-position="780">
+              <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/elements/btn.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -109,15 +118,15 @@
         <option value="$PROJECT_DIR$/src/templates/sections/banner.twig" />
         <option value="$PROJECT_DIR$/src/styles/base/fonts.scss" />
         <option value="$PROJECT_DIR$/src/templates/sections/offers.twig" />
-        <option value="$PROJECT_DIR$/src/styles/elements/btn.scss" />
         <option value="$PROJECT_DIR$/src/styles/components/header.scss" />
         <option value="$PROJECT_DIR$/src/templates/index.twig" />
         <option value="$PROJECT_DIR$/src/styles/style.scss" />
         <option value="$PROJECT_DIR$/src/templates/components/header.twig" />
         <option value="$PROJECT_DIR$/src/styles/variables/colors.scss" />
         <option value="$PROJECT_DIR$/src/styles/sections/offers.scss" />
-        <option value="$PROJECT_DIR$/src/templates/sections/info.tiwg" />
         <option value="$PROJECT_DIR$/src/templates/components/button.twig" />
+        <option value="$PROJECT_DIR$/src/styles/elements/btn.scss" />
+        <option value="$PROJECT_DIR$/src/templates/sections/info.tiwg" />
         <option value="$PROJECT_DIR$/src/styles/sections/info.scss" />
       </list>
     </option>
@@ -285,12 +294,12 @@
       <workItem from="1586265892480" duration="5047000" />
       <workItem from="1586423861175" duration="6875000" />
       <workItem from="1586442698326" duration="2439000" />
-      <workItem from="1586507425791" duration="21914000" />
+      <workItem from="1586507425791" duration="23062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31233000" />
+    <option name="totallyTimeSpent" value="32381000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -305,7 +314,7 @@
     <frame x="-7" y="-1080" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29431072" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11050328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -430,13 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/elements/btn.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/components/header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -465,13 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/components/header.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/variables/colors.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -486,17 +481,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/components/button.twig">
+    <entry file="file://$PROJECT_DIR$/src/styles/elements/btn.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
+        <state relative-caret-position="140">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/sections/info.tiwg">
+    <entry file="file://$PROJECT_DIR$/src/templates/components/button.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/components/header.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -507,10 +509,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/sections/info.tiwg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/sections/info.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+        <state relative-caret-position="780">
+          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
         </state>
       </provider>
     </entry>
