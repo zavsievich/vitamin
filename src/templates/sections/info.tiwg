@@ -33,4 +33,7 @@
             </div>
         {% endfor %}
     </div>
+    {% include "../components/button.twig" with {
+        content : 'View skin glow',
+    } %}
 </section>
