@@ -6,7 +6,7 @@
       font-size: 2em;
       color: $c-black;
       line-height: .7em;
-      font-weight: 600;
+      font-weight: 700;
       padding: .5rem 1rem;
     }
 
@@ -18,16 +18,29 @@
   }
   
   &-poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &__product {
       display: flex;
       justify-content: center;
       width: 25rem;
       height: 19rem;
-      background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
+      margin: 2rem;
+      border-radius: .8rem;
 
       &-img {
         height: 19rem;
         transform: translateY(17%);
+      }
+    }
+
+    &__info {
+      &-title {
+        font-size: 1.4em;
+        line-height: 1.5em;
+        font-weight: 700;
       }
     }
   }

@@ -1,8 +1,14 @@
-@font-face {
-  font-weight: bold;
-  font-family: "Nunito";
+/*@font-face {
+  font-weight: 600;
+  font-family: "Helvetica";
   font-style: normal;
-  src: url("../../fonts/HelveticaNeueLTStd-Hv.otf"); }
+  src: url("../../fonts/HelveticaNeueLTProHvEx.otf");
+}*/
+@font-face {
+  font-weight: 700;
+  font-family: "Helvetica";
+  font-style: normal;
+  src: url("../../fonts/HelveticaNeueLTProBd.otf"); }
 
 @font-face {
   font-weight: normal;
@@ -427,7 +433,7 @@ a {
       color: #FFFFFF;
       font-size: 1.2em;
       line-height: 1em;
-      font-weight: 600;
+      font-weight: 400;
       padding: 1em; }
   .header-logo {
     -webkit-box-flex: 2;
@@ -474,7 +480,7 @@ a {
       padding-right: 1.4em;
       font-size: 1.2em;
       line-height: 1.2em;
-      font-weight: 600; }
+      font-weight: 400; }
     .header-basket svg {
       width: 1.2em;
       height: 1.1em;
@@ -521,31 +527,48 @@ a {
       font-size: 2em;
       color: #000000;
       line-height: .7em;
-      font-weight: 600;
+      font-weight: 700;
       padding: .5rem 1rem; }
     .offers-heading__sub-title {
       font-size: 1.4em;
       line-height: 1em;
       padding: .5rem 1rem; }
-  .offers-poster__product {
+  .offers-poster {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    width: 25rem;
-    height: 19rem;
-    background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
-    background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
-    background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%); }
-    .offers-poster__product-img {
+            justify-content: center; }
+    .offers-poster__product {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 25rem;
       height: 19rem;
-      -webkit-transform: translateY(17%);
-          -ms-transform: translateY(17%);
-              transform: translateY(17%); }
+      margin: 2rem;
+      -webkit-border-radius: .8rem;
+              border-radius: .8rem; }
+      .offers-poster__product-img {
+        height: 19rem;
+        -webkit-transform: translateY(17%);
+            -ms-transform: translateY(17%);
+                transform: translateY(17%); }
+    .offers-poster__info-title {
+      font-size: 1.4em;
+      line-height: 1.5em;
+      font-weight: 700; }
 
 .visible {
   visibility: visible !important; }

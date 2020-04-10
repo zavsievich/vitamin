@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e796c3b-f33e-4884-9530-f2c9c285ea71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/fonts/HelveticaNeueLTProBd.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/HelveticaNeueLTProBdCn.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/HelveticaNeueLTProHvEx.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.tmp/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/base/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/sections/offers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/sections/offers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/sections/offers.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/offers.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +27,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/sections/offers.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="27" column="19" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="19" />
+            <state relative-caret-position="252">
+              <caret line="18" column="95" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/templates/components/button.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
+              <caret column="42" selection-start-column="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -43,11 +54,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/sections/offers.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/components/header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/base/fonts.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -67,14 +96,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/styles/base/layout.scss" />
         <option value="$PROJECT_DIR$/src/styles/components/banner.scss" />
-        <option value="$PROJECT_DIR$/src/styles/components/header.scss" />
         <option value="$PROJECT_DIR$/src/templates/components/header.twig" />
         <option value="$PROJECT_DIR$/src/templates/sections/banner.twig" />
         <option value="$PROJECT_DIR$/src/templates/index.twig" />
         <option value="$PROJECT_DIR$/src/styles/style.scss" />
-        <option value="$PROJECT_DIR$/src/templates/sections/offers.twig" />
         <option value="$PROJECT_DIR$/src/templates/components/button.twig" />
+        <option value="$PROJECT_DIR$/src/templates/sections/offers.twig" />
         <option value="$PROJECT_DIR$/src/styles/sections/offers.scss" />
+        <option value="$PROJECT_DIR$/src/styles/base/fonts.scss" />
+        <option value="$PROJECT_DIR$/src/styles/components/header.scss" />
       </list>
     </option>
   </component>
@@ -107,6 +137,12 @@
               <item name="vitamin" type="b2602c69:ProjectViewProjectNode" />
               <item name="vitamin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vitamin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vitamin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -129,6 +165,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
               <item name="sections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vitamin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vitamin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="variables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vitamin" type="b2602c69:ProjectViewProjectNode" />
@@ -172,6 +215,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\vitamin\src\fonts" />
       <recent name="C:\project\vitamin\src\images" />
       <recent name="C:\project\vitamin\src\styles\sections" />
       <recent name="D:\projects\vitamin\src\images\svg_sprite_inline" />
@@ -214,12 +258,12 @@
       <workItem from="1586265892480" duration="5047000" />
       <workItem from="1586423861175" duration="6875000" />
       <workItem from="1586442698326" duration="2439000" />
-      <workItem from="1586507425791" duration="3629000" />
+      <workItem from="1586507425791" duration="6430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12948000" />
+    <option name="totallyTimeSpent" value="15749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -234,7 +278,7 @@
     <frame x="-7" y="-1080" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21225382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26695842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -252,7 +296,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="3" side_tool="true" weight="0.45960698" />
+      <window_info anchor="right" id="Terminal" order="3" side_tool="true" weight="0.4595186" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,24 +376,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/components/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/index.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/sections/banner.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -360,24 +390,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/variables/sizes.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/__variables.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/sections/banner.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/components/button.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/sections/offers.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="19" />
+        <state relative-caret-position="252">
+          <caret line="18" column="95" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/sections/offers.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="210">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/base/fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/components/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
         </state>
       </provider>
     </entry>
