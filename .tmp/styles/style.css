@@ -534,8 +534,10 @@ a {
     text-transform: uppercase; }
 
 .offers {
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
+  background-color: #FFFFFF; }
+  .offers-wrap {
+    padding-top: 3rem;
+    padding-bottom: 5rem; }
   .offers-heading {
     text-align: center; }
     .offers-heading__title {

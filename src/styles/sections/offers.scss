@@ -1,6 +1,10 @@
 .offers {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  background-color: $c-white;
+
+  &-wrap {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
 
   &-heading {
     text-align: center;
