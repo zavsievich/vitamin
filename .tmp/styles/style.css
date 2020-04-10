@@ -399,6 +399,20 @@ a {
   text-decoration: none;
   color: #000000; }
 
+.btn {
+  background: -webkit-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 94.53%);
+  background: -o-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 94.53%);
+  background: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 94.53%);
+  font-size: 1em;
+  margin-top: 1em;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-border-radius: 1.5em;
+          border-radius: 1.5em;
+  padding: 1em 6em;
+  border: none; }
+
 .header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -520,7 +534,8 @@ a {
     text-transform: uppercase; }
 
 .offers {
-  margin-top: 4rem; }
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
   .offers-heading {
     text-align: center; }
     .offers-heading__title {
@@ -545,7 +560,8 @@ a {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin-top: 2rem; }
     .offers-poster__product {
       display: -webkit-box;
       display: -webkit-flex;
@@ -555,20 +571,32 @@ a {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      width: 25rem;
-      height: 19rem;
+      width: 33rem;
+      height: 25rem;
       margin: 2rem;
       -webkit-border-radius: .8rem;
-              border-radius: .8rem; }
+              border-radius: .8rem;
+      margin-left: 0; }
       .offers-poster__product-img {
-        height: 19rem;
-        -webkit-transform: translateY(17%);
-            -ms-transform: translateY(17%);
-                transform: translateY(17%); }
-    .offers-poster__info-title {
-      font-size: 1.4em;
-      line-height: 1.5em;
-      font-weight: 700; }
+        height: 22rem;
+        -webkit-transform: translateY(29%);
+            -ms-transform: translateY(29%);
+                transform: translateY(29%); }
+    .offers-poster__info {
+      padding-left: 1rem; }
+      .offers-poster__info-title {
+        font-size: 1.4em;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin: .5em 0; }
+      .offers-poster__info-cost {
+        font-size: 1.4em;
+        margin: .5em 0; }
+      .offers-poster__info-description {
+        font-size: 1.4em;
+        max-width: 17em;
+        margin: .5em 0;
+        line-height: 1.7em; }
 
 .visible {
   visibility: visible !important; }

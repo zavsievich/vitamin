@@ -1,7 +1,10 @@
 .offers {
-  margin-top: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
   &-heading {
     text-align: center;
+
     &__title {
       font-size: 2em;
       color: $c-black;
@@ -16,31 +19,48 @@
       padding: .5rem 1rem;
     }
   }
-  
+
   &-poster {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 
     &__product {
       display: flex;
       justify-content: center;
-      width: 25rem;
-      height: 19rem;
+      width: 33rem;
+      height: 25rem;
       margin: 2rem;
       border-radius: .8rem;
+      margin-left: 0;
 
       &-img {
-        height: 19rem;
-        transform: translateY(17%);
+        height: 22rem;
+        transform: translateY(29%);
       }
     }
 
     &__info {
+      padding-left: 1rem;
+
       &-title {
         font-size: 1.4em;
         line-height: 1.5em;
         font-weight: 700;
+        margin: .5em 0;
+      }
+
+      &-cost {
+        font-size: 1.4em;
+        margin: .5em 0;
+      }
+
+      &-description {
+        font-size: 1.4em;
+        max-width: 17em;
+        margin: .5em 0;
+        line-height: 1.7em;
       }
     }
   }
