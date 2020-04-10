@@ -1,0 +1,26 @@
+.info {
+  background-color: $c-gray;
+
+  &-wrap {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  &-heading {
+    text-align: center;
+
+    &__title {
+      font-size: 2em;
+      color: $c-black;
+      line-height: .7em;
+      font-weight: 700;
+      padding: .5rem 1rem;
+    }
+
+    &__sub-title {
+      font-size: 1.4em;
+      line-height: 1em;
+      padding: .5rem 1rem;
+    }
+  }
+}

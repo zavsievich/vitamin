@@ -603,6 +603,24 @@ a {
         margin: .5em 0;
         line-height: 1.7em; }
 
+.info {
+  background-color: #F6F6F6; }
+  .info-wrap {
+    padding-top: 3rem;
+    padding-bottom: 5rem; }
+  .info-heading {
+    text-align: center; }
+    .info-heading__title {
+      font-size: 2em;
+      color: #000000;
+      line-height: .7em;
+      font-weight: 700;
+      padding: .5rem 1rem; }
+    .info-heading__sub-title {
+      font-size: 1.4em;
+      line-height: 1em;
+      padding: .5rem 1rem; }
+
 .visible {
   visibility: visible !important; }
 

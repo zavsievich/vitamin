@@ -1,0 +1,14 @@
+{% if not args %}
+    {% set args = {
+        headingTitle: 'Too much copy supplied',
+        headingSubTitle: 'Needs to be 2 lines max',
+    } %}
+{% endif %}
+<section class="info">
+    <div class="info-wrap">
+        <div class="info-heading">
+            <h2 class="info-heading__title">{{ args.headingTitle }}</h2>
+            <p class="info-heading__sub-title">{{ args.headingSubTitle }}</p>
+        </div>
+    </div>
+</section>
