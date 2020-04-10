@@ -400,9 +400,9 @@ a {
   color: #000000; }
 
 .btn {
-  background: -webkit-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 94.53%);
-  background: -o-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 94.53%);
-  background: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 94.53%);
+  background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+  background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+  background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
   font-size: 1em;
   margin-top: 1em;
   color: #FFFFFF;
@@ -481,9 +481,9 @@ a {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       border: 1px solid #FFFFFF;
-      background: -webkit-linear-gradient(319.3deg, #D369D6 7.15%, #EB0A3C 94.53%);
-      background: -o-linear-gradient(319.3deg, #D369D6 7.15%, #EB0A3C 94.53%);
-      background: linear-gradient(130.7deg, #D369D6 7.15%, #EB0A3C 94.53%);
+      background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+      background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+      background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
       height: 10px;
       width: 10px;
       top: 50%;
@@ -576,7 +576,10 @@ a {
       margin: 2rem;
       -webkit-border-radius: .8rem;
               border-radius: .8rem;
-      margin-left: 0; }
+      margin-left: 0;
+      background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+      background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+      background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%); }
       .offers-poster__product-img {
         height: 22rem;
         -webkit-transform: translateY(29%);
