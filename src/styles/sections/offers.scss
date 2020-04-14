@@ -33,12 +33,11 @@
     &__product {
       display: flex;
       justify-content: center;
-      width: 33rem;
       height: 25rem;
-      margin: 2rem;
       border-radius: .8rem;
-      margin-left: 0;
+      margin-left: 2em;
       background: $c-pink-gradient;
+      flex: 1 0 14%;
 
       &-img {
         height: 22rem;
@@ -47,7 +46,8 @@
     }
 
     &__info {
-      padding-left: 1rem;
+      padding-left: 2rem;
+      flex: 1 0 10%;
 
       &-title {
         font-size: 1.4em;
