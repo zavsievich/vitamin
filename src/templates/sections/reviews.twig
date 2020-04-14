@@ -1,0 +1,67 @@
+{% if not args %}
+    {% set args = {
+        title : 'People have sald',
+        rev :
+        [
+            {
+                name : 'Lishay Matvey',
+                assessment :
+                [
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                ],
+                text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna. “',
+            },
+        ],
+        revBtn :
+        [
+            {
+                state : 'is-active',
+                btn : 'slider-bitton',
+            },
+            {
+                btn : 'slider-bitton',
+            },
+            {
+                btn : 'slider-bitton',
+            },
+        ],
+
+    } %}
+{% endif %}
+<section class="reviews container">
+    <h2 class="reviews-title">{{ args.title }}</h2>
+    {% for item in args.rev %}
+        <div class="reviews-content">
+            <p class="reviews-content__name">{{ item.name }}</p>
+            <div class="reviews-content__assessment">
+                {% for star in item.assessment %}
+                    <span class="reviews-content__assessment-star">
+                        <svg class="el-icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#{{ star.star }}"></use>
+                        </svg>
+                    </span>
+                {% endfor %}
+            </div>
+            <p class="reviews-content__text">{{ item.text }}</p>
+        </div>
+    {% endfor %}
+    {% for item in args.revBtn %}
+        <button class="reviews-btn {{ item.state }}">
+            <span class="visually-hidden">{{ item.btn }}</span>
+        </button>
+    {% endfor %}
+</section>
