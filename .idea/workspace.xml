@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e796c3b-f33e-4884-9530-f2c9c285ea71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.tmp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/sections/capabilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/sections/capabilities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/sections/info.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/sections/info.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/sections/reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/sections/reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/sections/capabilities.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/capabilities.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/sections/info.tiwg" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/info.tiwg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/sections/reviews.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/reviews.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/elements/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/btn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/components/button.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/components/button.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/sections/capabilities.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
               <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/components/btn.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/components/button.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -58,8 +71,6 @@
         <option value="$PROJECT_DIR$/src/styles/components/banner.scss" />
         <option value="$PROJECT_DIR$/src/templates/sections/banner.twig" />
         <option value="$PROJECT_DIR$/src/styles/base/fonts.scss" />
-        <option value="$PROJECT_DIR$/src/templates/components/button.twig" />
-        <option value="$PROJECT_DIR$/src/styles/elements/btn.scss" />
         <option value="$PROJECT_DIR$/src/styles/variables/colors.scss" />
         <option value="$PROJECT_DIR$/src/templates/index.twig" />
         <option value="$PROJECT_DIR$/src/styles/style.scss" />
@@ -75,6 +86,9 @@
         <option value="$PROJECT_DIR$/src/templates/sections/reviews.twig" />
         <option value="$PROJECT_DIR$/src/templates/sections/capabilities.twig" />
         <option value="$PROJECT_DIR$/src/styles/sections/capabilities.scss" />
+        <option value="$PROJECT_DIR$/src/styles/elements/btn.scss" />
+        <option value="$PROJECT_DIR$/src/templates/components/button.twig" />
+        <option value="$PROJECT_DIR$/src/styles/components/btn.scss" />
       </list>
     </option>
   </component>
@@ -134,6 +148,13 @@
               <item name="vitamin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="elements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vitamin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vitamin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
               <item name="sections" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -178,11 +199,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\vitamin\src\styles\components" />
       <recent name="C:\project\vitamin\src\images" />
       <recent name="C:\project\vitamin\src\images\svg_sprite_inline" />
       <recent name="C:\project\vitamin\src\fonts" />
       <recent name="C:\project\vitamin\src\styles\sections" />
-      <recent name="D:\projects\vitamin\src\images\svg_sprite_inline" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -227,7 +248,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61521000" />
+    <option name="totallyTimeSpent" value="61700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -242,7 +263,7 @@
     <frame x="1913" y="3" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11269147" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27789935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -374,20 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/elements/btn.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/components/button.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/variables/colors.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -493,6 +500,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/components/button.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/components/btn.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
         </state>
       </provider>
     </entry>

@@ -416,7 +416,7 @@ a {
   text-decoration: none;
   color: #000000; }
 
-.btn {
+.c-btn {
   background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
   background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
   background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
