@@ -1,0 +1,37 @@
+.s-article {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+
+  &-item {
+    margin: 2.375rem;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 706px;
+    height: 706px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      font-size: 2.125em;
+      color: $c-white;
+      max-width: 9em;
+      text-align: center;
+      margin: 1em;
+
+      &-link {
+        color: $c-white;
+      }
+    }
+
+    &__view {
+      font-size: 1.375em;
+      color: $c-white;
+    }
+  }
+}

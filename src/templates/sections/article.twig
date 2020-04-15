@@ -1,0 +1,28 @@
+{% if not args %}
+    {% set args = {
+        card :
+        [
+            {
+                title : 'Should you switch to alkline diet?',
+                view : 'View post',
+                bgImage : 'images/diet.jpg',
+            },
+            {
+                title : 'The importance of sleep',
+                view : 'View post',
+                bgImage : 'images/sleep.jpg',
+            },
+        ],
+    } %}
+{% endif %}
+
+<section class="s-article">
+    {% for item in args.card %}
+        <article class="s-article-item" style="background-image: url({{ item.bgImage }})">
+            <h2 class="s-article-item__title">
+                <a class="s-article-item__title-link" href="#">{{ item.title }}</a>
+            </h2>
+            <p class="s-article-item__view">{{ item.view }}</p>
+        </article>
+    {% endfor %}
+</section>

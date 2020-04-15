@@ -896,6 +896,53 @@ a {
     font-size: 2.12em;
     margin-bottom: .6em; }
 
+.s-article {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 0; }
+  .s-article-item {
+    margin: 2.375rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+            background-size: cover;
+    width: 706px;
+    height: 706px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .s-article-item__title {
+      font-size: 2.125em;
+      color: #FFFFFF;
+      max-width: 9em;
+      text-align: center;
+      margin: 1em; }
+      .s-article-item__title-link {
+        color: #FFFFFF; }
+    .s-article-item__view {
+      font-size: 1.375em;
+      color: #FFFFFF; }
+
 .visible {
   visibility: visible !important; }
 
