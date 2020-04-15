@@ -1,0 +1,40 @@
+{% if not args %}
+    {% set args = {
+        capabilities :
+        [
+            {
+                icon : 'box',
+                title : 'Free UK Shipping',
+                text : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam dignissim elit non lacus egestas maximus.',
+            },
+            {
+                icon : 'sale',
+                title : 'Monthly discount codes',
+                text : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam dignissim elit non lacus egestas maximus.',
+            },
+            {
+                icon : 'row',
+                title : 'Subscription',
+                text : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam dignissim elit non lacus egestas maximus.',
+            },
+        ],
+    } %}
+{% endif %}
+
+<section class="capabilities">
+    {% for item in args.capabilities %}
+        <div class="capabilities-wrap">
+            <div class="capabilities-img">
+                <svg class="el-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                         xlink:href="#{{ item.icon }}"></use>
+                </svg>
+            </div>
+            <h2 class="capabilities-title">{{ item.title }}</h2>
+            <p class="capabilities-text">{{ item.text }}</p>
+        </div>
+    {% endfor %}
+</section>

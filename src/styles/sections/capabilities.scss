@@ -1,0 +1,40 @@
+.capabilities {
+  background-color: $c-gray;
+  padding: 8rem 0 6rem;
+  display: flex;
+  justify-content: center;
+
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+  }
+
+  &-img {
+    background-color: $c-white;
+    color: #A738AC;
+    height: 6.25rem;
+    width: 6.25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 3.37rem;
+      height: 2.9rem;
+    }
+  }
+
+  &-title {
+    font-size: 1.25em;
+    padding: 1em 0;
+  }
+
+  &-text {
+    font-size: 1.25em;
+    max-width: 16em;
+    text-align: center;
+  }
+}
