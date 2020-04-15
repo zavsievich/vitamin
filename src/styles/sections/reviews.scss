@@ -6,6 +6,7 @@
 
   &-title {
     font-size: 2em;
+    padding: 2em .5em 1em;
   }
 
   &-content {
@@ -15,17 +16,27 @@
 
     &__name {
       font-size: 1.4em;
+      padding-bottom: .6em;
     }
 
     &__assessment {
+      font-size: 1.4em;
+      padding-bottom: .6em;
 
       &-star {
-
         svg {
           width: 20px;
           height: 20px;
         }
       }
+    }
+
+    &__text {
+      font-size: 1.75em;
+      line-height: 34px;
+      max-width: 25em;
+      text-align: center;
+      font-style: italic;
     }
   }
 }

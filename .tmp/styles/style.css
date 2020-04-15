@@ -747,7 +747,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
   .reviews-title {
-    font-size: 2em; }
+    font-size: 2em;
+    padding: 2em .5em 1em; }
   .reviews-content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -763,10 +764,20 @@ a {
         -ms-flex-align: center;
             align-items: center; }
     .reviews-content__name {
-      font-size: 1.4em; }
-    .reviews-content__assessment-star svg {
-      width: 20px;
-      height: 20px; }
+      font-size: 1.4em;
+      padding-bottom: .6em; }
+    .reviews-content__assessment {
+      font-size: 1.4em;
+      padding-bottom: .6em; }
+      .reviews-content__assessment-star svg {
+        width: 20px;
+        height: 20px; }
+    .reviews-content__text {
+      font-size: 1.75em;
+      line-height: 34px;
+      max-width: 25em;
+      text-align: center;
+      font-style: italic; }
 
 .visible {
   visibility: visible !important; }
