@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*@font-face {
   font-weight: 600;
   font-family: "Helvetica";
@@ -430,7 +431,7 @@ a {
   border: none;
   max-width: 361px; }
 
-.header {
+.с-header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -449,33 +450,24 @@ a {
   margin: 0 auto;
   height: 80px;
   font-size: 16px; }
-  .header-nav {
-    -webkit-box-flex: 2;
-    -webkit-flex: 2 0 auto;
-        -ms-flex: 2 0 auto;
-            flex: 2 0 auto; }
-    .header-nav__list {
+  .с-header-nav {
+    -webkit-box-flex: 1.5;
+    -webkit-flex: 1.5 0 auto;
+        -ms-flex: 1.5 0 auto;
+            flex: 1.5 0 auto; }
+    .с-header-nav__list {
       list-style-type: none;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-    .header-nav__title-link {
+    .с-header-nav__title-link {
       color: #FFFFFF;
       font-size: 1.2em;
       line-height: 1em;
       font-weight: 400;
       padding: 1em; }
-  .header-logo {
-    -webkit-box-flex: 2;
-    -webkit-flex: 2 0 auto;
-        -ms-flex: 2 0 auto;
-            flex: 2 0 auto; }
-  .header-basket {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
+  .с-header-basket {
     background: none;
     border: none;
     color: #FFFFFF;
@@ -491,8 +483,11 @@ a {
     height: -moz-max-content;
     height: max-content;
     position: relative;
-    margin: 1.2em; }
-    .header-basket::after {
+    margin: 1.2em;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end; }
+    .с-header-basket::after {
       content: "";
       position: absolute;
       -webkit-border-radius: 50%;
@@ -507,17 +502,23 @@ a {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
-    .header-basket__title {
+    .с-header-basket__title {
       padding-right: 1.4em;
       font-size: 1.2em;
       line-height: 1.2em;
       font-weight: 400; }
-    .header-basket svg {
+    .с-header-basket svg {
       width: 1.2em;
       height: 1.1em;
       position: absolute;
       right: 0;
       bottom: 0; }
+
+.c-header__logo-wrap {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 0 auto;
+      -ms-flex: 2 0 auto;
+          flex: 2 0 auto; }
 
 .banner {
   background-repeat: no-repeat;
@@ -550,24 +551,24 @@ a {
     margin-left: 5.3em;
     text-transform: uppercase; }
 
-.offers {
+.s-offers {
   background-color: #FFFFFF; }
-  .offers-wrap {
+  .s-offers-wrap {
     padding-top: 3rem;
     padding-bottom: 5rem; }
-  .offers-heading {
+  .s-offers-heading {
     text-align: center; }
-    .offers-heading__title {
+    .s-offers-heading__title {
       font-size: 2em;
       color: #000000;
       line-height: .7em;
       font-weight: 700;
       padding: .5rem 1rem; }
-    .offers-heading__sub-title {
+    .s-offers-heading__sub-title {
       font-size: 1.4em;
       line-height: 1em;
       padding: .5rem 1rem; }
-  .offers-poster {
+  .s-offers-poster {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -581,7 +582,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 2rem; }
-    .offers-poster__product {
+    .s-offers-poster__product {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -601,26 +602,26 @@ a {
       -webkit-flex: 1 0 14%;
           -ms-flex: 1 0 14%;
               flex: 1 0 14%; }
-      .offers-poster__product-img {
+      .s-offers-poster__product-img {
         height: 22rem;
         -webkit-transform: translateY(29%);
             -ms-transform: translateY(29%);
                 transform: translateY(29%); }
-    .offers-poster__info {
+    .s-offers-poster__info {
       padding-left: 2rem;
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 10%;
           -ms-flex: 1 0 10%;
               flex: 1 0 10%; }
-      .offers-poster__info-title {
+      .s-offers-poster__info-title {
         font-size: 1.4em;
         line-height: 1.5em;
         font-weight: 700;
         margin: .5em 0; }
-      .offers-poster__info-cost {
+      .s-offers-poster__info-cost {
         font-size: 1.4em;
         margin: .5em 0; }
-      .offers-poster__info-description {
+      .s-offers-poster__info-description {
         font-size: 1.4em;
         max-width: 17em;
         margin: .5em 0;

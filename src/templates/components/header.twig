@@ -14,25 +14,27 @@
                 title : 'Contact',
             },
         ],
-        headerLogoDescr : 'Vitami',
+        headerLogoAlt : 'Vitami',
         basketTitle : 'Basket',
         headerLogo : 'images/svg_sprite_inline/vitami.svg',
         bannerBackgroundImage : 'images/hero-bg.jpg',
     } %}
 {% endif %}
-<header class="header">
-    <nav class="header-nav">
-        <ul class="header-nav__list">
+<header class="с-header">
+    <nav class="с-header-nav">
+        <ul class="с-header-nav__list">
             {% for item in args.nav %}
-                <li class="header-nav__title">
-                    <a href="#" class="header-nav__title-link">{{ item.title }}</a>
+                <li class="с-header-nav__title">
+                    <a href="#" class="с-header-nav__title-link">{{ item.title }}</a>
                 </li>
             {% endfor %}
         </ul>
     </nav>
-    <a href="" class="header-logo"><img src="{{ args.headerLogo }}" alt="{{ args.headerLogoDescr }}"></a>
-    <button class="header-basket">
-        <p class="header-basket__title">{{ args.basketTitle }}</p>
+    <div class="c-header__logo-wrap">
+        <a href="#" class="с-header-logo"><img src="{{ args.headerLogo }}" alt="{{ args.headerLogoAlt }}"></a>
+    </div>
+    <button class="с-header-basket">
+        <p class="с-header-basket__title">{{ args.basketTitle }}</p>
         <svg class="el-icon">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
         </svg>
