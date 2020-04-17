@@ -93,4 +93,12 @@
   @include media-breakpoint-up(md) {
     padding: 3rem 1.25rem;
   }
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+
+    &-item {
+      margin: 1em;
+    }
+  }
 }

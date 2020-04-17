@@ -1291,6 +1291,15 @@ a {
   @media screen and (min-width: 650px) {
     .s-article {
       padding: 3rem 1.25rem; } }
+  @media screen and (min-width: 900px) {
+    .s-article {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .s-article-item {
+        margin: 1em; } }
 
 .s-instagram {
   display: -webkit-box;
