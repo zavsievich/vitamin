@@ -1190,7 +1190,7 @@ a {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 2rem; }
+    margin: 1em 2rem; }
   .s-capabilities-img {
     background-color: #FFFFFF;
     color: #A738AC;
