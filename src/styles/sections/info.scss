@@ -84,14 +84,13 @@
         background: $c-color-btnSlideActive;
       }
     }
-
-    &__btn-wrap {
-      display: flex;
-      margin-top: 0.8rem;
-    }
   }
 }
 
 .btn--info {
   background-color: black;
+}
+
+.info-content__btn-wrap {
+  margin-top: 1rem;
 }
