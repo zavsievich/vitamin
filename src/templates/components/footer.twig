@@ -4,20 +4,49 @@
         communication :
         [
             {
-               icon : 'facebook',
-               descr : 'facebook',
+                icon : 'facebook',
+                descr : 'facebook',
             },
             {
-               icon : 'instagram',
-               descr : 'instagram',
+                icon : 'instagram',
+                descr : 'instagram',
             },
             {
-               icon : 'twitter',
-               descr : 'twitter',
+                icon : 'twitter',
+                descr : 'twitter',
             },
 
         ],
         btn : 'Join',
+        text : 'Join our mailing list to stay up to date with the vitami news and offers.',
+        nav :
+        [
+            {
+                title : 'Shop',
+            },
+            {
+                title : 'Faqs',
+            },
+            {
+                title : 'Blog',
+            },
+            {
+                title : 'Contact',
+            },
+        ],
+        rules :
+        [
+            {
+               title : 'Terms & Conditions',
+            },
+            {
+               title : 'Privacy Policy',
+            },
+            {
+               title : 'Cookie Policy',
+            },
+
+        ],
     } %}
 {% endif %}
 <footer class="c-footer">
@@ -30,10 +59,12 @@
         {% for item in args.communication %}
             <li class="c-footer__communication-item">
                 <span class="visually-hidden">{{ item.descr }}</span>
-                <svg class="el-icon">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xlink:href="#{{ item.icon }}"></use>
-                </svg>
+                <a href="#" class="c-footer__communication-item-link">
+                    <svg class="el-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                             xlink:href="#{{ item.icon }}"></use>
+                    </svg>
+                </a>
             </li>
         {% endfor %}
     </ul>
@@ -42,4 +73,19 @@
                name="search" placeholder="Your email">
         <button class="c-footer-search-btn" type="submit">{{ args.btn }}</button>
     </form>
+    <p class="c-footer-text">{{ args.text }}</p>
+    <ul class="c-footer__nav-list">
+        {% for item in args.nav %}
+            <li class="c-footer__nav-item">
+                <a href="#" class="c-footer__nav-item-link">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <ul class="c-footer__rules-list">
+        {% for item in args.rules %}
+            <li class="c-footer__rules-item">
+                <a href="#" class="c-footer__rules-item-link">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
 </footer>
