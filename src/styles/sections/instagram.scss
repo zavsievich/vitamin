@@ -47,4 +47,10 @@
       }
     }
   }
+
+  @include media-breakpoint-up(md) {
+    &-title {
+      font-size: 2.125em;
+    }
+  }
 }

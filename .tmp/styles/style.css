@@ -1320,6 +1320,9 @@ a {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
+  @media screen and (min-width: 650px) {
+    .s-instagram-title {
+      font-size: 2.125em; } }
 
 .visible {
   visibility: visible !important; }
