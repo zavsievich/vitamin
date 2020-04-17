@@ -21,6 +21,12 @@
     } %}
 {% endif %}
 <header class="с-header">
+    <button class="c-header__btn">
+        <svg class="el-icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#burger"></use>
+        </svg>
+        <span class="visually-hidden">burger</span>
+    </button>
     <nav class="с-header-nav">
         <ul class="с-header-nav__list">
             {% for item in args.nav %}

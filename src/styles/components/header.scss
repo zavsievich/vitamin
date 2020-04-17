@@ -9,6 +9,19 @@
   height: 80px;
   font-size: 16px;
 
+  .c-header__btn {
+    display: none;
+    border: none;
+    background: none;
+    color: $c-white;
+    padding: .5rem;
+    margin-right: 1rem;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   &-nav {
     flex: 1.5 0 auto;
 
@@ -66,8 +79,26 @@
       bottom: 0;
     }
   }
+
+  @include media-breakpoint-up(xs) {
+
+    &-nav {
+      display: none;
+    }
+
+    .c-header__btn {
+      display: block;
+    }
+
+    &-basket {
+      &__title {
+        display: none;
+      }
+    }
+  }
 }
 
-.c-header__logo-wrap {
+/*.c-header__logo-wrap {
   flex: 2 0 auto;
-}
+}*/
+

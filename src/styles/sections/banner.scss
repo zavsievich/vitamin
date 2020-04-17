@@ -19,4 +19,16 @@
     margin-left: 5.3em;
     text-transform: uppercase;
   }
+
+  @include media-breakpoint-up(xs) {
+    padding: 0;
+    background-position: 64% 50%;
+    min-height: 440px;
+
+    &-title {
+      margin: 0;
+      font-size: 1.75em;
+      text-align: center;
+    }
+  }
 }
