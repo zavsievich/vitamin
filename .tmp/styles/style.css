@@ -930,7 +930,8 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    position: relative; }
     .s-article-item__title {
       font-size: 2.125em;
       color: #FFFFFF;
@@ -938,7 +939,20 @@ a {
       text-align: center;
       margin: 1em; }
       .s-article-item__title-link {
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        outline: none; }
+        .s-article-item__title-link::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0; }
+    .s-article-item:focus-within {
+      -webkit-box-shadow: 0 0 0 0.2rem #E51E25;
+              box-shadow: 0 0 0 0.2rem #E51E25; }
+    .s-article-item:focus-within a:focus {
+      text-decoration: none; }
     .s-article-item__view {
       font-size: 1.375em;
       color: #FFFFFF; }

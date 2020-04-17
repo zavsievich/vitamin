@@ -17,6 +17,8 @@
     flex-direction: column;
     align-items: center;
 
+    position: relative;
+
     &__title {
       font-size: 2.125em;
       color: $c-white;
@@ -26,7 +28,25 @@
 
       &-link {
         color: $c-white;
+        outline: none;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+        }
       }
+    }
+
+    &:focus-within {
+      box-shadow: 0 0 0 0.2rem $c-brand;
+    }
+
+    &:focus-within a:focus {
+      text-decoration: none;
     }
 
     &__view {
