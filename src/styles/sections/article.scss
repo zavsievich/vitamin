@@ -82,4 +82,15 @@
       color: $c-white;
     }
   }
+
+  @include media-breakpoint-up(xs) {
+    flex-direction: column;
+
+    &-item {
+      min-height: 340px;
+      min-width: 279px;
+      margin: 0;
+      margin-bottom: 3rem;
+    }
+  }
 }

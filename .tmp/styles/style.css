@@ -1101,7 +1101,12 @@ a {
           justify-content: center;
   padding: 3rem 0;
   max-width: 1488px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .s-article-item {
     margin: 2.375rem;
     background-repeat: no-repeat;
@@ -1183,6 +1188,11 @@ a {
     .s-article-item__view {
       font-size: 1.375em;
       color: #FFFFFF; }
+  .s-article-item {
+    min-height: 340px;
+    min-width: 279px;
+    margin: 0;
+    margin-bottom: 3rem; }
 
 .s-instagram {
   display: -webkit-box;
