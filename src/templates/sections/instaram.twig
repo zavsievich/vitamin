@@ -24,13 +24,15 @@
 
     } %}
 {% endif %}
-<section class="instagram">
-    <h2 class="instagram-title">{{ args.title }}</h2>
-    <p class="instagram-text">{{ args.text }}</p>
-    {% for item in args.img %}
-        <a href="" class="instagram-img">
-            <img src="{{ item.imgUrl }}" alt="{{ item.imgAlt }}">
-            <span class="visually-hidden">link</span>
-        </a>
-    {% endfor %}
+<section class="s-instagram">
+    <h2 class="s-instagram-title">{{ args.title }}</h2>
+    <p class="s-instagram-text">{{ args.text }}</p>
+    <div class="s-instagram-img__wrap">
+        {% for item in args.img %}
+            <a href="#" class="s-instagram-img__link">
+                <img src="{{ item.imgUrl }}" alt="{{ item.imgAlt }}" class="s-instagram-img">
+                <span class="visually-hidden">link</span>
+            </a>
+        {% endfor %}
+    </div>
 </section>

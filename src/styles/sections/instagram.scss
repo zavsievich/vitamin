@@ -1,0 +1,33 @@
+.s-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &-title {
+    font-size: 2.125em;
+    padding: .25em 0;
+  }
+
+  &-text {
+    font-size: 1.375em;
+    padding-bottom: 2rem;
+  }
+
+  &-img {
+    &__wrap {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__link {
+      margin: 0;
+      padding: 0;
+    }
+
+    margin: 1.3rem;
+    border-radius: .4rem;
+  }
+}
