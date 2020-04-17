@@ -46,9 +46,18 @@
 
   @include media-breakpoint-up(lg) {
     min-height: 775px;
+    flex-direction: row;
+    justify-content: flex-start;
 
     &-title {
+      margin: 0;
+      padding: 0;
+      color: $c-white;
+      max-width: 734px;
       font-size: 2.75em;
+      margin-left: 5.3em;
+      text-transform: uppercase;
+      text-align: left;
     }
   }
 

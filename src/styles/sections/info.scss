@@ -92,6 +92,7 @@
         line-height: 1em;
       }
     }
+
     &-content {
       flex-direction: column;
 
@@ -102,10 +103,7 @@
       }
 
       &__btn {
-
-        &-wrap {
-          display: none;
-        }
+        display: none;
       }
     }
   }
@@ -135,9 +133,7 @@
       flex-direction: row;
 
       &__btn {
-        &-wrap {
-          display: flex;
-        }
+        display: inline-block;
       }
     }
   }

@@ -103,6 +103,31 @@
           transform: translateY(29%);
         }
       }
+
+      &__info {
+        padding-left: 2rem;
+        flex: 1 0 10%;
+
+        &-title {
+          font-size: 1.4em;
+          line-height: 1.5em;
+          font-weight: 700;
+          margin: .5em 0;
+        }
+
+        &-cost {
+          font-size: 1.4em;
+          margin: .5em 0;
+        }
+
+        &-description {
+          font-size: 1.4em;
+          max-width: 17em;
+          margin: .5em 0;
+          line-height: 1.7em;
+        }
+      }
     }
+
   }
 }

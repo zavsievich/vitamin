@@ -137,6 +137,12 @@
       display: flex;
     }
 
+    &-logo {
+      &__img {
+        height: 3rem;
+      }
+    }
+
     .c-header__btn {
       display: none;
     }
