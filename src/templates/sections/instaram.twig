@@ -1,0 +1,36 @@
+{% if not args %}
+    {% set args = {
+        title : 'Follow us on instagram',
+        text : 'Show us your results #Vitami',
+        img :
+        [
+            {
+                imgUrl : 'images/runner.jpg',
+                imgAlt : 'runner',
+            },
+            {
+                imgUrl : 'images/yoga.jpg',
+                imgAlt : 'yoga',
+            },
+            {
+                imgUrl : 'images/fitness.jpg',
+                imgAlt : 'fitness',
+            },
+            {
+                imgUrl : 'images/bike.jpg',
+                imgAlt : 'bike',
+            },
+        ]
+
+    } %}
+{% endif %}
+<section class="instagram">
+    <h2 class="instagram-title">{{ args.title }}</h2>
+    <p class="instagram-text">{{ args.text }}</p>
+    {% for item in args.img %}
+        <a href="" class="instagram-img">
+            <img src="{{ item.imgUrl }}" alt="{{ item.imgAlt }}">
+            <span class="visually-hidden">link</span>
+        </a>
+    {% endfor %}
+</section>
