@@ -15,6 +15,7 @@
     background: none;
     color: $c-white;
     padding: .5rem;
+
     svg {
       width: 20px;
       height: 20px;
@@ -104,9 +105,10 @@
     }
   }
 
-  @include media-breakpoint-up(xs) {
+  @include media-breakpoint-up(md) {
     &-logo  {
       margin-right: 0;
+
       &__img {
         height: 2rem;
       }
@@ -116,6 +118,14 @@
       margin-left: 0;
       &__title {
         display: block;
+      }
+    }
+
+    .c-header__btn {
+
+      svg {
+        width: 30px;
+        height: 30px;
       }
     }
   }

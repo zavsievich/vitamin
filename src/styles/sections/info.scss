@@ -105,6 +105,16 @@
       }
     }
   }
+
+  @include media-breakpoint-up(md) {
+    &-content {
+      &__description {
+        &-text {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
 }
 
 .btn--info {
