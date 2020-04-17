@@ -30,4 +30,20 @@
     width: 100%;
     border-radius: .4rem;
   }
+
+  @include media-breakpoint-up(xs) {
+
+    &-title {
+      align-items: center;
+      font-size: 1.375em;
+    }
+
+    &-img {
+      margin: 1rem 0;
+
+      &__wrap {
+        flex-direction: column;
+      }
+    }
+  }
 }
