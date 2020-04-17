@@ -545,10 +545,15 @@ a {
       bottom: 0; }
   .с-header-nav {
     display: none; }
+  .с-header-logo__img {
+    height: 1.4rem; }
   .с-header .c-header__btn {
     display: block; }
-  .с-header-basket__title {
-    display: none; }
+  .с-header-basket {
+    margin-bottom: 1.5em;
+    margin-right: 0; }
+    .с-header-basket__title {
+      display: none; }
 
 /*.c-header__logo-wrap {
   flex: 2 0 auto;
@@ -659,6 +664,13 @@ a {
     .c-footer__rules-item-link {
       font-size: 15px;
       padding: 1em; }
+  .c-footer-logo__img {
+    height: 1.8rem; }
+  .c-footer__communication-item-link {
+    padding: .5rem; }
+  .c-footer__communication-item svg {
+    height: 15px;
+    width: 15px; }
   .c-footer-search {
     margin: 1.5em 0 1.5em; }
     .c-footer-search-input {

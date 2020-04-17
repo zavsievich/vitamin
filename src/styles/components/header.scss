@@ -85,11 +85,19 @@
       display: none;
     }
 
+    &-logo  {
+      &__img {
+        height: 1.4rem;
+      }
+    }
+
     .c-header__btn {
       display: block;
     }
 
     &-basket {
+      margin-bottom: 1.5em;
+      margin-right: 0;
       &__title {
         display: none;
       }
