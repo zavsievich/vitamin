@@ -569,6 +569,19 @@ a {
     .с-header .c-header__btn svg {
       width: 30px;
       height: 30px; } }
+  @media screen and (min-width: 900px) {
+    .с-header-nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    .с-header .c-header__btn {
+      display: none; }
+    .с-header .c-header__logo-wrap {
+      -webkit-box-flex: 2;
+      -webkit-flex: 2 0 auto;
+          -ms-flex: 2 0 auto;
+              flex: 2 0 auto; } }
 
 /*
 .c-header__logo-wrap {
