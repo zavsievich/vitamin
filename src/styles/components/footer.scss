@@ -161,5 +161,64 @@
       }
     }
   }
+
+  @include media-breakpoint-up(md) {
+    &-logo {
+      &__img {
+        height: 3rem;
+      }
+    }
+
+    &__communication {
+      &-item {
+        &-link {
+          padding: .8rem;
+        }
+
+        svg {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+
+    &-search {
+      margin: 1.5em 0 1.5em;
+
+      &-input {
+        width: 16rem;
+      }
+
+      &-btn {
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+    }
+
+    &__nav {
+      &-item {
+        &-link {
+          font-size: 1.125em;
+          padding: 1.2em;
+          margin: .8em;
+        }
+      }
+    }
+
+    &__rules {
+
+      &-list {
+        flex-direction: row;
+      }
+
+      &-item {
+        padding: .4em 0;
+
+        &-link {
+          font-size: 1.125em;
+        }
+      }
+    }
+  }
 }
 
