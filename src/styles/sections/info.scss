@@ -75,7 +75,7 @@
     &__btn {
       width: 3rem;
       height: 0.7rem;
-      background:$c-gray-btnSlidePassive;
+      background: $c-gray-btnSlidePassive;
       border-radius: .3rem;
       border: none;
       margin: .3rem;
@@ -94,6 +94,7 @@
     }
     &-content {
       flex-direction: column;
+
       &__description {
         &-text {
           font-size: 1em;
@@ -101,7 +102,10 @@
       }
 
       &__btn {
-        display: none;
+
+        &-wrap {
+          display: none;
+        }
       }
     }
   }
@@ -125,6 +129,20 @@
       }
     }
   }
+
+  @include media-breakpoint-up(xl) {
+    &-content {
+      flex-direction: row;
+
+      &__btn {
+        &-wrap {
+          display: flex;
+        }
+      }
+    }
+  }
+
+
 }
 
 .btn--info {
