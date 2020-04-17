@@ -24,11 +24,21 @@
       content: "";
       display: block;
       padding-top: 100%;
+
     }
 
     &__wrap {
       text-align: center;
       position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     &__title {
@@ -42,14 +52,16 @@
         color: $c-white;
         outline: none;
 
-        /*&::after {
+        &::after {
           content: "";
           position: absolute;
+          background-color: black;
+          opacity: 0.1;
           top: 0;
           bottom: 0;
           right: 0;
           left: 0;
-        }*/
+        }
       }
     }
 
