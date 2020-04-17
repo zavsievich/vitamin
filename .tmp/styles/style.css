@@ -1184,6 +1184,16 @@ a {
       .s-magazine-title {
         font-size: 1.375em;
         margin: .6em; } }
+  @media screen and (min-width: 900px) {
+    .s-magazine {
+      min-height: 900px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .s-magazine-title {
+        font-size: 1.375em;
+        margin: .6em; } }
 
 .s-article {
   display: -webkit-box;

@@ -43,4 +43,14 @@
       margin: .6em;
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 900px;
+    justify-content: center;
+
+    &-title {
+      font-size: 1.375em;
+      margin: .6em;
+    }
+  }
 }
