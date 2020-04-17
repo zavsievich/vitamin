@@ -103,9 +103,27 @@
       }
     }
   }
+
+  @include media-breakpoint-up(xs) {
+    &-logo  {
+      margin-right: 0;
+      &__img {
+        height: 2rem;
+      }
+    }
+
+    &-basket {
+      margin-left: 0;
+      &__title {
+        display: block;
+      }
+    }
+  }
 }
 
-/*.c-header__logo-wrap {
-  flex: 2 0 auto;
-}*/
+/*
+.c-header__logo-wrap {
+  flex: 1 0 auto;
+}
+*/
 
