@@ -762,7 +762,13 @@ a {
   padding: 0 20px;
   padding: 0;
   background-position: 64% 50%;
-  min-height: 440px; }
+  min-height: 440px;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .banner-title {
     margin: 0;
     padding: 0;
@@ -781,6 +787,11 @@ a {
       background-position: 50% 50%; }
       .banner-title {
         font-size: 1.9em; } }
+  @media screen and (min-width: 900px) {
+    .banner {
+      min-height: 775px; }
+      .banner-title {
+        font-size: 2.75em; } }
 
 .s-offers {
   background-color: #FFFFFF; }

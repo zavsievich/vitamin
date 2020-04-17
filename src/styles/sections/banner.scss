@@ -24,6 +24,9 @@
     padding: 0;
     background-position: 64% 50%;
     min-height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &-title {
       margin: 0;
@@ -40,4 +43,13 @@
       font-size: 1.9em;
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 775px;
+
+    &-title {
+      font-size: 2.75em;
+    }
+  }
+
 }
