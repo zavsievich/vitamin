@@ -115,6 +115,16 @@
       }
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    &-content {
+      &__description {
+        &-text {
+          font-size: 1.375em;
+        }
+      }
+    }
+  }
 }
 
 .btn--info {

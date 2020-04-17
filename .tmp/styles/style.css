@@ -994,6 +994,9 @@ a {
   @media screen and (min-width: 650px) {
     .s-info-content__description-text {
       font-size: 1.2em; } }
+  @media screen and (min-width: 900px) {
+    .s-info-content__description-text {
+      font-size: 1.375em; } }
 
 .btn--info {
   background-color: black; }
