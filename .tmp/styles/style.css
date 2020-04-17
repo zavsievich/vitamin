@@ -536,6 +536,78 @@ a {
       -ms-flex: 2 0 auto;
           flex: 2 0 auto; }
 
+.c-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .c-footer__communication-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .c-footer__communication-item {
+    list-style-type: none;
+    padding: 1rem; }
+    .c-footer__communication-item svg {
+      height: 23px;
+      width: 23px; }
+  .c-footer-search {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin: 0 20px;
+    margin-bottom: 2em; }
+    .c-footer-search-input {
+      position: relative;
+      width: 16rem;
+      line-height: 1.18em;
+      color: #000000;
+      -webkit-border-radius: .3em;
+              border-radius: .3em;
+      border: none;
+      -webkit-border-top-right-radius: 0;
+              border-top-right-radius: 0;
+      -webkit-border-bottom-right-radius: 0;
+              border-bottom-right-radius: 0;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      font-size: 1em;
+      background-color: #F6F6F6;
+      padding: 1em 0 1em 1em; }
+    .c-footer-search-btn {
+      background: -webkit-linear-gradient(319.62deg, #D369D6 7.15%, #EB0A3C 94.53%);
+      background: -o-linear-gradient(319.62deg, #D369D6 7.15%, #EB0A3C 94.53%);
+      background: linear-gradient(130.38deg, #D369D6 7.15%, #EB0A3C 94.53%);
+      -webkit-border-radius: 0 5px 5px 0;
+              border-radius: 0 5px 5px 0;
+      border: none;
+      color: #FFFFFF;
+      cursor: pointer;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      padding-right: 2em;
+      padding-left: 2em; }
+      .c-footer-search-btn:hover {
+        background-color: #E51E25; }
+
 .banner {
   background-repeat: no-repeat;
   width: 100%;

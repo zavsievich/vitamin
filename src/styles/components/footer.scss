@@ -1,0 +1,61 @@
+.c-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__communication {
+
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      list-style-type: none;
+      padding: 1rem;
+
+      svg {
+        height: 23px;
+        width: 23px;
+      }
+    }
+  }
+
+  &-search {
+    display: flex;
+    position: relative;
+    margin: 0 20px;
+    margin-bottom: 2em;
+
+    &-input {
+      position: relative;
+      width: 16rem;
+      line-height: 1.18em;
+      color: $c-black;
+      border-radius: .3em;
+      border: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      transition: .3s;
+      font-size: 1em;
+      background-color: $c-gray;
+      padding: 1em 0 1em 1em;
+    }
+
+    &-btn {
+      background: $c-btnSearch;
+      border-radius: 0 5px 5px 0;
+      border: none;
+      color: $c-white;
+      cursor: pointer;
+      transition: 0.3s;
+      padding-right: 2em;
+      padding-left: 2em;
+
+      &:hover {
+        background-color: $c-brand;
+      }
+    }
+  }
+}
+

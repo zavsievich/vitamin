@@ -17,6 +17,7 @@
             },
 
         ],
+        btn : 'Join',
     } %}
 {% endif %}
 <footer class="c-footer">
@@ -36,4 +37,9 @@
             </li>
         {% endfor %}
     </ul>
+    <form class="c-footer-search" method="get">
+        <input type="search" class="c-footer-search-input" id="search"
+               name="search" placeholder="Your email">
+        <button class="c-footer-search-btn" type="submit">{{ args.btn }}</button>
+    </form>
 </footer>
