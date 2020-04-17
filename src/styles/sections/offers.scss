@@ -90,4 +90,19 @@
       }
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    &-poster {
+      flex-direction: row;
+
+      &__product {
+        flex: 1 0 14%;
+
+        &-img {
+          height: 22rem;
+          transform: translateY(29%);
+        }
+      }
+    }
+  }
 }

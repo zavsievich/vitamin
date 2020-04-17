@@ -451,6 +451,9 @@ a {
   border: none;
   max-width: 361px;
   width: 100%; }
+  @media screen and (min-width: 900px) {
+    .c-btn {
+      max-width: 361px; } }
 
 .с-header {
   display: -webkit-box;
@@ -874,6 +877,23 @@ a {
     .s-offers-poster__info {
       margin-top: 6rem;
       padding: 1rem; }
+  @media screen and (min-width: 900px) {
+    .s-offers-poster {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .s-offers-poster__product {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 14%;
+            -ms-flex: 1 0 14%;
+                flex: 1 0 14%; }
+        .s-offers-poster__product-img {
+          height: 22rem;
+          -webkit-transform: translateY(29%);
+              -ms-transform: translateY(29%);
+                  transform: translateY(29%); } }
 
 .s-info {
   background-color: #F6F6F6;
