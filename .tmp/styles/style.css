@@ -449,7 +449,8 @@ a {
           border-radius: 1.5em;
   padding: 1em 3em;
   border: none;
-  max-width: 361px; }
+  max-width: 361px;
+  width: 100%; }
 
 .с-header {
   display: -webkit-box;
@@ -475,8 +476,7 @@ a {
     border: none;
     background: none;
     color: #FFFFFF;
-    padding: .5rem;
-    margin-right: 1rem; }
+    padding: .5rem; }
     .с-header .c-header__btn svg {
       width: 20px;
       height: 20px; }
@@ -772,6 +772,26 @@ a {
         max-width: 17em;
         margin: .5em 0;
         line-height: 1.7em; }
+  .s-offers-poster {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .s-offers-poster__product {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 0;
+          -ms-flex: 0 0 0px;
+              flex: 0 0 0;
+      width: 100%;
+      margin: 0; }
+      .s-offers-poster__product-img {
+        -webkit-transform: translateY(24%);
+            -ms-transform: translateY(24%);
+                transform: translateY(24%); }
+    .s-offers-poster__info {
+      margin-top: 6rem;
+      padding: 1rem; }
 
 .s-info {
   background-color: #F6F6F6;
@@ -964,7 +984,10 @@ a {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
   .s-capabilities-wrap {
     display: -webkit-box;
     display: -webkit-flex;

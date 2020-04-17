@@ -9,4 +9,8 @@
   padding: 1em 3em;
   border: none;
   max-width: 361px;
+
+  @include media-breakpoint-up(xs) {
+    width: 100%;
+  }
  }
