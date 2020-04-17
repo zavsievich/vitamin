@@ -53,4 +53,12 @@
       font-size: 2.125em;
     }
   }
+
+  @include media-breakpoint-up(xl) {
+    &-img {
+      &__wrap {
+        flex-direction: row;
+      }
+    }
+  }
 }
