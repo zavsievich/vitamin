@@ -19,10 +19,12 @@
 <section class="s-article">
     {% for item in args.card %}
         <article class="s-article-item" style="background-image: url({{ item.bgImage }})">
-            <h2 class="s-article-item__title">
-                <a class="s-article-item__title-link" href="#">{{ item.title }}</a>
-            </h2>
-            <p class="s-article-item__view">{{ item.view }}</p>
+            <div class="s-article-item__wrap">
+                <h2 class="s-article-item__title">
+                    <a class="s-article-item__title-link" href="#">{{ item.title }}</a>
+                </h2>
+                <p class="s-article-item__view">{{ item.view }}</p>
+            </div>
         </article>
     {% endfor %}
 </section>
