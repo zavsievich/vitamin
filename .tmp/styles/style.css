@@ -1259,6 +1259,9 @@ a {
     min-width: 279px;
     margin: 0;
     margin-bottom: 3rem; }
+  @media screen and (min-width: 650px) {
+    .s-article {
+      padding: 3rem 1.25rem; } }
 
 .s-instagram {
   display: -webkit-box;
