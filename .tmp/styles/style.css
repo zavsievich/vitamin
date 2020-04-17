@@ -35,6 +35,10 @@
   height: 1em;
   fill: currentColor; }
 
+.icon-VitamiOrange {
+  width: 218px;
+  height: 67px; }
+
 .icon-basket {
   width: 26px;
   height: 24px; }
@@ -42,6 +46,14 @@
 .icon-box {
   width: 56px;
   height: 49px; }
+
+.icon-facebook {
+  width: 13px;
+  height: 24px; }
+
+.icon-instagram {
+  width: 24px;
+  height: 24px; }
 
 .icon-row {
   width: 52px;
@@ -54,6 +66,10 @@
 .icon-star {
   width: 22px;
   height: 20px; }
+
+.icon-twitter {
+  width: 24px;
+  height: 21px; }
 
 .icon-vitami {
   width: 127px;

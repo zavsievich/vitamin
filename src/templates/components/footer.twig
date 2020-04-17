@@ -1,3 +1,39 @@
-<footer class="footer">
+{% if not args %}
+    {% set args = {
+        logo : 'images/svg_sprite_inline/VitamiOrange.svg',
+        communication :
+        [
+            {
+               icon : 'facebook',
+               descr : 'facebook',
+            },
+            {
+               icon : 'instagram',
+               descr : 'instagram',
+            },
+            {
+               icon : 'twitter',
+               descr : 'twitter',
+            },
 
+        ],
+    } %}
+{% endif %}
+<footer class="c-footer">
+    <div class="c-footer-logo__wrap">
+        <a href="#" class="c-footer-logo">
+            <img src="{{ args.logo }}" alt="{{ args.logoAlt }}">
+        </a>
+    </div>
+    <ul class="c-footer__communication-list">
+        {% for item in args.communication %}
+            <li class="c-footer__communication-item">
+                <span class="visually-hidden">{{ item.descr }}</span>
+                <svg class="el-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                         xlink:href="#{{ item.icon }}"></use>
+                </svg>
+            </li>
+        {% endfor %}
+    </ul>
 </footer>
