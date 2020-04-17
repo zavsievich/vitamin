@@ -31,4 +31,13 @@
       text-align: center;
     }
   }
+
+  @include media-breakpoint-up(md) {
+    min-height: 550px;
+    background-position: 50% 50%;
+
+    &-title {
+      font-size: 1.9em;
+    }
+  }
 }

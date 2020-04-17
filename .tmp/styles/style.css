@@ -739,6 +739,12 @@ a {
     margin: 0;
     font-size: 1.75em;
     text-align: center; }
+  @media screen and (min-width: 650px) {
+    .banner {
+      min-height: 550px;
+      background-position: 50% 50%; }
+      .banner-title {
+        font-size: 1.9em; } }
 
 .s-offers {
   background-color: #FFFFFF; }
