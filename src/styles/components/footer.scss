@@ -5,6 +5,7 @@
   align-items: center;
   text-align: center;
   padding-top: 4em;
+
   &__communication {
     &-list {
       display: flex;
@@ -98,6 +99,47 @@
       &-link {
         font-size: 15px;
         padding: 1em;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+
+    padding: 0 1.25rem;
+
+    &-search {
+      margin: 1.5em 0 1.5em;
+
+      &-input {
+        width: 13rem;
+      }
+
+      &-btn {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+
+    &__nav {
+      &-item {
+        &-link {
+          font-size: .75em;
+          margin: 0;
+        }
+      }
+    }
+
+    &__rules {
+
+      &-list {
+        flex-direction: column;
+      }
+
+      &-item {
+        padding: .4em 0;
+        &-link {
+          font-size: .75em;
+        }
       }
     }
   }
