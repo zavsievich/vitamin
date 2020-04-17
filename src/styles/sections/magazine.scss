@@ -8,10 +8,29 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 1.25rem;
 
   &-title {
     color: $c-white;
     font-size: 2.12em;
     margin-bottom: .6em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @include media-breakpoint-up(xs) {
+    justify-content: flex-end;
+    min-height: 472px;
+
+    &__content {
+      &-wrap {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-title {
+      font-size: 1.375em;
+      margin: 0;
+    }
   }
 }
