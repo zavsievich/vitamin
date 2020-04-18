@@ -449,6 +449,7 @@ a {
   padding: 1em 3em;
   border: none;
   max-width: 361px;
+  cursor: pointer;
   width: 100%; }
   @media screen and (min-width: 900px) {
     .c-btn {

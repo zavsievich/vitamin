@@ -9,10 +9,8 @@
   padding: 1em 3em;
   border: none;
   max-width: 361px;
-
-  @include media-breakpoint-up(xs) {
-    width: 100%;
-  }
+  cursor: pointer;
+  width: 100%;
 
   @include media-breakpoint-up(lg) {
     max-width: 361px;
