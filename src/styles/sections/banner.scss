@@ -1,46 +1,33 @@
 .banner {
   background-repeat: no-repeat;
   width: 100%;
-  background-position: 50% 50%;
-  min-height: 775px;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   margin-top: -80px;
-  padding: 0 20px;
+  background-position: 64% 50%;
+  min-height: 440px;
+  align-items: center;
 
-  &-title {
+  &__title {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     color: $c-white;
     max-width: 734px;
-    font-size: 2.75em;
-    margin-left: 5.3em;
     text-transform: uppercase;
-  }
-
-  @include media-breakpoint-up(xs) {
-    padding: 0;
-    background-position: 64% 50%;
-    min-height: 440px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &-title {
-      margin: 0;
-      font-size: 1.75em;
-      text-align: center;
-    }
+    font-size: 1.75em;
+    text-align: center;
   }
 
   @include media-breakpoint-up(md) {
     min-height: 550px;
     background-position: 50% 50%;
+    justify-content: center;
 
-    &-title {
+    &__title {
       font-size: 1.9em;
+      padding: 0;
     }
   }
 
@@ -49,7 +36,7 @@
     flex-direction: row;
     justify-content: flex-start;
 
-    &-title {
+    &__title {
       margin: 0;
       padding: 0;
       color: $c-white;
@@ -60,5 +47,4 @@
       text-align: left;
     }
   }
-
 }
