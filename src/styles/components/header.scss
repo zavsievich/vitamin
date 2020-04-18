@@ -10,7 +10,7 @@
   font-size: 16px;
 
   .header__btn {
-    display: none;
+    display: block;
     border: none;
     background: none;
     color: $c-white;
@@ -25,6 +25,7 @@
 
   &__nav {
     flex: 1 0 auto;
+    display: none;
 
     &-list {
       list-style-type: none;
@@ -41,6 +42,12 @@
     }
   }
 
+  &__logo {
+    &-img {
+      height: 1.4rem;
+    }
+  }
+
   &__basket {
     background: none;
     border: none;
@@ -50,6 +57,7 @@
     height: max-content;
     position: relative;
     padding-right: 1.9rem;
+    margin-top: 1.5rem;
 
     &::after {
       content: "";
@@ -67,6 +75,7 @@
     &-title {
       font-size: 1.25rem;
       font-weight: 400;
+      display: none;
     }
 
     svg {
@@ -78,35 +87,8 @@
     }
   }
 
-  @include media-breakpoint-up(xs) {
-
-    &__nav {
-      display: none;
-    }
-
-    &__logo {
-      &-img {
-        height: 1.4rem;
-      }
-    }
-
-    .header__btn {
-      display: block;
-    }
-
-    &__basket {
-      margin-top: 1.5rem;
-
-      &-title {
-        display: none;
-      }
-    }
-  }
-
   @include media-breakpoint-up(md) {
     &__logo {
-      //margin-right: 0;
-
       &-img {
         height: 2rem;
       }
@@ -121,7 +103,6 @@
     }
 
     .header__btn {
-
       svg {
         width: 30px;
         height: 30px;
@@ -146,10 +127,6 @@
 
     .header__btn {
       display: none;
-    }
-
-    .header__logo-wrap {
-      //flex: 2 0 auto;
     }
   }
 }

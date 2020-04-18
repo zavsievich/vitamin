@@ -474,7 +474,7 @@ a {
   height: 80px;
   font-size: 16px; }
   .header .header__btn {
-    display: none;
+    display: block;
     border: none;
     background: none;
     color: #FFFFFF;
@@ -487,7 +487,8 @@ a {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
-            flex: 1 0 auto; }
+            flex: 1 0 auto;
+    display: none; }
     .header__nav-list {
       list-style-type: none;
       display: -webkit-box;
@@ -499,6 +500,8 @@ a {
       font-size: 1.2em;
       font-weight: 400;
       padding: 0.5em 1.5em; }
+  .header__logo-img {
+    height: 1.4rem; }
   .header__basket {
     background: none;
     border: none;
@@ -515,7 +518,8 @@ a {
     height: -moz-max-content;
     height: max-content;
     position: relative;
-    padding-right: 1.9rem; }
+    padding-right: 1.9rem;
+    margin-top: 1.5rem; }
     .header__basket::after {
       content: "";
       position: absolute;
@@ -534,23 +538,14 @@ a {
       right: 0; }
     .header__basket-title {
       font-size: 1.25rem;
-      font-weight: 400; }
+      font-weight: 400;
+      display: none; }
     .header__basket svg {
       width: 1.2em;
       height: 1.1em;
       position: absolute;
       right: 0;
       bottom: 0; }
-  .header__nav {
-    display: none; }
-  .header__logo-img {
-    height: 1.4rem; }
-  .header .header__btn {
-    display: block; }
-  .header__basket {
-    margin-top: 1.5rem; }
-    .header__basket-title {
-      display: none; }
   @media screen and (min-width: 650px) {
     .header__logo-img {
       height: 2rem; }
