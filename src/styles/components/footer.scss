@@ -4,7 +4,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 4em;
+  margin-top: 8rem;
+  padding: 0 1.25rem;
+
+  &__logo {
+    &-img {
+      height: 1.8rem;
+    }
+  }
 
   &__communication {
     &-list {
@@ -15,34 +22,32 @@
     &-item {
       list-style-type: none;
 
-      &-link {
-        padding: 1rem;
-      }
-
       svg {
-        height: 23px;
-        width: 23px;
+        height: 15px;
+        width: 15px;
       }
+    }
+
+    &-link {
+      padding: 0.5rem;
     }
   }
 
-  &-search {
+  &__search {
     display: flex;
     position: relative;
-    margin: 0 20px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 1.5em 0 1.5em;
 
     &-input {
       position: relative;
-      width: 16rem;
-      line-height: 1.18em;
+      width: 13rem;
+      line-height: 1.18;
       color: $c-black;
-      border-radius: .3em;
+      border-radius: 0.3em;
       border: none;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-      transition: .3s;
+      transition: 0.3s;
       font-size: 1em;
       background-color: $c-gray;
       padding: 1em 0 1em 2em;
@@ -55,13 +60,13 @@
       color: $c-white;
       cursor: pointer;
       transition: 0.3s;
-      padding-right: 2em;
-      padding-left: 2em;
+      padding-left: 1em;
+      padding-right: 1em;
     }
   }
 
-  &-text {
-    line-height: 1.375em;
+  &__text {
+    line-height: 1.375;
     color: $c-text-grey;
     max-width: 23em;
     margin-bottom: 1.5em;
@@ -70,7 +75,8 @@
   &__nav {
     &-list {
       display: flex;
-      margin-top: .8rem;
+      margin-top: 0.8rem;
+      flex-wrap: wrap;
     }
 
     &-item {
@@ -78,111 +84,57 @@
       color: $c-black;
       font-weight: 600;
       text-transform: uppercase;
+      margin: 0.8em;
+    }
 
-      &-link {
-        padding: 1.2em;
-        margin: .8em;
-      }
+    &-link {
+      padding: 1.2em;
+      font-size: 0.75em;
+      margin: 0;
     }
   }
 
   &__rules {
     &-list {
       display: flex;
+      flex-direction: column;
       margin-top: 2rem;
       margin-bottom: 2rem;
+      flex-wrap: wrap;
     }
 
     &-item {
       list-style-type: none;
-
-      &-link {
-        font-size: 15px;
-        padding: 1em;
-      }
-    }
-  }
-
-  @include media-breakpoint-up(xs) {
-
-    padding: 0 1.25rem;
-
-    &-logo {
-      &__img {
-        height: 1.8rem;
-      }
+      padding: 0.4em 0;
     }
 
-    &__communication {
-      &-item {
-        &-link {
-          padding: .5rem;
-        }
-        svg {
-          height: 15px;
-          width: 15px;
-        }
-      }
-    }
-
-    &-search {
-      margin: 1.5em 0 1.5em;
-
-      &-input {
-        width: 13rem;
-      }
-
-      &-btn {
-        padding-left: 1em;
-        padding-right: 1em;
-      }
-    }
-
-    &__nav {
-      &-item {
-        &-link {
-          font-size: .75em;
-          margin: 0;
-        }
-      }
-    }
-
-    &__rules {
-      &-list {
-        flex-direction: column;
-      }
-
-      &-item {
-        padding: .4em 0;
-
-        &-link {
-          font-size: .75em;
-        }
-      }
+    &-link {
+      font-size: 0.75em;
+      padding: 1em;
     }
   }
 
   @include media-breakpoint-up(md) {
-    &-logo {
-      &__img {
+    &__logo {
+      &-img {
         height: 3rem;
       }
     }
 
     &__communication {
       &-item {
-        &-link {
-          padding: .8rem;
-        }
-
         svg {
           height: 20px;
           width: 20px;
         }
       }
+
+      &-link {
+        padding: 0.8rem;
+      }
     }
 
-    &-search {
+    &__search {
       margin: 1.5em 0 1.5em;
 
       &-input {
@@ -196,12 +148,10 @@
     }
 
     &__nav {
-      &-item {
-        &-link {
-          font-size: 1.125em;
-          padding: 1.2em;
-          margin: .8em;
-        }
+      &-link {
+        font-size: 1.125em;
+        padding: 1.2em;
+        margin: 0.8em;
       }
     }
 
@@ -212,11 +162,11 @@
       }
 
       &-item {
-        padding: .4em 0;
+        padding: 0.4em 0;
+      }
 
-        &-link {
-          font-size: 1.125em;
-        }
+      &-link {
+        font-size: 1.125em;
       }
     }
   }
