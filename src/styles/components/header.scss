@@ -38,6 +38,7 @@
         font-size: 1.2em;
         font-weight: 400;
         padding: 0.5em 1.5em;
+        white-space: nowrap;
       }
     }
   }
@@ -113,16 +114,17 @@
   @include media-breakpoint-up(lg) {
     &__nav {
       display: flex;
+      flex: 0 0 40%;
     }
 
     &__logo {
       &-img {
         height: 3rem;
       }
+    }
 
-      &-wrap {
-        flex: 2 0 auto;
-      }
+    &__basket {
+      flex: 0 0 40%;
     }
 
     .header__btn {
