@@ -1,47 +1,47 @@
-.с-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
   margin: 0 auto;
   height: 80px;
   font-size: 16px;
 
-  .c-header__btn {
+  .header__btn {
     display: none;
     border: none;
     background: none;
     color: $c-white;
-    padding: .5rem;
+    padding: 0.5rem;
+    margin-top: 0.8rem;
 
     svg {
       width: 20px;
-      height: 20px;
+      height: 15px;
     }
   }
 
-  &-nav {
-    flex: 1.5 0 auto;
+  &__nav {
+    flex: 1 0 auto;
 
-    &__list {
+    &-list {
       list-style-type: none;
       display: flex;
     }
 
-    &__title {
+    &-title {
       &-link {
         color: $c-white;
         font-size: 1.2em;
-        line-height: 1em;
         font-weight: 400;
-        padding: 1em;
+        padding: 0.5em 1.5em;
       }
     }
   }
 
-  &-basket {
+  &__basket {
     background: none;
     border: none;
     color: $c-white;
@@ -49,8 +49,7 @@
     justify-content: flex-end;
     height: max-content;
     position: relative;
-    margin: 1.2em;
-    align-self: flex-end;
+    padding-right: 1.9rem;
 
     &::after {
       content: "";
@@ -62,12 +61,11 @@
       width: 10px;
       top: 50%;
       transform: translateY(-50%);
+      right: 0;
     }
 
-    &__title {
-      padding-right: 1.4em;
-      font-size: 1.2em;
-      line-height: 1.2em;
+    &-title {
+      font-size: 1.25rem;
       font-weight: 400;
     }
 
@@ -82,48 +80,47 @@
 
   @include media-breakpoint-up(xs) {
 
-    &-nav {
+    &__nav {
       display: none;
     }
 
-    &-logo {
-      &__img {
+    &__logo {
+      &-img {
         height: 1.4rem;
       }
     }
 
-    .c-header__btn {
+    .header__btn {
       display: block;
     }
 
-    &-basket {
-      margin-bottom: 1.5em;
-      margin-right: 0;
+    &__basket {
+      margin-top: 1.5rem;
 
-      &__title {
+      &-title {
         display: none;
       }
     }
   }
 
   @include media-breakpoint-up(md) {
-    &-logo {
-      margin-right: 0;
+    &__logo {
+      //margin-right: 0;
 
-      &__img {
+      &-img {
         height: 2rem;
       }
     }
 
-    &-basket {
-      margin-left: 0;
+    &__basket {
+      margin-top: 0;
 
-      &__title {
+      &-title {
         display: block;
       }
     }
 
-    .c-header__btn {
+    .header__btn {
 
       svg {
         width: 30px;
@@ -133,22 +130,26 @@
   }
 
   @include media-breakpoint-up(lg) {
-    &-nav {
+    &__nav {
       display: flex;
     }
 
-    &-logo {
-      &__img {
+    &__logo {
+      &-img {
         height: 3rem;
+      }
+
+      &-wrap {
+        flex: 2 0 auto;
       }
     }
 
-    .c-header__btn {
+    .header__btn {
       display: none;
     }
 
-    .c-header__logo-wrap {
-      flex: 2 0 auto;
+    .header__logo-wrap {
+      //flex: 2 0 auto;
     }
   }
 }

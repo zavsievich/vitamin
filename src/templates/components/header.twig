@@ -20,27 +20,27 @@
         bannerBackgroundImage : 'images/hero-bg.jpg',
     } %}
 {% endif %}
-<header class="с-header">
-    <button class="c-header__btn">
+<header class="header">
+    <button class="header__btn">
         <svg class="el-icon">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#burger"></use>
         </svg>
         <span class="visually-hidden">burger</span>
     </button>
-    <nav class="с-header-nav">
-        <ul class="с-header-nav__list">
+    <nav class="header__nav">
+        <ul class="header__nav-list">
             {% for item in args.nav %}
-                <li class="с-header-nav__title">
-                    <a href="#" class="с-header-nav__title-link">{{ item.title }}</a>
+                <li class="header__nav-title">
+                    <a href="#" class="header__nav-title-link">{{ item.title }}</a>
                 </li>
             {% endfor %}
         </ul>
     </nav>
-    <div class="c-header__logo-wrap">
-        <a href="#" class="с-header-logo"><img class="с-header-logo__img" src="{{ args.headerLogo }}" alt="{{ args.headerLogoAlt }}"></a>
+    <div class="header__logo-wrap">
+        <a href="#" class="header__logo"><img class="с-header__logo-img" src="{{ args.headerLogo }}" alt="{{ args.headerLogoAlt }}"></a>
     </div>
-    <button class="с-header-basket">
-        <p class="с-header-basket__title">{{ args.basketTitle }}</p>
+    <button class="header__basket">
+        <p class="header__basket-title">{{ args.basketTitle }}</p>
         <svg class="el-icon">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
         </svg>

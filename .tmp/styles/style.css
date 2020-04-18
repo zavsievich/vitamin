@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*@font-face {
   font-weight: 600;
   font-family: "Helvetica";
@@ -455,7 +454,7 @@ a {
     .c-btn {
       max-width: 361px; } }
 
-.с-header {
+.header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -469,38 +468,38 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
   margin: 0 auto;
   height: 80px;
   font-size: 16px; }
-  .с-header .c-header__btn {
+  .header .header__btn {
     display: none;
     border: none;
     background: none;
     color: #FFFFFF;
-    padding: .5rem; }
-    .с-header .c-header__btn svg {
+    padding: 0.5rem;
+    margin-top: 0.8rem; }
+    .header .header__btn svg {
       width: 20px;
-      height: 20px; }
-  .с-header-nav {
-    -webkit-box-flex: 1.5;
-    -webkit-flex: 1.5 0 auto;
-        -ms-flex: 1.5 0 auto;
-            flex: 1.5 0 auto; }
-    .с-header-nav__list {
+      height: 15px; }
+  .header__nav {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto; }
+    .header__nav-list {
       list-style-type: none;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-    .с-header-nav__title-link {
+    .header__nav-title-link {
       color: #FFFFFF;
       font-size: 1.2em;
-      line-height: 1em;
       font-weight: 400;
-      padding: 1em; }
-  .с-header-basket {
+      padding: 0.5em 1.5em; }
+  .header__basket {
     background: none;
     border: none;
     color: #FFFFFF;
@@ -516,11 +515,8 @@ a {
     height: -moz-max-content;
     height: max-content;
     position: relative;
-    margin: 1.2em;
-    -webkit-align-self: flex-end;
-        -ms-flex-item-align: end;
-            align-self: flex-end; }
-    .с-header-basket::after {
+    padding-right: 1.9rem; }
+    .header__basket::after {
       content: "";
       position: absolute;
       -webkit-border-radius: 50%;
@@ -534,56 +530,52 @@ a {
       top: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
-    .с-header-basket__title {
-      padding-right: 1.4em;
-      font-size: 1.2em;
-      line-height: 1.2em;
+              transform: translateY(-50%);
+      right: 0; }
+    .header__basket-title {
+      font-size: 1.25rem;
       font-weight: 400; }
-    .с-header-basket svg {
+    .header__basket svg {
       width: 1.2em;
       height: 1.1em;
       position: absolute;
       right: 0;
       bottom: 0; }
-  .с-header-nav {
+  .header__nav {
     display: none; }
-  .с-header-logo__img {
+  .header__logo-img {
     height: 1.4rem; }
-  .с-header .c-header__btn {
+  .header .header__btn {
     display: block; }
-  .с-header-basket {
-    margin-bottom: 1.5em;
-    margin-right: 0; }
-    .с-header-basket__title {
+  .header__basket {
+    margin-top: 1.5rem; }
+    .header__basket-title {
       display: none; }
   @media screen and (min-width: 650px) {
-    .с-header-logo {
-      margin-right: 0; }
-      .с-header-logo__img {
-        height: 2rem; }
-    .с-header-basket {
-      margin-left: 0; }
-      .с-header-basket__title {
+    .header__logo-img {
+      height: 2rem; }
+    .header__basket {
+      margin-top: 0; }
+      .header__basket-title {
         display: block; }
-    .с-header .c-header__btn svg {
+    .header .header__btn svg {
       width: 30px;
       height: 30px; } }
   @media screen and (min-width: 900px) {
-    .с-header-nav {
+    .header__nav {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-    .с-header-logo__img {
+    .header__logo-img {
       height: 3rem; }
-    .с-header .c-header__btn {
-      display: none; }
-    .с-header .c-header__logo-wrap {
+    .header__logo-wrap {
       -webkit-box-flex: 2;
       -webkit-flex: 2 0 auto;
           -ms-flex: 2 0 auto;
-              flex: 2 0 auto; } }
+              flex: 2 0 auto; }
+    .header .header__btn {
+      display: none; } }
 
 .c-footer {
   display: -webkit-box;
