@@ -4,12 +4,12 @@
         [
             {
                 title : 'Should you switch to alkline diet?',
-                view : 'View post',
+                subTitle : 'View post',
                 bgImage : 'images/diet.jpg',
             },
             {
                 title : 'The importance of sleep',
-                view : 'View post',
+                subTitle : 'View post',
                 bgImage : 'images/sleep.jpg',
             },
         ],
@@ -18,13 +18,13 @@
 
 <section class="s-article">
     {% for item in args.card %}
-        <article class="s-article-item" style="background-image: url({{ item.bgImage }})">
-            <div class="s-article-item__wrap">
-                <h2 class="s-article-item__title">
-                    <a class="s-article-item__title-link" href="#">{{ item.title }}</a>
+        <div class="s-article__item" style="background-image: url({{ item.bgImage }})">
+            <div class="s-article__item-wrap">
+                <h2 class="s-article__item-title">
+                    <a class="s-article__item-link" href="#">{{ item.title }}</a>
                 </h2>
-                <p class="s-article-item__view">{{ item.view }}</p>
+                <p class="s-article__item-sub">{{ item.subTitle }}</p>
             </div>
-        </article>
+        </div>
     {% endfor %}
 </section>
