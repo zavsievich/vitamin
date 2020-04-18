@@ -20,14 +20,12 @@
     &__title {
       font-size: 2em;
       color: $c-black;
-      line-height: .7em;
       font-weight: 700;
       padding: .5rem 1rem;
     }
 
     &__sub-title {
       font-size: 1.4em;
-      line-height: 1em;
       padding: .5rem 1rem;
     }
   }
@@ -44,14 +42,13 @@
 
       &-title {
         font-size: 1.4em;
-        line-height: .8em;
         margin-bottom: .5em;
         padding-left: 1rem;
       }
 
       &-text {
         font-size: 1.2em;
-        line-height: 1.6em;
+        line-height: 1.6;
         color: $c-text-grey;
         max-width: 27em;
         padding: 1em;
@@ -87,11 +84,6 @@
   }
 
   @include media-breakpoint-up(xs) {
-    &-heading {
-      &__title {
-        line-height: 1em;
-      }
-    }
 
     &-content {
       flex-direction: column;

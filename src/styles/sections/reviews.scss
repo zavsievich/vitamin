@@ -7,7 +7,7 @@
 
   &-title {
     font-size: 2em;
-    padding: 0 .5em 1em;
+    padding: 0.6em .5em 1em;
     text-align: center;
   }
 
@@ -35,7 +35,6 @@
 
     &__text {
       font-size: 1.75em;
-      line-height: 34px;
       max-width: 25em;
       text-align: center;
       font-style: italic;
@@ -57,12 +56,6 @@
     &__wrap {
       display: flex;
       margin-top: 2rem;
-    }
-  }
-
-  @include media-breakpoint-up(xs) {
-    &-title {
-      padding: .6em 0;
     }
   }
 }

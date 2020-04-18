@@ -5,11 +5,18 @@
   justify-content: center;
   flex-wrap: wrap;
 
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   &-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em 2rem;
+    margin: 1%;
   }
 
   &-img {
@@ -37,5 +44,27 @@
     font-size: 1.25em;
     max-width: 16em;
     text-align: center;
+  }
+
+  @include media-breakpoint-up(md) {
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    &-wrap {
+      max-width: 30%;
+      text-align: center;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+
+    &-wrap {
+      max-width: 31%;
+      text-align: center;
+    }
   }
 }
