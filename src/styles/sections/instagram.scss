@@ -6,57 +6,61 @@
   width: 100%;
   padding: 0 1.25rem;
 
-  &-title {
-    font-size: 2.125em;
-    padding: .25em 0;
+  &__title {
+    padding: 0.25em 0;
+    align-items: center;
+    font-size: 1.375em;
   }
 
-  &-text {
+  &__text {
     font-size: 1.375em;
     padding-bottom: 2rem;
   }
 
-  &-img {
-    &__wrap {
+  &__img {
+    &-wrap {
       padding-top: 2rem;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
-    &__link {
+    &-link {
       margin: 1%;
       padding: 0;
     }
 
     width: 100%;
-    border-radius: .4rem;
-  }
-
-  @include media-breakpoint-up(xs) {
-
-    &-title {
-      align-items: center;
-      font-size: 1.375em;
-    }
-
-    &-img {
-      margin: 1rem 0;
-
-      &__wrap {
-        flex-direction: column;
-      }
-    }
+    border-radius: 0.4rem;
   }
 
   @include media-breakpoint-up(md) {
-    &-title {
+    &__title {
       font-size: 2.125em;
+    }
+
+    &__img {
+      &-wrap {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+
+      &-link {
+        margin: 1%;
+        padding: 0;
+        width: 22.8%;
+      }
+
+      width: 100%;
+      border-radius: .4rem;
     }
   }
 
   @include media-breakpoint-up(xl) {
-    &-img {
-      &__wrap {
+    &__img {
+      &-wrap {
         flex-direction: row;
       }
     }
