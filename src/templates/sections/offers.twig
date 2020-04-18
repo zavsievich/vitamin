@@ -8,21 +8,22 @@
     } %}
 {% endif %}
 <section class="s-offers">
-    <div class="s-offers-wrap">
-        <div class="s-offers-heading">
-            <h2 class="s-offers-heading__title">{{ args.headingTitle }}</h2>
-            <p class="s-offers-heading__sub-title">{{ args.headingSubTitle }}</p>
+    <div class="s-offers__wrap">
+        <div class="s-offers__heading">
+            <h2 class="s-offers__heading-title">{{ args.headingTitle }}</h2>
+            <p class="s-offers__heading-sub-title">{{ args.headingSubTitle }}</p>
         </div>
-        <div class="s-offers-poster container">
-            <div class="s-offers-poster__product">
-                <img src="images/cream.png" alt="cream" class="s-offers-poster__product-img">
+        <div class="s-offers__poster container">
+            <div class="s-offers__poster-product">
+                <img src="images/cream.png" alt="cream" class="s-offers__poster-product-img">
             </div>
-            <div class="s-offers-poster__info">
-                <h3 class="s-offers-poster__info-title">{{ args.posterInfoTitle }}</h3>
-                <p class="s-offers-poster__info-cost">{{ args.posterInfoCost }}</p>
-                <p class="s-offers-poster__info-description">{{ args.posterInfoDescr }}</p>
+            <div class="s-offers__poster-info">
+                <h3 class="s-offers__poster-info-title">{{ args.posterInfoTitle }}</h3>
+                <p class="s-offers__poster-info-cost">{{ args.posterInfoCost }}</p>
+                <p class="s-offers__poster-info-description">{{ args.posterInfoDescr }}</p>
                 {% include "../components/button.twig" with {
                     content : 'View detalis',
+                    link : '#',
                 } %}
             </div>
         </div>

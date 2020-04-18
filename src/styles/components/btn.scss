@@ -1,7 +1,6 @@
 .c-btn  {
   background: $c-pink-gradient;
   font-size: 1em;
-  margin-top: 1em;
   color: $c-white;
   font-weight: 700;
   text-transform: uppercase;
@@ -11,9 +10,6 @@
   max-width: 361px;
   cursor: pointer;
   width: 100%;
-
-  @include media-breakpoint-up(lg) {
-    max-width: 361px;
-  }
-
- }
+  text-align: center;
+  display: inline-block;
+}

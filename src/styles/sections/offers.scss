@@ -1,15 +1,15 @@
 .s-offers {
   background-color: $c-white;
 
-  &-wrap {
+  &__wrap {
     padding-top: 3rem;
     padding-bottom: 5rem;
   }
 
-  &-heading {
+  &__heading {
     text-align: center;
 
-    &__title {
+    &-title {
       font-size: 2em;
       color: $c-black;
       line-height: .7em;
@@ -17,36 +17,38 @@
       padding: .5rem 1rem;
     }
 
-    &__sub-title {
+    &-sub-title {
       font-size: 1.4em;
       line-height: 1em;
       padding: .5rem 1rem;
     }
   }
 
-  &-poster {
+  &__poster {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 2rem;
 
-    &__product {
+    &-product {
       display: flex;
       justify-content: center;
       height: 25rem;
       border-radius: .8rem;
-      margin-left: 2em;
       background: $c-pink-gradient;
-      flex: 1 0 14%;
+      width: 100%;
+      margin: 0;
 
       &-img {
         height: 22rem;
-        transform: translateY(29%);
+        transform: translateY(24%);
       }
     }
 
-    &__info {
-      padding-left: 2rem;
+    &-info {
+      margin-top: 6rem;
+      padding: 1rem 1rem 1rem 2rem;
       flex: 1 0 10%;
 
       &-title {
@@ -70,32 +72,11 @@
     }
   }
 
-  @include media-breakpoint-up(xs) {
-    &-poster {
-      flex-direction: column;
-
-      &__product {
-        flex: 0 0 0;
-        width: 100%;
-        margin: 0;
-
-        &-img {
-          transform: translateY(24%);
-        }
-      }
-
-      &__info {
-        margin-top: 6rem;
-        padding: 1rem;
-      }
-    }
-  }
-
   @include media-breakpoint-up(lg) {
-    &-poster {
+    &__poster {
       flex-direction: row;
 
-      &__product {
+      &-product {
         flex: 1 0 14%;
 
         &-img {
@@ -104,7 +85,7 @@
         }
       }
 
-      &__info {
+      &-info {
         padding-left: 2rem;
         flex: 1 0 10%;
         margin-top: 0;
@@ -129,6 +110,5 @@
         }
       }
     }
-
   }
 }

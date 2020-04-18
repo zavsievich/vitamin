@@ -440,7 +440,6 @@ a {
   background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
   background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
   font-size: 1em;
-  margin-top: 1em;
   color: #FFFFFF;
   font-weight: 700;
   text-transform: uppercase;
@@ -450,10 +449,9 @@ a {
   border: none;
   max-width: 361px;
   cursor: pointer;
-  width: 100%; }
-  @media screen and (min-width: 900px) {
-    .c-btn {
-      max-width: 361px; } }
+  width: 100%;
+  text-align: center;
+  display: inline-block; }
 
 .header {
   display: -webkit-box;
@@ -814,22 +812,22 @@ a {
 
 .s-offers {
   background-color: #FFFFFF; }
-  .s-offers-wrap {
+  .s-offers__wrap {
     padding-top: 3rem;
     padding-bottom: 5rem; }
-  .s-offers-heading {
+  .s-offers__heading {
     text-align: center; }
-    .s-offers-heading__title {
+    .s-offers__heading-title {
       font-size: 2em;
       color: #000000;
       line-height: .7em;
       font-weight: 700;
       padding: .5rem 1rem; }
-    .s-offers-heading__sub-title {
+    .s-offers__heading-sub-title {
       font-size: 1.4em;
       line-height: 1em;
       padding: .5rem 1rem; }
-  .s-offers-poster {
+  .s-offers__poster {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -842,8 +840,13 @@ a {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 2rem; }
-    .s-offers-poster__product {
+    .s-offers__poster-product {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -855,91 +858,69 @@ a {
       height: 25rem;
       -webkit-border-radius: .8rem;
               border-radius: .8rem;
-      margin-left: 2em;
       background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
       background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
       background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 0 14%;
-          -ms-flex: 1 0 14%;
-              flex: 1 0 14%; }
-      .s-offers-poster__product-img {
+      width: 100%;
+      margin: 0; }
+      .s-offers__poster-product-img {
         height: 22rem;
-        -webkit-transform: translateY(29%);
-            -ms-transform: translateY(29%);
-                transform: translateY(29%); }
-    .s-offers-poster__info {
-      padding-left: 2rem;
+        -webkit-transform: translateY(24%);
+            -ms-transform: translateY(24%);
+                transform: translateY(24%); }
+    .s-offers__poster-info {
+      margin-top: 6rem;
+      padding: 1rem 1rem 1rem 2rem;
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 10%;
           -ms-flex: 1 0 10%;
               flex: 1 0 10%; }
-      .s-offers-poster__info-title {
+      .s-offers__poster-info-title {
         font-size: 1.4em;
         line-height: 1.5em;
         font-weight: 700;
         margin: .5em 0; }
-      .s-offers-poster__info-cost {
+      .s-offers__poster-info-cost {
         font-size: 1.4em;
         margin: .5em 0; }
-      .s-offers-poster__info-description {
+      .s-offers__poster-info-description {
         font-size: 1.4em;
         max-width: 17em;
         margin: .5em 0;
         line-height: 1.7em; }
-  .s-offers-poster {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .s-offers-poster__product {
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 0 0;
-          -ms-flex: 0 0 0px;
-              flex: 0 0 0;
-      width: 100%;
-      margin: 0; }
-      .s-offers-poster__product-img {
-        -webkit-transform: translateY(24%);
-            -ms-transform: translateY(24%);
-                transform: translateY(24%); }
-    .s-offers-poster__info {
-      margin-top: 6rem;
-      padding: 1rem; }
   @media screen and (min-width: 900px) {
-    .s-offers-poster {
+    .s-offers__poster {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row; }
-      .s-offers-poster__product {
+      .s-offers__poster-product {
         -webkit-box-flex: 1;
         -webkit-flex: 1 0 14%;
             -ms-flex: 1 0 14%;
                 flex: 1 0 14%; }
-        .s-offers-poster__product-img {
+        .s-offers__poster-product-img {
           height: 22rem;
           -webkit-transform: translateY(29%);
               -ms-transform: translateY(29%);
                   transform: translateY(29%); }
-      .s-offers-poster__info {
+      .s-offers__poster-info {
         padding-left: 2rem;
         -webkit-box-flex: 1;
         -webkit-flex: 1 0 10%;
             -ms-flex: 1 0 10%;
                 flex: 1 0 10%;
         margin-top: 0; }
-        .s-offers-poster__info-title {
+        .s-offers__poster-info-title {
           font-size: 1.4em;
           line-height: 1.5em;
           font-weight: 700;
           margin: .5em 0; }
-        .s-offers-poster__info-cost {
+        .s-offers__poster-info-cost {
           font-size: 1.4em;
           margin: .5em 0; }
-        .s-offers-poster__info-description {
+        .s-offers__poster-info-description {
           font-size: 1.4em;
           max-width: 17em;
           margin: .5em 0;
