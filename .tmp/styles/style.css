@@ -820,13 +820,11 @@ a {
     .s-offers__heading-title {
       font-size: 2em;
       color: #000000;
-      line-height: .7em;
       font-weight: 700;
-      padding: .5rem 1rem; }
+      padding: 0.5rem 1rem; }
     .s-offers__heading-sub-title {
       font-size: 1.4em;
-      line-height: 1em;
-      padding: .5rem 1rem; }
+      padding: 0.5rem 1rem; }
   .s-offers__poster {
     display: -webkit-box;
     display: -webkit-flex;
@@ -856,8 +854,8 @@ a {
           -ms-flex-pack: center;
               justify-content: center;
       height: 25rem;
-      -webkit-border-radius: .8rem;
-              border-radius: .8rem;
+      -webkit-border-radius: 0.8rem;
+              border-radius: 0.8rem;
       background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
       background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
       background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
@@ -877,17 +875,15 @@ a {
               flex: 1 0 10%; }
       .s-offers__poster-info-title {
         font-size: 1.4em;
-        line-height: 1.5em;
         font-weight: 700;
-        margin: .5em 0; }
+        margin: 0.5em 0; }
       .s-offers__poster-info-cost {
         font-size: 1.4em;
-        margin: .5em 0; }
+        margin: 0.5em 0; }
       .s-offers__poster-info-description {
         font-size: 1.4em;
         max-width: 17em;
-        margin: .5em 0;
-        line-height: 1.7em; }
+        margin: 0.5em 0; }
   @media screen and (min-width: 900px) {
     .s-offers__poster {
       -webkit-box-orient: horizontal;
@@ -914,17 +910,16 @@ a {
         margin-top: 0; }
         .s-offers__poster-info-title {
           font-size: 1.4em;
-          line-height: 1.5em;
           font-weight: 700;
-          margin: .5em 0; }
+          margin: 0.5em 0; }
         .s-offers__poster-info-cost {
           font-size: 1.4em;
-          margin: .5em 0; }
+          margin: 0.5em 0; }
         .s-offers__poster-info-description {
           font-size: 1.4em;
           max-width: 17em;
-          margin: .5em 0;
-          line-height: 1.7em; } }
+          margin: 0.5em 0;
+          line-height: 1.7; } }
 
 .s-info {
   background-color: #F6F6F6;
