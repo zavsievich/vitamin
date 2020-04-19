@@ -1,6 +1,6 @@
 {% if not args %}
     {% set args = {
-        card :
+        cards :
         [
             {
                 title : 'Should you switch to alkline diet?',
@@ -17,7 +17,7 @@
 {% endif %}
 
 <section class="s-article">
-    {% for item in args.card %}
+    {% for item in args.cards %}
         <div class="s-article__item" style="background-image: url({{ item.bgImage }})">
             <div class="s-article__item-wrap">
                 <h2 class="s-article__item-title">
