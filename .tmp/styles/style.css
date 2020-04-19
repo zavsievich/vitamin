@@ -435,11 +435,11 @@ a {
   text-decoration: none;
   color: #000000; }
 
-.c-btn {
-  background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
-  background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
-  background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
-  font-size: 1em;
+.e-btn {
+  background: -webkit-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
+  background: -o-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
+  background: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 91.07%);
+  font-size: 1rem;
   color: #FFFFFF;
   font-weight: 700;
   text-transform: uppercase;
@@ -451,7 +451,12 @@ a {
   cursor: pointer;
   width: 100%;
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .e-btn:hover, .e-btn:active {
+    font-size: 1.2rem; }
 
 .header {
   display: -webkit-box;
@@ -560,9 +565,9 @@ a {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       border: 1px solid #FFFFFF;
-      background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
-      background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
-      background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
+      background: -webkit-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
+      background: -o-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
+      background: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 91.07%);
       height: 10px;
       width: 10px;
       top: 50%;
@@ -892,9 +897,9 @@ a {
       height: 25rem;
       -webkit-border-radius: 0.8rem;
               border-radius: 0.8rem;
-      background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
-      background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
-      background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
+      background: -webkit-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
+      background: -o-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
+      background: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 91.07%);
       width: 100%;
       margin: 0; }
       .s-offers__poster-product-img {
