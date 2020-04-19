@@ -1,10 +1,8 @@
 .s-instagram {
-  display: none;
-  //display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  //width: 100%;
   padding: 0 1.25rem;
 
   &__title {
@@ -22,28 +20,21 @@
     &-wrap {
       padding-top: 2rem;
       display: flex;
-      //justify-content: flex-start;
-      //flex-wrap: wrap;
       overflow-x: auto;
       width: 100%;
       margin: 0;
       white-space: nowrap;
     }
 
-    &-link {
-      //margin: 1%;
-      display: flex;
-      padding: 0;
-      flex-shrink: 0;
-      margin: 0.3rem;
-    }
-
-    //width: 100%;
+    font-size: 0;
     border-radius: 0.4rem;
-    margin: 0;
     flex-shrink: 0;
-    display: block;
-    overflow: hidden;
+    width: 312px;
+    height: 312px;
+    margin: 0.7rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
 
@@ -51,30 +42,18 @@
     &__title {
       font-size: 2.125em;
     }
-
-    &__img {
-      &-wrap {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-      }
-
-      &-link {
-        margin: 1%;
-        padding: 0;
-        width: 22.8%;
-      }
-
-      width: 100%;
-      border-radius: .4rem;
-    }
   }
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(lg) {
     &__img {
+      margin: 1%;
+      width: 23%;
+      height: 0;
+      padding-bottom: 25%;
+
       &-wrap {
         flex-direction: row;
+        flex-wrap: wrap;
       }
     }
   }

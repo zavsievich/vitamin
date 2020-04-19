@@ -29,10 +29,11 @@
     <p class="s-instagram__text">{{ args.text }}</p>
     <div class="s-instagram__img-wrap">
         {% for item in args.img %}
-            <a href="#" class="s-instagram__img-link">
-                <img src="{{ item.imgUrl }}" alt="{{ item.imgAlt }}" class="s-instagram__img">
+            {#<a href="#" class="s-instagram__img">
+                <div class="s-instagram__img" style="background-image: url({{ item.imgUrl }})"></div>
                 <span class="visually-hidden">go to instagram..</span>
-            </a>
+            </a>#}
+            <a href="#" class="s-instagram__img" style="background-image: url({{ item.imgUrl }})">go to instagram..</a>
         {% endfor %}
     </div>
 </section>
