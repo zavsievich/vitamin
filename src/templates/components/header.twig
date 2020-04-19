@@ -17,7 +17,6 @@
         headerLogoAlt : 'Vitami',
         basketTitle : 'Basket',
         headerLogo : 'images/svg_sprite_inline/vitami.svg',
-        bannerBackgroundImage : 'images/hero-bg.jpg',
     } %}
 {% endif %}
 <header class="header">
@@ -25,7 +24,7 @@
         <svg class="el-icon">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#burger"></use>
         </svg>
-        <span class="visually-hidden">burger</span>
+        <span class="visually-hidden">Open menu</span>
     </button>
     <nav class="header__nav">
         <ul class="header__nav-list">
@@ -36,13 +35,15 @@
             {% endfor %}
         </ul>
     </nav>
-    <div class="header__logo-wrap">
-        <a href="#" class="header__logo"><img class="с-header__logo-img" src="{{ args.headerLogo }}" alt="{{ args.headerLogoAlt }}"></a>
+    <a href="#" class="header__logo">
+        <img class="с-header__logo-img" src="{{ args.headerLogo }}" alt="{{ args.headerLogoAlt }}">
+    </a>
+    <div class="header__basket-wrap">
+        <button class="header__basket">
+            <p class="header__basket-title">{{ args.basketTitle }}</p>
+            <svg class="el-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
+            </svg>
+        </button>
     </div>
-    <button class="header__basket">
-        <p class="header__basket-title">{{ args.basketTitle }}</p>
-        <svg class="el-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
-        </svg>
-    </button>
 </header>

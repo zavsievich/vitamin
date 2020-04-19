@@ -40,17 +40,36 @@
         font-weight: 400;
         padding: 0.5em 1em;
         white-space: nowrap;
+        transition: 0.3s;
+
+        &:hover,&:focus {
+          color: $c-brand-focus;
+        }
       }
     }
   }
 
   &__logo {
+    transition: 0.3s;
+
     &-img {
       height: 1.4rem;
+    }
+
+    &:hover,&:focus {
+      opacity: 0.5;
     }
   }
 
   &__basket {
+    transition: 0.3s;
+
+    &-wrap {
+      flex: 0 0 20%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
     background: none;
     border: none;
     color: $c-white;
@@ -60,7 +79,6 @@
     position: relative;
     padding-right: 1.9rem;
     margin-top: 1.5rem;
-    flex: 0 0 20%;
 
     &::after {
       content: "";
@@ -87,6 +105,10 @@
       position: absolute;
       right: 0;
       bottom: 0;
+    }
+
+    &:hover,&:focus {
+      color: $c-brand-focus;
     }
   }
 
@@ -126,7 +148,10 @@
     }
 
     .header__basket {
-      flex: 0 0 40%;
+
+      &-wrap {
+        flex: 0 0 40%;
+      }
     }
 
     .header__btn {
