@@ -897,9 +897,9 @@ a {
       height: 25rem;
       -webkit-border-radius: 0.8rem;
               border-radius: 0.8rem;
-      background: -webkit-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
-      background: -o-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
-      background: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 91.07%);
+      background: -webkit-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+      background: -o-linear-gradient(303.19deg, #C6489A 20.71%, #91206A 91.21%);
+      background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
       width: 100%;
       margin: 0; }
       .s-offers__poster-product-img {
@@ -1323,6 +1323,11 @@ a {
     -webkit-background-size: cover;
             background-size: cover;
     width: 100%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-border-radius: 1rem;
+            border-radius: 1rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1359,6 +1364,9 @@ a {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1385,7 +1393,9 @@ a {
         top: 0;
         bottom: 0;
         right: 0;
-        left: 0; }
+        left: 0;
+        -webkit-border-radius: 1rem;
+                border-radius: 1rem; }
     .s-article__item-title {
       font-size: 2.125em;
       color: #FFFFFF;
@@ -1405,7 +1415,7 @@ a {
         left: 0;
         cursor: pointer;
         z-index: 2; }
-    .s-article__item:focus-within {
+    .s-article__item:focus-within, .s-article__item:hover {
       -webkit-box-shadow: 0 0 0 0.2rem #E51E25;
               box-shadow: 0 0 0 0.2rem #E51E25; }
     .s-article__item:focus-within a:focus {
