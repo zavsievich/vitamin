@@ -24,10 +24,10 @@
 
     } %}
 {% endif %}
-<section class="s-instagram">
+<section class="s-instagram container">
     <h2 class="s-instagram__title">{{ args.title }}</h2>
     <p class="s-instagram__text">{{ args.text }}</p>
-    <div class="s-instagram__img-wrap container">
+    <div class="s-instagram__img-wrap">
         {% for item in args.img %}
             <a href="#" class="s-instagram__img-link">
                 <img src="{{ item.imgUrl }}" alt="{{ item.imgAlt }}" class="s-instagram__img">
