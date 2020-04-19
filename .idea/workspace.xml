@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e796c3b-f33e-4884-9530-f2c9c285ea71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.tmp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.tmp/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/.tmp/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/sections/instagram.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/sections/instagram.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/sections/instaram.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/instaram.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/sections/info.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/sections/slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/sections/info.tiwg" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/slider.tiwg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,49 +22,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/sections/instaram.twig">
+        <entry file="file://$PROJECT_DIR$/src/templates/sections/slider.tiwg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="35" column="115" selection-start-line="35" selection-start-column="115" selection-end-line="35" selection-end-column="115" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="443">
+              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/styles/sections/instagram.scss">
+        <entry file="file://$PROJECT_DIR$/src/styles/sections/slider.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/variables/breakpoints.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/sections/article.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/sections/article.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="877">
-              <caret line="105" column="28" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
+            <state relative-caret-position="471">
+              <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -83,7 +56,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/styles/components/banner.scss" />
         <option value="$PROJECT_DIR$/src/styles/base/fonts.scss" />
-        <option value="$PROJECT_DIR$/src/templates/sections/info.tiwg" />
         <option value="$PROJECT_DIR$/src/templates/sections/reviews.twig" />
         <option value="$PROJECT_DIR$/src/styles/elements/btn.scss" />
         <option value="$PROJECT_DIR$/src/templates/index.twig" />
@@ -111,6 +83,9 @@
         <option value="$PROJECT_DIR$/src/styles/sections/article.scss" />
         <option value="$PROJECT_DIR$/src/templates/sections/instaram.twig" />
         <option value="$PROJECT_DIR$/src/styles/sections/instagram.scss" />
+        <option value="$PROJECT_DIR$/src/templates/sections/info.tiwg" />
+        <option value="$PROJECT_DIR$/src/templates/sections/slider.tiwg" />
+        <option value="$PROJECT_DIR$/src/styles/sections/slider.scss" />
       </list>
     </option>
   </component>
@@ -287,7 +262,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128615000" />
+    <option name="totallyTimeSpent" value="130685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,7 +277,7 @@
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18137652" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20404859" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -434,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/sections/info.tiwg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/sections/magazine.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -493,13 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/sections/info.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/sections/reviews.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="826">
@@ -525,13 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -608,6 +562,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/sections/slider.tiwg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/sections/slider.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -17,28 +17,26 @@
         ]
     } %}
 {% endif %}
-<section class="s-info">
-    <div class="s-info-wrap">
-        <div class="s-info-heading">
-            <h2 class="s-info-heading__title">{{ args.headingTitle }}</h2>
-            <p class="s-info-heading__sub-title">{{ args.headingSubTitle }}</p>
+<section class="s-slider">
+    <div class="s-slider__wrap">
+        <div class="s-slider__heading">
+            <h2 class="s-slider__heading-title">{{ args.headingTitle }}</h2>
+            <p class="s-slider__heading-sub">{{ args.headingSubTitle }}</p>
         </div>
-        {% for item in args.info %}
-            <div class="s-info-content">
-                <div class="s-info-content__description">
-                    <h3 class="s-info-content__description-title">{{ item.title }}</h3>
-                    <p class="s-info-content__description-text">{{ item.text }}</p>
+        <div class="s-slider__content">
+            {% for item in args.info %}
+                <div class="s-slider__content-description">
+                    <h3 class="s-slider__content-title">{{ item.title }}</h3>
+                    <p class="s-slider__content-text">{{ item.text }}</p>
                 </div>
-                <div class="s-info-content__img-wrap">
-                    <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-info-content__img">
-                    <div class="info-content__btn-wrap">
-                        <button class="s-info-content__btn is-active"></button>
-                        <button class="s-info-content__btn"></button>
-                        <button class="s-info-content__btn"></button>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
+                <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-slider__content-img">
+            {% endfor %}
+        </div>
+        <div class="s-slider__btn-wrap">
+            <button class="s-slider__btn is-active"></button>
+            <button class="s-slider__btn"></button>
+            <button class="s-slider__btn"></button>
+        </div>
     </div>
     {% include "../components/button.twig" with {
         content : 'View skin glow',

@@ -1,0 +1,102 @@
+.s-slider {
+  background-color: $c-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.25rem 2rem;
+
+
+  &__wrap {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    text-align: center;
+
+    &-title {
+      font-size: 2em;
+      color: $c-black;
+      font-weight: 700;
+      padding: 0.5rem 1rem;
+    }
+
+    &-sub {
+      font-size: 1.4em;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em 1.5em;
+
+    &-description {
+      background-color: $c-white;
+      padding: 4% 4%;
+      border-radius: 0.8em;
+      flex: 1 0 50%;
+    }
+
+    &-title {
+      font-size: 1.4em;
+      margin-bottom: .5em;
+      padding-left: 1rem;
+    }
+
+    &-text {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: $c-text-grey;
+      max-width: 27em;
+      padding: 1em;
+      padding-left: 1rem;
+    }
+
+    &-img {
+      border-radius: 0.8rem;
+      box-shadow: $c-shadow-img;
+      width: 77%;
+    }
+  }
+
+  &__btn {
+    width: 3rem;
+    height: 0.7rem;
+    background: $c-gray-btnSlidePassive;
+    border-radius: .3rem;
+    border: none;
+    margin: .3rem;
+
+    &-wrap {
+      align-self: flex-end;
+      margin-right: 1rem;
+      display: none;
+    }
+
+    &.is-active {
+      background: $c-color-btnSlideActive;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__content {
+      flex-direction: row;
+
+      &-img {
+        width: 50%;
+      }
+    }
+
+    &__btn {
+      &-wrap {
+        display: inline-block;
+      }
+    }
+  }
+}
