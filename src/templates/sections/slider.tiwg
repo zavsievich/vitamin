@@ -14,6 +14,28 @@
                 imgUrl : 'images/grass.jpg',
                 alt : 'grass',
             },
+            {
+                title : 'Marine Colagen',
+                text : 'This fibrous protein is extracted from fish, cod and salmon as they have the
+                 best quality! we’ve made sure it only comes from those fish. It has antioxidant properties
+                 and is used in skin-care products to prevent or even repair the damage of environmental factors,
+                 as well as damage associated with the bodies built in the ageing process. So let’s say you want
+                 to stay young well, we wouldnt advise chasing salmon up and down the rivers of Scotland. But we
+                 would definitely try to take Vitami Skin Glow every morning and watch the magic happening!',
+                imgUrl : 'images/grass.jpg',
+                alt : 'grass',
+            },
+            {
+                title : 'Marine Colagen',
+                text : 'This fibrous protein is extracted from fish, cod and salmon as they have the
+                 best quality! we’ve made sure it only comes from those fish. It has antioxidant properties
+                 and is used in skin-care products to prevent or even repair the damage of environmental factors,
+                 as well as damage associated with the bodies built in the ageing process. So let’s say you want
+                 to stay young well, we wouldnt advise chasing salmon up and down the rivers of Scotland. But we
+                 would definitely try to take Vitami Skin Glow every morning and watch the magic happening!',
+                imgUrl : 'images/grass.jpg',
+                alt : 'grass',
+            },
         ]
     } %}
 {% endif %}
@@ -23,7 +45,7 @@
             <h2 class="s-slider__heading-title">{{ args.headingTitle }}</h2>
             <p class="s-slider__heading-sub">{{ args.headingSubTitle }}</p>
         </div>
-        <div class="s-slider__content">
+        <div class="s-slider__content s-slider__slick">
             {% for item in args.info %}
                 <div class="s-slider__content-description">
                     <h3 class="s-slider__content-title">{{ item.title }}</h3>
