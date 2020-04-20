@@ -1,17 +1,12 @@
 .s-product {
   background-color: $c-gray;
-  // display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 0 1.25rem 2rem;
-
+  text-align: center;
 
   &__wrap {
     padding-top: 3rem;
     padding-bottom: 1rem;
-    // display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 1rem;
   }
 
   &__heading {
@@ -35,12 +30,13 @@
     align-items: center;
     flex-direction: column;
     margin: 2em 1.5em;
+    text-align: start;
 
     &-description {
       background-color: $c-white;
       padding: 4% 4%;
       border-radius: 0.8em;
-      flex: 1 0 50%;
+      flex: 1 0 45%;
     }
 
     &-title {
@@ -65,22 +61,35 @@
     }
   }
 
-  &__btn {
+  .slick-dots {
+    display: flex;
+  }
+
+  .slick-dots li {
+    list-style-type: none;
+    font-size: 0;
+  }
+
+  .slick-dots li button {
     width: 3rem;
     height: 0.7rem;
     background: $c-gray-btnSlidePassive;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     border: none;
-    margin: .3rem;
+    margin: 0.3rem;
+  }
 
+  .slick-dots .slick-active button {
+    background: $c-color-btnSlideActive;
+  }
+
+  &__btn {
+    display: none;
     &-wrap {
-      align-self: flex-end;
       margin-right: 1rem;
       display: none;
-    }
-
-    &.is-active {
-      background: $c-color-btnSlideActive;
+      position: absolute;
+      right: 3rem;
     }
   }
 
@@ -89,7 +98,7 @@
       flex-direction: row;
 
       &-img {
-        width: 50%;
+        width: 55%;
       }
     }
 
