@@ -18,13 +18,13 @@
 
 <section class="s-article">
     {% for item in args.cards %}
-        <div class="s-article__item" style="background-image: url({{ item.bgImage }})">
+        <article class="s-article__item" style="background-image: url({{ item.bgImage }})">
             <div class="s-article__item-wrap">
                 <h2 class="s-article__item-title">
                     <a class="s-article__item-link" href="#">{{ item.title }}</a>
                 </h2>
                 <p class="s-article__item-sub">{{ item.subTitle }}</p>
             </div>
-        </div>
+        </article>
     {% endfor %}
 </section>
