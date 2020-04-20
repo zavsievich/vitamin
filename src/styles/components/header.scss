@@ -33,18 +33,17 @@
       display: flex;
     }
 
-    &-title {
-      &-link {
-        color: $c-white;
-        font-size: 1.2em;
-        font-weight: 400;
-        padding: 0.5em 1em;
-        white-space: nowrap;
-        transition: 0.3s;
+    &-link {
+      color: $c-white;
+      font-size: 1.2em;
+      font-weight: 400;
+      padding: 0.5em 1em;
+      white-space: nowrap;
+      transition: 0.3s;
+      text-decoration: none;
 
-        &:hover,&:focus {
-          color: $c-brand-focus;
-        }
+      &:hover,&:focus {
+        color: $c-brand-focus;
       }
     }
   }
@@ -122,7 +121,7 @@
     &__basket {
       margin-top: 0;
 
-      &-title {
+      &-item {
         display: block;
       }
     }
@@ -161,7 +160,7 @@
 
   @include media-breakpoint-up(xl) {
     &__nav {
-      &-title-link {
+      &-link {
         padding: 0.5em 1.5em;
       }
     }
