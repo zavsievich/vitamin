@@ -4,4 +4,9 @@ $('.js-product-carousel').slick({
   arrows: false,
   dots: true,
   appendDots: $('.js-product-dots')
-}); // $('.s-reviews__slick').slick();
+});
+$('.js-reviews-carousel').slick({
+  arrows: false,
+  dots: true,
+  appendDots: $('.js-reviews-dots')
+});
