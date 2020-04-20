@@ -1,5 +1,5 @@
 {% if not args %}
-    {% set args = {
+{% set args = {
         headingTitle: 'Too much copy supplied',
         headingSubTitle: 'Needs to be 2 lines max',
         info :[
@@ -39,28 +39,29 @@
         ]
     } %}
 {% endif %}
-<section class="s-slider">
-    <div class="s-slider__wrap">
-        <div class="s-slider__heading">
-            <h2 class="s-slider__heading-title">{{ args.headingTitle }}</h2>
-            <p class="s-slider__heading-sub">{{ args.headingSubTitle }}</p>
+<section class="s-product">
+    <div class="s-product__wrap">
+        <div class="s-product__heading">
+            <h2 class="s-product__heading-title">{{ args.headingTitle }}</h2>
+            <p class="s-product__heading-sub">{{ args.headingSubTitle }}</p>
         </div>
-        <div class="s-slider__content s-slider__slick">
+        <div class="s-product__carousel js-product-carousel">
             {% for item in args.info %}
-                <div class="s-slider__content-description">
-                    <h3 class="s-slider__content-title">{{ item.title }}</h3>
-                    <p class="s-slider__content-text">{{ item.text }}</p>
+            <article class="s-product__slide">
+                <div class="s-product__slide-description">
+                    <h3 class="s-product__slide-title">{{ item.title }}</h3>
+                    <p class="s-product__slide-text">{{ item.text }}</p>
                 </div>
-                <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-slider__content-img">
+                <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-product__slide-img">
+            </article>
             {% endfor %}
         </div>
-        <div class="s-slider__btn-wrap">
-            <button class="s-slider__btn is-active"></button>
-            <button class="s-slider__btn"></button>
-            <button class="s-slider__btn"></button>
+        <div class="s-product__btn-wrap js-product-dots">
+            <button class="s-product__btn js-product-dot"></button>
         </div>
     </div>
     {% include "../components/button.twig" with {
         content : 'View skin glow',
+        link: '#'
     } %}
 </section>

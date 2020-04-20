@@ -47,7 +47,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/sections/slider.tiwg">
+        <entry file="file://$PROJECT_DIR$/src/templates/sections/slider.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="93">
               <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
@@ -111,7 +111,7 @@
         <option value="$PROJECT_DIR$/src/styles/sections/banner.scss" />
         <option value="$PROJECT_DIR$/src/templates/sections/instaram.twig" />
         <option value="$PROJECT_DIR$/src/styles/sections/instagram.scss" />
-        <option value="$PROJECT_DIR$/src/templates/sections/info.tiwg" />
+        <option value="$PROJECT_DIR$/src/templates/sections/info.twig" />
         <option value="$PROJECT_DIR$/src/styles/sections/slider.scss" />
         <option value="$PROJECT_DIR$/src/styles/components/btn.scss" />
         <option value="$PROJECT_DIR$/src/styles/variables/colors.scss" />
@@ -125,7 +125,7 @@
         <option value="$PROJECT_DIR$/src/styles/style.scss" />
         <option value="$PROJECT_DIR$/src/styles/sections/reviews.scss" />
         <option value="$PROJECT_DIR$/src/templates/sections/offers.twig" />
-        <option value="$PROJECT_DIR$/src/templates/sections/slider.tiwg" />
+        <option value="$PROJECT_DIR$/src/templates/sections/slider.twig" />
         <option value="$PROJECT_DIR$/src/templates/sections/reviews.twig" />
         <option value="$PROJECT_DIR$/src/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/templates/sections/article.twig" />
@@ -608,7 +608,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/sections/slider.tiwg">
+    <entry file="file://$PROJECT_DIR$/src/templates/sections/slider.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
