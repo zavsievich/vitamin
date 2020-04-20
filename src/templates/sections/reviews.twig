@@ -1,7 +1,7 @@
 {% if not args %}
     {% set args = {
         title : 'People have sald',
-        rev :
+        reviews :
         [
             {
                 name : 'Lishay Matvey',
@@ -25,8 +25,52 @@
                 ],
                 text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna. “',
             },
+            {
+                name : 'Lishay Matvey',
+                assessment :
+                [
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                ],
+                text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna. “',
+            },
+            {
+                name : 'Lishay Matvey',
+                assessment :
+                [
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                ],
+                text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna. “',
+            },
         ],
-        revBtn :
+        reviewsBtn :
         [
             {
                 state : 'is-active',
@@ -44,12 +88,13 @@
 {% endif %}
 <section class="s-reviews container">
     <h2 class="s-reviews__title">{{ args.title }}</h2>
-    {% for item in args.rev %}
-        <div class="s-reviews__content">
-            <p class="s-reviews__content-name">{{ item.name }}</p>
-            <div class="s-reviews__content-assessment">
-                {% for star in item.assessment %}
-                    <span class="s-reviews__content-star">
+    <div class="s-reviews__slick">
+        {% for item in args.reviews %}
+            <div class="s-reviews__content">
+                <p class="s-reviews__content-name">{{ item.name }}</p>
+                <div class="s-reviews__content-assessment">
+                    {% for star in item.assessment %}
+                        <span class="s-reviews__content-star">
                         <svg class="el-icon">
                             <defs>
                                 <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -61,13 +106,14 @@
                                  xlink:href="#{{ star.star }}"></use>
                         </svg>
                     </span>
-                {% endfor %}
+                    {% endfor %}
+                </div>
+                <p class="s-reviews__content-text">{{ item.text }}</p>
             </div>
-            <p class="s-reviews__content-text">{{ item.text }}</p>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
     <div class="s-reviews__btn-wrap">
-        {% for item in args.revBtn %}
+        {% for item in args.reviewsBtn %}
             <button class="s-reviews__btn {{ item.state }}">
                 <span class="visually-hidden">{{ item.btn }}</span>
             </button>
