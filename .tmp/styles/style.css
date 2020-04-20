@@ -436,7 +436,7 @@ img {
   display: block;
   max-width: 100%; }
 
-.btn {
+.el-btn {
   background: -webkit-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
   background: -o-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
   background: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 91.07%);
@@ -455,8 +455,9 @@ img {
   display: inline-block;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
-  .btn:hover, .btn:active {
+  transition: 0.3s;
+  text-decoration: none; }
+  .el-btn:hover, .el-btn:active {
     font-size: 1.2rem; }
 
 .header {
