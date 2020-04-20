@@ -13,34 +13,23 @@
   &__content {
     &-wrap {
       margin-bottom: 2rem;
+      text-align: center;
     }
   }
 
-  &-title {
+  .c-heading--magazine {
     color: $c-white;
-    text-align: center;
     text-transform: uppercase;
-    font-size: 1.375em;
-    margin-bottom: 1rem;
+    text-align: center;
   }
 
   @include media-breakpoint-up(md) {
     min-height: 540px;
     justify-content: center;
-
-    &-title {
-      font-size: 1.375em;
-      margin: 0.6em;
-    }
   }
 
   @include media-breakpoint-up(lg) {
     min-height: 900px;
-
-    &-title {
-      font-size: 1.375em;
-      margin: 0.6em;
-    }
   }
 
   @include media-breakpoint-up(xl) {

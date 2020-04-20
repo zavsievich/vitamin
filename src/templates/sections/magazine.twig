@@ -5,7 +5,10 @@
 {% endif %}
 <section class="s-magazine" style="background-image: url(images/magazineBG.jpg)">
     <div class="s-magazine__content-wrap">
-        <h2 class="s-magazine-title">{{ args.title }}</h2>
+        {% include "../components/heading.twig" with {
+            title : 'Our headlth journal',
+            mod :'magazine',
+        } %}
         {% include "../components/button.twig" with {
             content : 'Go to journal',
         } %}

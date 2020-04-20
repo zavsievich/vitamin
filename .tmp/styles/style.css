@@ -792,6 +792,14 @@ img {
     .c-footer__rules-link {
       font-size: 1.125em; } }
 
+.c-heading {
+  text-align: center; }
+  .c-heading__title {
+    font-size: 2.125rem;
+    margin-bottom: 0.3em; }
+  .c-heading__sub {
+    font-size: 1.375rem; }
+
 .banner {
   background-repeat: no-repeat;
   width: 100%;
@@ -1277,29 +1285,22 @@ img {
           justify-content: flex-end;
   min-height: 472px; }
   .s-magazine__content-wrap {
-    margin-bottom: 2rem; }
-  .s-magazine-title {
+    margin-bottom: 2rem;
+    text-align: center; }
+  .s-magazine .c-heading--magazine {
     color: #FFFFFF;
-    text-align: center;
     text-transform: uppercase;
-    font-size: 1.375em;
-    margin-bottom: 1rem; }
+    text-align: center; }
   @media screen and (min-width: 650px) {
     .s-magazine {
       min-height: 540px;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
-              justify-content: center; }
-      .s-magazine-title {
-        font-size: 1.375em;
-        margin: 0.6em; } }
+              justify-content: center; } }
   @media screen and (min-width: 900px) {
     .s-magazine {
-      min-height: 900px; }
-      .s-magazine-title {
-        font-size: 1.375em;
-        margin: 0.6em; } }
+      min-height: 900px; } }
   @media screen and (min-width: 1200px) {
     .s-magazine {
       min-height: 1034px; } }
@@ -1472,16 +1473,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 1.25rem; }
-  .s-instagram__title {
-    padding: 0.25em 0;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 1.375em; }
-  .s-instagram__text {
-    font-size: 1.375em;
-    padding-bottom: 2rem; }
   .s-instagram__img {
     font-size: 0;
     -webkit-border-radius: 0.4rem;
@@ -1506,9 +1497,6 @@ img {
       width: 100%;
       margin: 0;
       white-space: nowrap; }
-  @media screen and (min-width: 650px) {
-    .s-instagram__title {
-      font-size: 2.125em; } }
   @media screen and (min-width: 900px) {
     .s-instagram__img {
       margin: 1%;
