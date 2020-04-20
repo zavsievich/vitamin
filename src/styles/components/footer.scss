@@ -30,6 +30,7 @@
       svg {
         height: 15px;
         width: 15px;
+        color: $c-black;
 
         transition: 0.3s;
       }
@@ -94,7 +95,6 @@
 
     &-item {
       list-style-type: none;
-      color: $c-black;
       font-weight: 600;
       text-transform: uppercase;
       margin: 0.8em;
@@ -105,6 +105,9 @@
       font-size: 0.75em;
       margin: 0;
       transition: 0.3s;
+      color: $c-black;
+      text-decoration: none;
+
 
       &:hover,&:focus {
         color: $c-brand-focus;
@@ -129,6 +132,8 @@
     &-link {
       font-size: 0.75em;
       padding: 1em;
+      color: $c-black;
+      text-decoration: none;
     }
   }
 

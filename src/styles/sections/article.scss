@@ -78,6 +78,7 @@
     &-link {
       color: $c-white;
       outline: none;
+      text-decoration: none;
 
       &::after {
         content: "";

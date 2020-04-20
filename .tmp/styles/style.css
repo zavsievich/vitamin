@@ -662,6 +662,7 @@ img {
     .c-footer__communication-item svg {
       height: 15px;
       width: 15px;
+      color: #000000;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
@@ -724,7 +725,6 @@ img {
             flex-wrap: wrap; }
   .c-footer__nav-item {
     list-style-type: none;
-    color: #000000;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0.8em; }
@@ -734,7 +734,9 @@ img {
     margin: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    color: #000000;
+    text-decoration: none; }
     .c-footer__nav-link:hover, .c-footer__nav-link:focus {
       color: #a02b78; }
   .c-footer__rules-list {
@@ -757,7 +759,9 @@ img {
     padding: 0.4em 0; }
   .c-footer__rules-link {
     font-size: 0.75em;
-    padding: 1em; }
+    padding: 1em;
+    color: #000000;
+    text-decoration: none; }
   @media screen and (min-width: 650px) {
     .c-footer__logo-img {
       height: 3rem; }
@@ -1408,7 +1412,8 @@ img {
       z-index: 2; }
     .s-article__item-link {
       color: #FFFFFF;
-      outline: none; }
+      outline: none;
+      text-decoration: none; }
       .s-article__item-link::after {
         content: "";
         position: absolute;
