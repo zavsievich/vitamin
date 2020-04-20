@@ -1101,11 +1101,11 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 6rem 1.25rem; }
-  .s-reviews-title {
+  .s-reviews__title {
     font-size: 2em;
     padding: 0.6em .5em 1em;
     text-align: center; }
-  .s-reviews-content {
+  .s-reviews__content {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1119,21 +1119,21 @@ img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .s-reviews-content__name {
+    .s-reviews__content-name {
       font-size: 1.4em;
       padding-bottom: .6em; }
-    .s-reviews-content__assessment {
+    .s-reviews__content-assessment {
       font-size: 1.4em;
       padding-bottom: .6em; }
-      .s-reviews-content__assessment-star svg {
-        width: 20px;
-        height: 20px; }
-    .s-reviews-content__text {
+    .s-reviews__content-star svg {
+      width: 20px;
+      height: 20px; }
+    .s-reviews__content-text {
       font-size: 1.75em;
       max-width: 25em;
       text-align: center;
       font-style: italic; }
-  .s-reviews-btn {
+  .s-reviews__btn {
     border: none;
     -webkit-border-radius: 50%;
             border-radius: 50%;
@@ -1141,11 +1141,11 @@ img {
     width: 1rem;
     background-color: #F1F1F1;
     margin: 0.5rem; }
-    .s-reviews-btn.is-active {
+    .s-reviews__btn.is-active {
       background: -webkit-linear-gradient(319.62deg, #D369D6 7.15%, #EB0A3C 94.53%);
       background: -o-linear-gradient(319.62deg, #D369D6 7.15%, #EB0A3C 94.53%);
       background: linear-gradient(130.38deg, #D369D6 7.15%, #EB0A3C 94.53%); }
-    .s-reviews-btn__wrap {
+    .s-reviews__btn-wrap {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;

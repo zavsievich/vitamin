@@ -43,13 +43,13 @@
     } %}
 {% endif %}
 <section class="s-reviews container">
-    <h2 class="s-reviews-title">{{ args.title }}</h2>
+    <h2 class="s-reviews__title">{{ args.title }}</h2>
     {% for item in args.rev %}
-        <div class="s-reviews-content">
-            <p class="s-reviews-content__name">{{ item.name }}</p>
-            <div class="s-reviews-content__assessment">
+        <div class="s-reviews__content">
+            <p class="s-reviews__content-name">{{ item.name }}</p>
+            <div class="s-reviews__content-assessment">
                 {% for star in item.assessment %}
-                    <span class="s-reviews-content__assessment-star">
+                    <span class="s-reviews__content-star">
                         <svg class="el-icon">
                             <defs>
                                 <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -63,12 +63,12 @@
                     </span>
                 {% endfor %}
             </div>
-            <p class="s-reviews-content__text">{{ item.text }}</p>
+            <p class="s-reviews__content-text">{{ item.text }}</p>
         </div>
     {% endfor %}
-    <div class="s-reviews-btn__wrap">
+    <div class="s-reviews__btn-wrap">
         {% for item in args.revBtn %}
-            <button class="s-reviews-btn {{ item.state }}">
+            <button class="s-reviews__btn {{ item.state }}">
                 <span class="visually-hidden">{{ item.btn }}</span>
             </button>
         {% endfor %}
