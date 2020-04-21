@@ -7,18 +7,22 @@
             {
                 imgUrl : 'images/runner.jpg',
                 imgAlt : 'runner',
+                imgLink : '#',
             },
             {
                 imgUrl : 'images/yoga.jpg',
                 imgAlt : 'yoga',
+                imgLink : '#',
             },
             {
                 imgUrl : 'images/fitness.jpg',
                 imgAlt : 'fitness',
+                imgLink : '#',
             },
             {
                 imgUrl : 'images/bike.jpg',
                 imgAlt : 'bike',
+                imgLink : '#',
             },
         ]
 
@@ -35,7 +39,7 @@
                 <div class="s-instagram__img" style="background-image: url({{ item.imgUrl }})"></div>
                 <span class="visually-hidden">go to instagram..</span>
             </a>#}
-            <a href="#" class="s-instagram__img" style="background-image: url({{ item.imgUrl }})">go to instagram..</a>
+            <a href="{{ item.imgLink }}" class="s-instagram__img" style="background-image: url({{ item.imgUrl }})">go to instagram..</a>
         {% endfor %}
     </div>
 </section>
