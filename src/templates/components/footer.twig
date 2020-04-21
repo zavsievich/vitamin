@@ -1,18 +1,23 @@
 {% if not args %}
     {% set args = {
         logo : 'images/svg_sprite_inline/VitamiOrange.svg',
+        logoLink : '#',
         communication :
         [
             {
                 icon : 'facebook',
+                iconLink : '#',
+
                 descr : 'facebook',
             },
             {
                 icon : 'instagram',
+                iconLink : '#',
                 descr : 'instagram',
             },
             {
                 icon : 'twitter',
+                iconLink : '#',
                 descr : 'twitter',
             },
 
@@ -23,27 +28,34 @@
         [
             {
                 title : 'Shop',
+                titleLink : '#',
             },
             {
                 title : 'Faqs',
+                titleLink : '#',
             },
             {
                 title : 'Blog',
+                titleLink : '#',
             },
             {
                 title : 'Contact',
+                titleLink : '#',
             },
         ],
         rules :
         [
             {
-               title : 'Terms & Conditions',
+                title : 'Terms & Conditions',
+                titleLink : '#',
             },
             {
-               title : 'Privacy Policy',
+                title : 'Privacy Policy',
+                titleLink : '#',
             },
             {
-               title : 'Cookie Policy',
+                title : 'Cookie Policy',
+                titleLink : '#',
             },
 
         ],
@@ -51,7 +63,7 @@
 {% endif %}
 <footer class="c-footer container">
     <div class="c-footer__logo-wrap">
-        <a href="#" class="c-footer__logo">
+        <a href="{{ args.logoLink }}" class="c-footer__logo">
             <img class="c-footer__logo-img" src="{{ args.logo }}" alt="{{ args.logoAlt }}">
         </a>
     </div>
@@ -59,7 +71,7 @@
         {% for item in args.communication %}
             <li class="c-footer__communication-item">
                 <span class="visually-hidden">{{ item.descr }}</span>
-                <a href="#" class="c-footer__communication-link">
+                <a href="{{ item.iconLink }}" class="c-footer__communication-link">
                     <svg class="el-icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
                              xlink:href="#{{ item.icon }}"></use>
@@ -77,14 +89,14 @@
     <ul class="c-footer__nav-list">
         {% for item in args.nav %}
             <li class="c-footer__nav-item">
-                <a href="#" class="c-footer__nav-link">{{ item.title }}</a>
+                <a href="{{ item.titleLink }}" class="c-footer__nav-link">{{ item.title }}</a>
             </li>
         {% endfor %}
     </ul>
     <ul class="c-footer__rules-list">
         {% for item in args.rules %}
             <li class="c-footer__rules-item">
-                <a href="#" class="c-footer__rules-link">{{ item.title }}</a>
+                <a href="{{ item.titleLink }}" class="c-footer__rules-link">{{ item.title }}</a>
             </li>
         {% endfor %}
     </ul>
