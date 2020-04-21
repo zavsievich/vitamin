@@ -1,7 +1,5 @@
 {% if not args %}
 {% set args = {
-        headingTitle: 'Too much copy supplied',
-        headingSubTitle: 'Needs to be 2 lines max',
         info :[
             {
                 title : 'Marine Colagen',
@@ -41,10 +39,10 @@
 {% endif %}
 <section class="s-product">
     <div class="s-product__wrap">
-        <div class="s-product__heading">
-            <h2 class="s-product__heading-title">{{ args.headingTitle }}</h2>
-            <p class="s-product__heading-sub">{{ args.headingSubTitle }}</p>
-        </div>
+        {% include "../components/heading.twig" with {
+            title : 'Too much copy supplied',
+            subTitle : 'Needs to be 2 lineas max',
+        } %}
         <div class="s-product__carousel js-product-carousel">
             {% for item in args.info %}
             <article class="s-product__slide">

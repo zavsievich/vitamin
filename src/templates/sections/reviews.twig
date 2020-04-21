@@ -1,6 +1,5 @@
 {% if not args %}
     {% set args = {
-        title : 'People have sald',
         reviews :
         [
             {
@@ -73,7 +72,9 @@
     } %}
 {% endif %}
 <section class="s-reviews container">
-    <h2 class="s-reviews__title">{{ args.title }}</h2>
+    {% include "../components/heading.twig" with {
+        title : 'People have sald',
+    } %}
     <div class="s-reviews__carousel js-reviews-carousel">
         {% for item in args.reviews %}
             <div class="s-reviews__content">

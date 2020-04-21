@@ -1070,16 +1070,6 @@ img {
     padding-top: 3rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem; }
-  .s-product__heading {
-    text-align: center; }
-    .s-product__heading-title {
-      font-size: 2em;
-      color: #000000;
-      font-weight: 700;
-      padding: 0.5rem 1rem; }
-    .s-product__heading-sub {
-      font-size: 1.4em;
-      padding: 0.5rem 1rem; }
   .s-product__slide {
     display: -webkit-box !important;
     display: -webkit-flex !important;
@@ -1163,14 +1153,7 @@ img {
 
 .s-reviews {
   text-align: center;
-  /*justify-content: center;
-  align-items: center;
-  flex-direction: column;*/
   padding: 6rem 1.25rem; }
-  .s-reviews__title {
-    font-size: 2em;
-    padding: 0.6em .5em 1em;
-    text-align: center; }
   .s-reviews__content-wrap {
     display: -webkit-box;
     display: -webkit-flex;

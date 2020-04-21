@@ -1,18 +1,8 @@
 .s-reviews {
   text-align: center;
-  /*justify-content: center;
-  align-items: center;
-  flex-direction: column;*/
   padding: 6rem 1.25rem;
 
-  &__title {
-    font-size: 2em;
-    padding: 0.6em .5em 1em;
-    text-align: center;
-  }
-
   &__content {
-
     &-wrap {
       display: flex;
       flex-direction: column;

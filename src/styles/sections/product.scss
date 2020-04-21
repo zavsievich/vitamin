@@ -9,22 +9,6 @@
     margin-bottom: 1rem;
   }
 
-  &__heading {
-    text-align: center;
-
-    &-title {
-      font-size: 2em;
-      color: $c-black;
-      font-weight: 700;
-      padding: 0.5rem 1rem;
-    }
-
-    &-sub {
-      font-size: 1.4em;
-      padding: 0.5rem 1rem;
-    }
-  }
-
   &__slide {
     display: flex !important;
     align-items: center;
