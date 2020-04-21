@@ -25,9 +25,9 @@
 {% endif %}
 
 <section class="s-advantages">
-    <div class="s-advantages__wrap container">
+    <ul class="s-advantages__list container">
         {% for item in args.capabilities %}
-            <div class="s-advantages__content">
+            <li class="s-advantages__content">
                 <div class="s-advantages__content-img">
                     <svg class="el-icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -36,7 +36,7 @@
                 </div>
                 <h2 class="s-advantages__content-title">{{ item.title }}</h2>
                 <p class="s-advantages__content-text">{{ item.text }}</p>
-            </div>
+            </li>
         {% endfor %}
-    </div>
+    </ul>
 </section>
