@@ -1,7 +1,5 @@
 {% if not args %}
     {% set args = {
-        headingTitle : 'Too much copy supplied ',
-        headingSubTitle : 'Needs to be 2 lines max',
         posterInfoTitle : 'Skin glow',
         posterInfoCost : '£12.00',
         posterInfoDescr : 'Natural blend of vitamins and minerals, specifically designed to improve the innate firmness and health of your skin.',
@@ -9,10 +7,10 @@
 {% endif %}
 <section class="s-offers">
     <div class="s-offers__wrap">
-        <div class="s-offers__heading">
-            <h2 class="s-offers__heading-title">{{ args.headingTitle }}</h2>
-            <p class="s-offers__heading-sub-title">{{ args.headingSubTitle }}</p>
-        </div>
+        {% include "../components/heading.twig" with {
+            title : 'Too much copy supplied',
+            subTitle : 'Needs to be 2 lines max',
+        } %}
         <div class="s-offers__poster container">
             <div class="s-offers__poster-product">
                 <img src="images/cream.png" alt="cream" class="s-offers__poster-product-img">
