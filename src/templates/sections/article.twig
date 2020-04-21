@@ -6,11 +6,13 @@
                 title : 'Should you switch to alkline diet?',
                 subTitle : 'View post',
                 bgImage : 'images/diet.jpg',
+                titleLink : '#',
             },
             {
                 title : 'The importance of sleep',
                 subTitle : 'View post',
                 bgImage : 'images/sleep.jpg',
+                titleLink : '#',
             },
         ],
     } %}
@@ -21,7 +23,7 @@
         <article class="s-article__item" style="background-image: url({{ item.bgImage }})">
             <div class="s-article__item-wrap">
                 <h2 class="s-article__item-title">
-                    <a class="s-article__item-link" href="#">{{ item.title }}</a>
+                    <a class="s-article__item-link" href="{{item.titleLink}}">{{ item.title }}</a>
                 </h2>
                 <p class="s-article__item-sub">{{ item.subTitle }}</p>
             </div>
