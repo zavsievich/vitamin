@@ -14,8 +14,32 @@
   display: inline-block;
   transition: 0.3s;
   text-decoration: none;
+  z-index: 1;
+  position: relative;
 
-  &:hover,&:active {
-    font-size: 1.2rem;
+  &::before {
+    position: absolute;
+    content: "";
+    border-radius: 1.5em;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background: $c-pink-gradientHover;
+    z-index: -1;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:active::before {
+    opacity: 1;
+  }
+
+  &:focus::before {
+    opacity: 1;
   }
 }

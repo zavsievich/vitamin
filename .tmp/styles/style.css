@@ -520,9 +520,9 @@ img {
   max-width: 100%; }
 
 .el-btn {
-  background: -webkit-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
-  background: -o-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
-  background: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 91.07%);
+  background: -webkit-linear-gradient(81.01deg, #D369D6 6.71%, #EB0A3C 94.09%);
+  background: -o-linear-gradient(81.01deg, #D369D6 6.71%, #EB0A3C 94.09%);
+  background: linear-gradient(8.99deg, #D369D6 6.71%, #EB0A3C 94.09%);
   font-size: 1rem;
   color: #FFFFFF;
   font-weight: 700;
@@ -539,9 +539,32 @@ img {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  text-decoration: none; }
-  .el-btn:hover, .el-btn:active {
-    font-size: 1.2rem; }
+  text-decoration: none;
+  z-index: 1;
+  position: relative; }
+  .el-btn::before {
+    position: absolute;
+    content: "";
+    -webkit-border-radius: 1.5em;
+            border-radius: 1.5em;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient(110.07deg, #D369D6 7.15%, #EB0A3C 50.07%);
+    background: -o-linear-gradient(110.07deg, #D369D6 7.15%, #EB0A3C 50.07%);
+    background: linear-gradient(-20.07deg, #D369D6 7.15%, #EB0A3C 50.07%);
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0; }
+  .el-btn:hover::before {
+    opacity: 1; }
+  .el-btn:active::before {
+    opacity: 1; }
+  .el-btn:focus::before {
+    opacity: 1; }
 
 .header {
   display: -webkit-box;
@@ -651,9 +674,9 @@ img {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       border: 1px solid #FFFFFF;
-      background: -webkit-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
-      background: -o-linear-gradient(282.07deg, #D369D6 7.15%, #EB0A3C 91.07%);
-      background: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 91.07%);
+      background: -webkit-linear-gradient(81.01deg, #D369D6 6.71%, #EB0A3C 94.09%);
+      background: -o-linear-gradient(81.01deg, #D369D6 6.71%, #EB0A3C 94.09%);
+      background: linear-gradient(8.99deg, #D369D6 6.71%, #EB0A3C 94.09%);
       height: 10px;
       width: 10px;
       top: 50%;
