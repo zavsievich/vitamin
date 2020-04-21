@@ -1533,63 +1533,39 @@ img {
         max-width: 100%; } }
 
 .s-instagram {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: block;
   padding: 0 1.25rem; }
-  .s-instagram__img {
-    font-size: 0;
-    -webkit-border-radius: 0.4rem;
-            border-radius: 0.4rem;
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
-    width: 312px;
-    height: 312px;
-    margin: 0.7rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-            background-size: cover; }
+  .s-instagram__img-wrap {
+    padding-top: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow-x: auto;
+    margin: 0 auto;
+    white-space: nowrap;
+    max-width: 1368px; }
+  .s-instagram__img-link {
+    min-width: 318px;
+    margin: 1%; }
+  @media screen and (min-width: 1200px) {
     .s-instagram__img-wrap {
-      padding-top: 2rem;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      overflow-x: auto;
-      width: 100%;
-      margin: 0;
-      white-space: nowrap; }
-  @media screen and (min-width: 900px) {
-    .s-instagram__img {
-      margin: 1%;
-      width: 23%;
-      height: 0;
-      padding-bottom: 25%; }
-      .s-instagram__img-wrap {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap; } }
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      overflow: initial;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+    .s-instagram__img-link {
+      margin: 0.5%;
+      width: 24%;
+      min-width: 277px; } }
 
 .visible {
   visibility: visible !important; }

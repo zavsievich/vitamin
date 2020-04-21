@@ -28,18 +28,16 @@
 
     } %}
 {% endif %}
-<section class="s-instagram container">
+<section class="s-instagram">
     {% include "../components/heading.twig" with {
         title : 'Follow us on instagram',
         subTitle : 'Show us your results #Vitami',
     } %}
     <div class="s-instagram__img-wrap">
         {% for item in args.img %}
-            {#<a href="#" class="s-instagram__img">
-                <div class="s-instagram__img" style="background-image: url({{ item.imgUrl }})"></div>
-                <span class="visually-hidden">go to instagram..</span>
-            </a>#}
-            <a href="{{ item.imgLink }}" class="s-instagram__img" style="background-image: url({{ item.imgUrl }})">go to instagram..</a>
+            <a href="{{ item.imgLink }}" class="s-instagram__img-link">
+                <img src="{{ item.imgUrl }}" alt="{{ item/imgAlt }}" class="s-instagram__img">
+            </a>
         {% endfor %}
     </div>
 </section>
