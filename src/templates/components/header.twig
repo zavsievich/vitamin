@@ -3,18 +3,23 @@
         nav : [
             {
                 title : 'Skin glow',
+                titleLink : '#',
             },
             {
                 title : 'FAQs',
+                titleLink : '#',
             },
             {
                 title : 'Blog',
+                titleLink : '#',
             },
             {
                 title : 'Contact',
+                titleLink : '#',
             },
         ],
         headerLogoAlt : 'Vitami',
+        logoLink : '/',
         basketTitle : 'Basket',
         headerLogo : 'images/svg_sprite_inline/vitami.svg',
     } %}
@@ -30,12 +35,12 @@
         <ul class="header__nav-list">
             {% for item in args.nav %}
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">{{ item.title }}</a>
+                    <a href="{{ item.titleLink }}" class="header__nav-link">{{ item.title }}</a>
                 </li>
             {% endfor %}
         </ul>
     </nav>
-    <a href="#" class="header__logo">
+    <a href="{{ args.logoLink }}" class="header__logo">
         <img class="с-header__logo-img" src="{{ args.headerLogo }}" alt="{{ args.headerLogoAlt }}">
     </a>
     <div class="header__basket-wrap">
