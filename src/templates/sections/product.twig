@@ -46,9 +46,9 @@
         <div class="s-product__carousel js-product-carousel">
             {% for item in args.info %}
             <article class="s-product__slide">
-                <div class="s-product__slide-description">
-                    <h3 class="s-product__slide-title">{{ item.title }}</h3>
-                    <p class="s-product__slide-text">{{ item.text }}</p>
+                <div class="el-wysiwg">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.text }}</p>
                 </div>
                 <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-product__slide-img">
             </article>

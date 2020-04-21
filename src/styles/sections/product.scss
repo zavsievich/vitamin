@@ -16,28 +16,6 @@
     margin: 2em 1.5em;
     text-align: start;
 
-    &-description {
-      background-color: $c-white;
-      padding: 4% 4%;
-      border-radius: 0.8em;
-      flex: 1 0 45%;
-    }
-
-    &-title {
-      font-size: 1.4em;
-      margin-bottom: .5em;
-      padding-left: 1rem;
-    }
-
-    &-text {
-      font-size: 1.2em;
-      line-height: 1.6;
-      color: $c-text-grey;
-      max-width: 27em;
-      padding: 1em;
-      padding-left: 1rem;
-    }
-
     &-img {
       border-radius: 0.8rem;
       box-shadow: $c-shadow-img;
@@ -47,6 +25,7 @@
 
   &__btn {
     display: none;
+
     &-wrap {
       margin-right: 1rem;
       display: none;

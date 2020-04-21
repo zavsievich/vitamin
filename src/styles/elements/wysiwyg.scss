@@ -1,0 +1,42 @@
+.el-wysiwg  {
+  font-size: 1rem;
+  background-color: $c-white;
+  padding: 4% 4%;
+  border-radius: 0.8em;
+  flex: 1 0 45%;
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 6px;
+    height: auto;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    margin-bottom: .5em;
+    padding-left: 1rem;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: $c-text-grey;
+    max-width: 27em;
+    padding: 1em;
+    padding-left: 1rem;
+  }
+
+  ul {
+    padding: 1em;
+    padding-left: 1rem;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: $c-text-grey;
+  }
+}
