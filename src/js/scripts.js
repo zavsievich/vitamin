@@ -2,15 +2,17 @@ function menuWrap() {
     const menuList = document.querySelector('.js-menu');
     const btnMenu = document.querySelector('.js-toggle');
     const header = document.querySelector('.js-header');
+    const active = 'is-active';
+    const fixed = 'is-fixed';
 
 
     function headerFix() {
         window.onscroll = function showHeader() {
 
-            if (window.pageYOffset > 50 && !(menuList.classList.contains('is-active'))) {
-                header.classList.add('is-fixed');
+            if (window.pageYOffset > 50 && !(menuList.classList.contains(active))) {
+                header.classList.add(fixed);
             } else {
-                header.classList.remove('is-fixed');
+                header.classList.remove(fixed);
             }
         };
     }
@@ -22,11 +24,11 @@ function menuWrap() {
         btnMenu.addEventListener('click', toggleMenu);
 
         function toggleMenu() {
-            btnMenu.classList.toggle('is-active');
-            menuList.classList.toggle('is-active');
+            btnMenu.classList.toggle(active);
+            menuList.classList.toggle(active);
 
-            if (header.classList.contains('is-fixed')) {
-                header.classList.remove('is-fixed');
+            if (header.classList.contains(fixed)) {
+                header.classList.remove(fixed);
             }
         }
     }
@@ -35,8 +37,6 @@ function menuWrap() {
 }
 
 menuWrap();
-
-// slick-slider
 
 function sliders() {
     $('.js-product-carousel').slick({
