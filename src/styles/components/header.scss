@@ -1,7 +1,7 @@
 .header {
   margin: 0 auto;
   height: 80px;
-  font-size: 16px;
+  font-size: 1rem;
 
   &__wrap {
     display: flex;
@@ -71,11 +71,12 @@
     &-lines::after,
     &-lines::before {
       position: absolute;
-      width: 40px;
-      height: 3px;
+      width: 2.5rem;
+      height: 0.187rem;
       background-color: $c-white;
       left: 0;
       transition: 0.3s;
+      font-size: 0;
     }
 
     &-lines::before {
@@ -145,7 +146,7 @@
 
     &-link {
       color: $c-white;
-      font-size: 1.2em;
+      font-size: 1.2rem;
       font-weight: 600;
       padding: 0.5em 1em;
       white-space: nowrap;
@@ -235,13 +236,6 @@
     &__basket {
       &-item {
         display: block;
-      }
-    }
-
-    .header__btn {
-      svg {
-        width: 30px;
-        height: 30px;
       }
     }
   }
