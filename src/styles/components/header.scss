@@ -13,13 +13,35 @@
     width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+
+    &.is-fixed {
+      background-color: $c-white;
+      padding-bottom: 1rem;
+
+      .header__nav-link {
+        color: $c-black;
+      }
+
+      .header__logo {
+        color: $c-brand;
+      }
+
+      .header__basket {
+        color: $c-black;
+      }
+
+      .header__btn-lines,
+      .header__btn-lines::before,
+      .header__btn-lines::after {
+        background-color: $c-black;
+      }
+    }
   }
 
   .header__btn {
     display: inline-block;
     border: none;
     background: none;
-    color: $c-white;
     padding: 0.5rem;
     margin-top: 0.3rem;
     position: relative;
@@ -124,7 +146,7 @@
     &-link {
       color: $c-white;
       font-size: 1.2em;
-      font-weight: 400;
+      font-weight: 600;
       padding: 0.5em 1em;
       white-space: nowrap;
       transition: 0.3s;
@@ -137,15 +159,17 @@
   }
 
   &__logo {
-    transition: 0.3s;
     z-index: 21;
+    color: $c-white;
 
-    &-img {
-      height: 1.4rem;
+    svg {
+      height: 2.8rem;
+      width: 7rem;
+      transition: 0.3s;
     }
 
     &:hover, &:focus {
-      opacity: 0.5;
+      color: $c-brand;
     }
   }
 
@@ -184,7 +208,7 @@
 
     &-title {
       font-size: 1.25rem;
-      font-weight: 400;
+      font-weight: 600;
       display: none;
     }
 

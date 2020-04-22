@@ -13,6 +13,23 @@ function openMenu() {
 
 openMenu();
 
+// header fix
+function fixHeader() {
+
+    window.onscroll = function showHeader() {
+
+        const header = document.querySelector('.js-header');
+
+        if (window.pageYOffset > 400) {
+            header.classList.add('is-fixed');
+        } else {
+            header.classList.remove('is-fixed');
+        }
+    }
+}
+
+fixHeader();
+
 // slick-slider
 
 $('.js-product-carousel').slick({

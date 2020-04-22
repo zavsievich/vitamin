@@ -21,7 +21,7 @@
         headerLogoAlt : 'Vitami',
         logoLink : '/',
         basketTitle : 'Basket',
-        headerLogo : 'images/svg_sprite_inline/vitami.svg',
+        headerLogo : 'logo',
     } %}
 {% endif %}
 <header class="header">
@@ -58,7 +58,7 @@
                 ]
             } %}
     </nav>
-    <div class="header__wrap">
+    <div class="header__wrap js-header">
         <div class="header__btn-wrap">
             <button class="header__btn js-toggle">
                 <span class="header__btn-lines"></span>
@@ -76,7 +76,10 @@
             </ul>
         </nav>
         <a href="{{ args.logoLink }}" class="header__logo">
-            <img class="с-header__logo-img" src="{{ args.headerLogo }}" alt="{{ args.headerLogoAlt }}">
+            <svg class="el-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                     xlink:href="#{{ args.headerLogo }}"></use>
+            </svg>
         </a>
         <div class="header__basket-wrap">
             <button class="header__basket">

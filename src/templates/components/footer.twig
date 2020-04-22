@@ -61,25 +61,12 @@
         ],
     } %}
 {% endif %}
-<footer class="c-footer container">
-    <div class="c-footer__logo-wrap">
-        <a href="{{ args.logoLink }}" class="c-footer__logo">
-            <img class="c-footer__logo-img" src="{{ args.logo }}" alt="{{ args.logoAlt }}">
+<footer class="footer container">
+    <div class="footer__logo-wrap">
+        <a href="{{ args.logoLink }}" class="footer__logo">
+            <img class="footer__logo-img" src="{{ args.logo }}" alt="{{ args.logoAlt }}">
         </a>
     </div>
-    {#<ul class="c-footer__communication-list">
-        {% for item in args.communication %}
-            <li class="c-footer__communication-item">
-                <span class="visually-hidden">{{ item.descr }}</span>
-                <a href="{{ item.iconLink }}" class="c-footer__communication-link">
-                    <svg class="el-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                             xlink:href="#{{ item.icon }}"></use>
-                    </svg>
-                </a>
-            </li>
-        {% endfor %}
-    </ul>#}
     {% include 'components/social.twig' with
         {
             mod : 'footer',
@@ -104,23 +91,23 @@
 
             ]
         } %}
-    <form class="c-footer__search" method="get">
-        <input type="search" class="c-footer__search-input" id="search"
+    <form class="footer__search" method="get">
+        <input type="search" class="footer__search-input" id="search"
                name="search" placeholder="Your email">
-        <button class="c-footer__search-btn" type="submit">{{ args.btn }}</button>
+        <button class="footer__search-btn" type="submit">{{ args.btn }}</button>
     </form>
-    <p class="c-footer__text">{{ args.text }}</p>
-    <ul class="c-footer__nav-list">
+    <p class="footer__text">{{ args.text }}</p>
+    <ul class="footer__nav-list">
         {% for item in args.nav %}
-            <li class="c-footer__nav-item">
-                <a href="{{ item.titleLink }}" class="c-footer__nav-link">{{ item.title }}</a>
+            <li class="footer__nav-item">
+                <a href="{{ item.titleLink }}" class="footer__nav-link">{{ item.title }}</a>
             </li>
         {% endfor %}
     </ul>
-    <ul class="c-footer__rules-list">
+    <ul class="footer__rules-list">
         {% for item in args.rules %}
-            <li class="c-footer__rules-item">
-                <a href="{{ item.titleLink }}" class="c-footer__rules-link">{{ item.title }}</a>
+            <li class="footer__rules-item">
+                <a href="{{ item.titleLink }}" class="footer__rules-link">{{ item.title }}</a>
             </li>
         {% endfor %}
     </ul>
