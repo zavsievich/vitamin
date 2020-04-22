@@ -28,6 +28,8 @@ function menuWrap() {
 
       if (header.classList.contains(fixed)) {
         header.classList.remove(fixed);
+      } else if (window.pageYOffset > 50) {
+        header.classList.add(fixed);
       }
     }
   }
