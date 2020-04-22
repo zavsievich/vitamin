@@ -18,26 +18,6 @@
                 titleLink : '#',
             },
         ],
-        communication :
-        [
-            {
-                icon : 'facebook',
-                iconLink : '#',
-
-                descr : 'facebook',
-            },
-            {
-                icon : 'instagram',
-                iconLink : '#',
-                descr : 'instagram',
-            },
-            {
-                icon : 'twitter',
-                iconLink : '#',
-                descr : 'twitter',
-            },
-
-        ],
         headerLogoAlt : 'Vitami',
         logoLink : '/',
         basketTitle : 'Basket',
@@ -54,19 +34,29 @@
                 </li>
             {% endfor %}
         </ul>
-        <ul class="header__communication-list">
-            {% for item in args.communication %}
-                <li class="header__communication-item">
-                    <span class="visually-hidden">{{ item.descr }}</span>
-                    <a href="{{ item.iconLink }}" class="header__communication-link">
-                        <svg class="el-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 xlink:href="#{{ item.icon }}"></use>
-                        </svg>
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
+        {% include 'components/social.twig' with
+            {
+                communication :
+                [
+                    {
+                        icon : 'facebook',
+                        iconLink : '#',
+
+                        descr : 'facebook',
+                    },
+                    {
+                        icon : 'instagram',
+                        iconLink : '#',
+                        descr : 'instagram',
+                    },
+                    {
+                        icon : 'twitter',
+                        iconLink : '#',
+                        descr : 'twitter',
+                    },
+
+                ]
+            } %}
     </nav>
     <div class="header__wrap">
         <div class="header__btn-wrap">

@@ -7,6 +7,12 @@
   margin-top: 8rem;
   padding: 0 1.25rem;
 
+  .el-social--footer {
+    svg {
+      color: $c-black;
+    }
+  }
+
   &__logo {
     &-img {
       height: 1.8rem;
@@ -15,35 +21,6 @@
       &:hover,&:focus {
         opacity: 0.5;
       }
-    }
-  }
-
-  &__communication {
-    &-list {
-      display: flex;
-      margin-top: 1rem;
-    }
-
-    &-item {
-      list-style-type: none;
-
-      svg {
-        height: 15px;
-        width: 15px;
-        color: $c-black;
-
-        transition: 0.3s;
-      }
-
-      &:hover,&:focus {
-        svg {
-          color: $c-brand-focus;
-        }
-      }
-    }
-
-    &-link {
-      padding: 0.5rem;
     }
   }
 
@@ -144,19 +121,6 @@
       }
     }
 
-    &__communication {
-      &-item {
-        svg {
-          height: 20px;
-          width: 20px;
-        }
-      }
-
-      &-link {
-        padding: 0.8rem;
-      }
-    }
-
     &__search {
       margin: 1.5em 0 1.5em;
 
@@ -179,7 +143,6 @@
     }
 
     &__rules {
-
       &-list {
         flex-direction: row;
       }

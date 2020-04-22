@@ -1,0 +1,13 @@
+<ul class="el-social el-social--{{ mod }}">
+    {% for item in communication %}
+        <li class="el-social__item">
+            <span class="visually-hidden">{{ item.descr }}</span>
+            <a href="{{ item.iconLink }}" class="el-social__link">
+                <svg class="el-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                         xlink:href="#{{ item.icon }}"></use>
+                </svg>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
