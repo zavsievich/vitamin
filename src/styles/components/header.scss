@@ -1,26 +1,114 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
   margin: 0 auto;
   height: 80px;
   font-size: 16px;
 
-  .header__btn {
+  &__wrap {
     display: flex;
-    flex: 0 0 20%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    position: fixed;
+    z-index: 21;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .header__btn {
+    display: inline-block;
     border: none;
     background: none;
     color: $c-white;
     padding: 0.5rem;
-    margin-top: 0.8rem;
+    margin-top: 0.3rem;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    z-index: 21;
 
-    svg {
-      width: 20px;
-      height: 15px;
+    &.is-active .header__btn-lines {
+      background-color: transparent;
+    }
+
+    &.is-active .header__btn-lines::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &.is-active .header__btn-lines::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    &-wrap {
+      flex: 0 0 20%;
+    }
+
+    &-lines,
+    &-lines::after,
+    &-lines::before {
+      position: absolute;
+      width: 40px;
+      height: 6px;
+      background-color: $c-white;
+      left: 0;
+      transition: 0.3s;
+    }
+
+    &-lines::before {
+      content: '';
+      top: -12px;
+    }
+
+    &-lines::after {
+      content: '';
+      top: 12px;
+    }
+  }
+
+  &__menu {
+    padding-top: 80px;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    background: $c-pink-gradient;
+    left: -100%;
+    align-items: center;
+    transition: 0.3s;
+
+    &.is-active {
+      left: 0;
+    }
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      margin: 1rem;
+    }
+
+    &-link {
+      color: $c-white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 0.5em 1em;
+      white-space: nowrap;
+      transition: 0.3s;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover, &:focus {
+        color: $c-brand-focus;
+      }
     }
   }
 
@@ -42,7 +130,7 @@
       transition: 0.3s;
       text-decoration: none;
 
-      &:hover,&:focus {
+      &:hover, &:focus {
         color: $c-brand-focus;
       }
     }
@@ -50,18 +138,20 @@
 
   &__logo {
     transition: 0.3s;
+    z-index: 21;
 
     &-img {
       height: 1.4rem;
     }
 
-    &:hover,&:focus {
+    &:hover, &:focus {
       opacity: 0.5;
     }
   }
 
   &__basket {
     transition: 0.3s;
+    z-index: 21;
 
     &-wrap {
       flex: 0 0 20%;
@@ -106,8 +196,36 @@
       bottom: 0;
     }
 
-    &:hover,&:focus {
+    &:hover, &:focus {
       color: $c-brand-focus;
+    }
+  }
+
+  &__communication {
+    &-list {
+      display: flex;
+      margin-top: 1rem;
+    }
+
+    &-item {
+      list-style-type: none;
+
+      svg {
+        height: 20px;
+        width: 20px;
+        color: $c-white;
+        transition: 0.3s;
+      }
+
+      &:hover,&:focus {
+        svg {
+          color: $c-brand-focus;
+        }
+      }
+    }
+
+    &-link {
+      padding: 0.5rem;
     }
   }
 
@@ -119,8 +237,6 @@
     }
 
     &__basket {
-      margin-top: 0;
-
       &-item {
         display: block;
       }
@@ -147,6 +263,7 @@
     }
 
     &__basket {
+      margin-top: 0;
 
       &-title {
         display: block;
@@ -157,7 +274,13 @@
       }
     }
 
-    .header__btn {
+    &__btn {
+      &-wrap {
+        display: none;
+      }
+    }
+
+    &__menu {
       display: none;
     }
   }

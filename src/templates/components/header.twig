@@ -18,6 +18,26 @@
                 titleLink : '#',
             },
         ],
+        communication :
+        [
+            {
+                icon : 'facebook',
+                iconLink : '#',
+
+                descr : 'facebook',
+            },
+            {
+                icon : 'instagram',
+                iconLink : '#',
+                descr : 'instagram',
+            },
+            {
+                icon : 'twitter',
+                iconLink : '#',
+                descr : 'twitter',
+            },
+
+        ],
         headerLogoAlt : 'Vitami',
         logoLink : '/',
         basketTitle : 'Basket',
@@ -25,30 +45,56 @@
     } %}
 {% endif %}
 <header class="header">
-    <button class="header__btn">
-        <svg class="el-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#burger"></use>
-        </svg>
-        <span class="visually-hidden">Open menu</span>
-    </button>
-    <nav class="header__nav">
-        <ul class="header__nav-list">
+    <nav class="header__menu js-menu">
+        <ul class="header__menu-list">
             {% for item in args.nav %}
-                <li class="header__nav-item">
-                    <a href="{{ item.titleLink }}" class="header__nav-link">{{ item.title }}</a>
+                <li class="header__menu-item">
+                    <a href="{{ item.titleLink }}"
+                       class="header__menu-link">{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <ul class="header__communication-list">
+            {% for item in args.communication %}
+                <li class="header__communication-item">
+                    <span class="visually-hidden">{{ item.descr }}</span>
+                    <a href="{{ item.iconLink }}" class="header__communication-link">
+                        <svg class="el-icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xlink:href="#{{ item.icon }}"></use>
+                        </svg>
+                    </a>
                 </li>
             {% endfor %}
         </ul>
     </nav>
-    <a href="{{ args.logoLink }}" class="header__logo">
-        <img class="с-header__logo-img" src="{{ args.headerLogo }}" alt="{{ args.headerLogoAlt }}">
-    </a>
-    <div class="header__basket-wrap">
-        <button class="header__basket">
-            <p class="header__basket-title">{{ args.basketTitle }}</p>
-            <svg class="el-icon">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
-            </svg>
-        </button>
+    <div class="header__wrap">
+        <div class="header__btn-wrap">
+            <button class="header__btn js-toggle">
+                <span class="header__btn-lines"></span>
+                <span class="visually-hidden">Open menu</span>
+            </button>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                {% for item in args.nav %}
+                    <li class="header__nav-item">
+                        <a href="{{ item.titleLink }}"
+                           class="header__nav-link">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <a href="{{ args.logoLink }}" class="header__logo">
+            <img class="с-header__logo-img" src="{{ args.headerLogo }}" alt="{{ args.headerLogoAlt }}">
+        </a>
+        <div class="header__basket-wrap">
+            <button class="header__basket">
+                <p class="header__basket-title">{{ args.basketTitle }}</p>
+                <svg class="el-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
+                </svg>
+            </button>
+        </div>
     </div>
 </header>
