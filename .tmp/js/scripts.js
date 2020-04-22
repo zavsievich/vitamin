@@ -1,25 +1,12 @@
 "use strict";
 
-// open menu
 function menuWrap() {
   var menuList = document.querySelector('.js-menu');
+  var btnMenu = document.querySelector('.js-toggle');
+  var header = document.querySelector('.js-header');
 
-  function openMenu() {
-    var btnMenu = document.querySelector('.js-toggle');
-    btnMenu.addEventListener('click', toggleMenu);
-
-    function toggleMenu() {
-      btnMenu.classList.toggle('is-active');
-      menuList.classList.toggle('is-active');
-    }
-  }
-
-  openMenu(); // header fix
-
-  function fixHeader() {
+  function headerFix() {
     window.onscroll = function showHeader() {
-      var header = document.querySelector('.js-header');
-
       if (window.pageYOffset > 50 && !menuList.classList.contains('is-active')) {
         header.classList.add('is-fixed');
       } else {
@@ -28,18 +15,37 @@ function menuWrap() {
     };
   }
 
-  fixHeader();
+  headerFix();
+
+  function openMenu() {
+    btnMenu.addEventListener('click', toggleMenu);
+
+    function toggleMenu() {
+      btnMenu.classList.toggle('is-active');
+      menuList.classList.toggle('is-active');
+
+      if (header.classList.contains('is-fixed')) {
+        header.classList.remove('is-fixed');
+      }
+    }
+  }
+
+  openMenu();
 }
 
 menuWrap(); // slick-slider
 
-$('.js-product-carousel').slick({
-  arrows: false,
-  dots: true,
-  appendDots: $('.js-product-dots')
-});
-$('.js-reviews-carousel').slick({
-  arrows: false,
-  dots: true,
-  appendDots: $('.js-reviews-dots')
-});
+function sliders() {
+  $('.js-product-carousel').slick({
+    arrows: false,
+    dots: true,
+    appendDots: $('.js-product-dots')
+  });
+  $('.js-reviews-carousel').slick({
+    arrows: false,
+    dots: true,
+    appendDots: $('.js-reviews-dots')
+  });
+}
+
+sliders();
