@@ -4,15 +4,14 @@ function menuWrap() {
   var menuList = document.querySelector('.js-menu');
   var btnMenu = document.querySelector('.js-toggle');
   var header = document.querySelector('.js-header');
-  var active = 'is-active';
-  var fixed = 'is-fixed';
+  var activeClass = 'is-active';
 
   function headerFix() {
     window.onscroll = function showHeader() {
-      if (window.pageYOffset > 50 && !menuList.classList.contains(active)) {
-        header.classList.add(fixed);
+      if (window.pageYOffset > 50 && !menuList.classList.contains(activeClass)) {
+        header.classList.add(activeClass);
       } else {
-        header.classList.remove(fixed);
+        header.classList.remove(activeClass);
       }
     };
   }
@@ -23,13 +22,13 @@ function menuWrap() {
     btnMenu.addEventListener('click', toggleMenu);
 
     function toggleMenu() {
-      btnMenu.classList.toggle(active);
-      menuList.classList.toggle(active);
+      btnMenu.classList.toggle(activeClass);
+      menuList.classList.toggle(activeClass);
 
-      if (header.classList.contains(fixed)) {
-        header.classList.remove(fixed);
+      if (header.classList.contains(activeClass)) {
+        header.classList.remove(activeClass);
       } else if (window.pageYOffset > 50) {
-        header.classList.add(fixed);
+        header.classList.add(activeClass);
       }
     }
   }
