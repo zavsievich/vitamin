@@ -27,27 +27,66 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 3rem;
 
     &-product {
       display: flex;
       justify-content: center;
-      height: 25rem;
+      height: 17rem;
       border-radius: 0.8rem;
       background: $c-pink-gradintTitle;
       width: 100%;
       margin: 0;
 
       &-img {
-        height: 22rem;
+        height: 16rem;
         transform: translateY(24%);
       }
     }
 
     &-info {
-      margin-top: 6rem;
-      padding: 1rem 1rem 1rem 2rem;
+      margin-top: 1.5rem;
+      padding: 1rem;
       flex: 1 0 10%;
+    }
+
+    &-title {
+      font-size: 1.4em;
+      font-weight: 700;
+      margin: 0.5em 0;
+    }
+
+    &-cost {
+      font-size: 1.4em;
+      margin: 0.5em 0 1.4em;
+    }
+
+    &-description {
+      font-size: 1.4em;
+      max-width: 17em;
+      margin: 0.5em 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__poster {
+      flex-direction: row;
+
+      &-product {
+        flex: 1 0 14%;
+        height: 25rem;
+
+        &-img {
+          height: 22rem;
+          transform: translateY(29%);
+        }
+      }
+
+      &-info {
+        padding-left: 2rem;
+        flex: 1 0 10%;
+        margin-top: 0;
+      }
 
       &-title {
         font-size: 1.4em;
@@ -64,45 +103,7 @@
         font-size: 1.4em;
         max-width: 17em;
         margin: 0.5em 0;
-      }
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    &__poster {
-      flex-direction: row;
-
-      &-product {
-        flex: 1 0 14%;
-
-        &-img {
-          height: 22rem;
-          transform: translateY(29%);
-        }
-      }
-
-      &-info {
-        padding-left: 2rem;
-        flex: 1 0 10%;
-        margin-top: 0;
-
-        &-title {
-          font-size: 1.4em;
-          font-weight: 700;
-          margin: 0.5em 0;
-        }
-
-        &-cost {
-          font-size: 1.4em;
-          margin: 0.5em 0;
-        }
-
-        &-description {
-          font-size: 1.4em;
-          max-width: 17em;
-          margin: 0.5em 0;
-          line-height: 1.7;
-        }
+        line-height: 1.7;
       }
     }
 
