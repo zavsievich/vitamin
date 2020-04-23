@@ -7,6 +7,8 @@
     max-width: 1480px;
     margin: 0 auto;
     margin-top: 1.5rem;
+    display: flex;
+    overflow-x: auto;
   }
 
   &__wrap {
@@ -19,13 +21,15 @@
     display: flex !important;
     align-items: center;
     flex-direction: column;
-    margin: 2em 1.5em;
+    margin: 2rem 0.5rem;
     text-align: start;
-
+    min-width: 90%;
     &-img {
       border-radius: 0.2rem;
       box-shadow: $c-shadow-img;
       object-fit: cover;
+      min-width: 258px;
+      min-height: 258px;
 
       &-wrap {
         height: 0;
@@ -68,8 +72,14 @@
   }
 
   @include media-breakpoint-up(lg) {
+
+    &__carousel {
+      display: block;
+    }
+
     &__slide {
       flex-direction: row;
+      min-width: 0;
 
       &-img {
         width: 55%;

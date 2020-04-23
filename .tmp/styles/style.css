@@ -581,14 +581,14 @@ img {
   font-size: 1rem;
   background-color: #FFFFFF;
   padding: 4% 4%;
-  padding-right: 1%;
+  padding-right: 3%;
   -webkit-border-radius: 0.8em;
           border-radius: 0.8em;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 45%;
       -ms-flex: 1 0 45%;
           flex: 1 0 45%;
-  width: 85%; }
+  width: 95%; }
   .el-wysiwg img {
     display: block;
     max-width: 100%;
@@ -1271,7 +1271,12 @@ img {
   .s-product__carousel {
     max-width: 1480px;
     margin: 0 auto;
-    margin-top: 1.5rem; }
+    margin-top: 1.5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: auto; }
   .s-product__wrap {
     padding-top: 3rem;
     padding-bottom: 1rem;
@@ -1290,15 +1295,18 @@ img {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 2em 1.5em;
-    text-align: start; }
+    margin: 2rem 0.5rem;
+    text-align: start;
+    min-width: 90%; }
     .s-product__slide-img {
       -webkit-border-radius: 0.2rem;
               border-radius: 0.2rem;
       -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
               box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      min-width: 258px;
+      min-height: 258px; }
       .s-product__slide-img-wrap {
         height: 0;
         padding-bottom: 100%; }
@@ -1330,12 +1338,15 @@ img {
         background: -o-linear-gradient(280.33deg, #D369D6 7.15%, #EB0A3C 94.53%);
         background: linear-gradient(169.67deg, #D369D6 7.15%, #EB0A3C 94.53%); }
   @media screen and (min-width: 900px) {
+    .s-product__carousel {
+      display: block; }
     .s-product__slide {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
-              flex-direction: row; }
+              flex-direction: row;
+      min-width: 0; }
       .s-product__slide-img {
         width: 55%;
         height: 100%;
