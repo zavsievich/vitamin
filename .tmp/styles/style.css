@@ -604,7 +604,7 @@ img {
     margin-bottom: .5em;
     padding-left: 1rem; }
   .el-wysiwg p {
-    font-size: 1rem;
+    font-size: 1.375rem;
     line-height: 1.25;
     color: #464646;
     padding: 1em;
@@ -622,7 +622,6 @@ img {
     .el-wysiwg {
       padding-right: 4%; }
       .el-wysiwg p {
-        font-size: 1.25rem;
         line-height: 1.4;
         max-width: 27em; } }
 
