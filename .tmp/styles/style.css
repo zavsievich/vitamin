@@ -1398,10 +1398,25 @@ img {
   .s-reviews__content-assessment {
     font-size: 1.4em;
     padding-bottom: .6em; }
+  .s-reviews__content-assessment[data-filled="1"] .s-reviews__content-star:nth-child(1) {
+    color: #ed8702; }
+  .s-reviews__content-assessment[data-filled="2"] .s-reviews__content-star:nth-child(1),
+  .s-reviews__content-assessment[data-filled="2"] .s-reviews__content-star:nth-child(2) {
+    color: #ed8702; }
+  .s-reviews__content-assessment[data-filled="3"] .s-reviews__content-star:nth-child(1),
+  .s-reviews__content-assessment[data-filled="3"] .s-reviews__content-star:nth-child(2),
+  .s-reviews__content-assessment[data-filled="3"] .s-reviews__content-star:nth-child(3) {
+    color: #ed8702; }
   .s-reviews__content-assessment[data-filled="4"] .s-reviews__content-star:nth-child(1),
   .s-reviews__content-assessment[data-filled="4"] .s-reviews__content-star:nth-child(2),
   .s-reviews__content-assessment[data-filled="4"] .s-reviews__content-star:nth-child(3),
   .s-reviews__content-assessment[data-filled="4"] .s-reviews__content-star:nth-child(4) {
+    color: #ed8702; }
+  .s-reviews__content-assessment[data-filled="5"] .s-reviews__content-star:nth-child(1),
+  .s-reviews__content-assessment[data-filled="5"] .s-reviews__content-star:nth-child(2),
+  .s-reviews__content-assessment[data-filled="5"] .s-reviews__content-star:nth-child(3),
+  .s-reviews__content-assessment[data-filled="5"] .s-reviews__content-star:nth-child(4),
+  .s-reviews__content-assessment[data-filled="5"] .s-reviews__content-star:nth-child(5) {
     color: #ed8702; }
   .s-reviews__content-star {
     color: #F6F6F6; }

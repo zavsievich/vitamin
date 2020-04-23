@@ -22,6 +22,7 @@
                         star: 'star',
                     },
                 ],
+                stars : '5',
                 text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna. “',
             },
             {
@@ -44,6 +45,7 @@
                         star: 'star',
                     },
                 ],
+                stars : '3',
                 text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna. “',
             },
             {
@@ -66,6 +68,7 @@
                         star: 'star',
                     },
                 ],
+                stars : '4',
                 text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna. “',
             },
         ],
@@ -80,7 +83,7 @@
             <div class="s-reviews__content">
                 <div class="s-reviews__content-wrap">
                     <p class="s-reviews__content-name">{{ item.name }}</p>
-                    <div class="s-reviews__content-assessment" data-filled="4">
+                    <div class="s-reviews__content-assessment" data-filled="{{ item.stars }}">
                         {% for star in item.assessment %}
                             <span class="s-reviews__content-star">
                         <svg class="el-icon">
