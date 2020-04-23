@@ -542,7 +542,7 @@ img {
           border-radius: 1.5em;
   padding: 1em 3em;
   border: none;
-  max-width: 361px;
+  max-width: 261px;
   cursor: pointer;
   width: 100%;
   text-align: center;
@@ -576,6 +576,9 @@ img {
     opacity: 1; }
   .el-btn:focus::before {
     opacity: 1; }
+  @media screen and (min-width: 900px) {
+    .el-btn {
+      max-width: 261px; } }
 
 .el-wysiwg {
   font-size: 1rem;
@@ -1195,14 +1198,28 @@ img {
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 10%;
           -ms-flex: 1 0 10%;
-              flex: 1 0 10%; }
+              flex: 1 0 10%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .s-offers__poster-info .el-btn {
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center; }
     .s-offers__poster-title {
       font-size: 1.4em;
       font-weight: 700;
-      margin: 0.5em 0; }
+      margin: 0.5em 0;
+      margin-bottom: 0.1rem; }
     .s-offers__poster-cost {
       font-size: 1.4em;
-      margin: 0.5em 0 1.4em; }
+      margin: 0.1em 0; }
     .s-offers__poster-description {
       font-size: 1.4rem;
       max-width: 17em;
@@ -1231,7 +1248,8 @@ img {
         -webkit-flex: 1 0 10%;
             -ms-flex: 1 0 10%;
                 flex: 1 0 10%;
-        margin-top: 0; }
+        margin-top: 0;
+        display: block; }
       .s-offers__poster-title {
         font-size: 1.4em;
         font-weight: 700;
@@ -1301,8 +1319,8 @@ img {
     .s-product__slide-img {
       -webkit-border-radius: 0.2rem;
               border-radius: 0.2rem;
-      -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-              box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      -webkit-box-shadow: 0 14px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+              box-shadow: 0 14px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
       -o-object-fit: cover;
          object-fit: cover;
       min-width: 258px;

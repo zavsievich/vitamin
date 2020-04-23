@@ -7,7 +7,7 @@
   border-radius: 1.5em;
   padding: 1em 3em;
   border: none;
-  max-width: 361px;
+  max-width: 261px;
   cursor: pointer;
   width: 100%;
   text-align: center;
@@ -41,5 +41,9 @@
 
   &:focus::before {
     opacity: 1;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 261px;
   }
 }
