@@ -1086,10 +1086,11 @@ img {
   .banner__title {
     margin: 0;
     padding: 1rem;
+    padding-bottom: 4rem;
     color: #FFFFFF;
     max-width: 734px;
     text-transform: uppercase;
-    font-size: 1.75em;
+    font-size: 1.75rem;
     text-align: center; }
   @media screen and (min-width: 650px) {
     .banner {
@@ -1100,8 +1101,7 @@ img {
           -ms-flex-pack: center;
               justify-content: center; }
       .banner__title {
-        font-size: 1.9em;
-        padding: 0; } }
+        font-size: 1.9rem; } }
   @media screen and (min-width: 900px) {
     .banner {
       min-height: 775px;
@@ -1119,8 +1119,8 @@ img {
         padding: 0;
         color: #FFFFFF;
         max-width: 734px;
-        font-size: 2.75em;
-        margin-left: 5.3em;
+        font-size: 2.75rem;
+        margin-left: 18%;
         text-transform: uppercase;
         text-align: left; } }
 
