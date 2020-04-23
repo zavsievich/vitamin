@@ -1491,8 +1491,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    margin: 1%;
-    margin-top: 2%; }
+    margin: 8%; }
     .s-advantages__content-img {
       background-color: #FFFFFF;
       color: #A738AC;
@@ -1542,7 +1541,8 @@ img {
               justify-content: flex-start; }
     .s-advantages__content {
       max-width: 31%;
-      text-align: center; } }
+      text-align: center;
+      margin: 1%; } }
 
 .s-magazine {
   background-position: center;
