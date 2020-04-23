@@ -45,8 +45,8 @@
     padding: 0.5rem;
     margin-top: 0.3rem;
     position: relative;
-    width: 40px;
-    height: 30px;
+    width: 33px;
+    height: 21px;
     z-index: 21;
 
     &.is-active .header__btn-lines {
@@ -56,11 +56,13 @@
     &.is-active .header__btn-lines::before {
       top: 0;
       transform: rotate(45deg);
+      height: 4px;
     }
 
     &.is-active .header__btn-lines::after {
       top: 0;
       transform: rotate(-45deg);
+      height: 4px;
     }
 
     &-wrap {
@@ -71,22 +73,23 @@
     &-lines::after,
     &-lines::before {
       position: absolute;
-      width: 2.5rem;
-      height: 0.187rem;
+      width: 100%;
+      height:2px;
       background-color: $c-white;
       left: 0;
       transition: 0.3s;
       font-size: 0;
+      border-radius: 4px;
     }
 
     &-lines::before {
       content: '';
-      top: -10px;
+      top: -8px;
     }
 
     &-lines::after {
       content: '';
-      top: 10px;
+      top: 8px;
     }
   }
 
