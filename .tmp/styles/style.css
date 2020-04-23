@@ -826,12 +826,9 @@ img {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
     position: relative;
     padding-right: 1.9rem;
-    margin-top: 1.5rem; }
+    height: 1.3rem; }
     .header__basket-wrap {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 20%;
@@ -866,8 +863,8 @@ img {
       font-weight: 600;
       display: none; }
     .header__basket svg {
-      width: 1.2em;
-      height: 1.1em;
+      width: 1.2rem;
+      height: 1.1rem;
       position: absolute;
       right: 0;
       bottom: 0; }
@@ -890,15 +887,13 @@ img {
               flex: 0 0 40%; }
     .header__logo-img {
       height: 3rem; }
-    .header__basket {
-      margin-top: 0; }
-      .header__basket-title {
-        display: block; }
-      .header__basket-wrap {
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 40%;
-            -ms-flex: 0 0 40%;
-                flex: 0 0 40%; }
+    .header__basket-title {
+      display: block; }
+    .header__basket-wrap {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 40%;
+          -ms-flex: 0 0 40%;
+              flex: 0 0 40%; }
     .header__btn-wrap {
       display: none; }
     .header__menu {
