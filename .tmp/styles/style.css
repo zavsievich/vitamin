@@ -1376,7 +1376,7 @@ img {
 
 .s-reviews {
   text-align: center;
-  padding: 6rem 1.25rem; }
+  padding: 6rem 1.25rem 8rem; }
   .s-reviews__content-wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1397,9 +1397,16 @@ img {
   .s-reviews__content-assessment {
     font-size: 1.4em;
     padding-bottom: .6em; }
-  .s-reviews__content-star svg {
-    width: 20px;
-    height: 20px; }
+  .s-reviews__content-assessment[data-filled="4"] .s-reviews__content-star:nth-child(1),
+  .s-reviews__content-assessment[data-filled="4"] .s-reviews__content-star:nth-child(2),
+  .s-reviews__content-assessment[data-filled="4"] .s-reviews__content-star:nth-child(3),
+  .s-reviews__content-assessment[data-filled="4"] .s-reviews__content-star:nth-child(4) {
+    color: #ed8702; }
+  .s-reviews__content-star {
+    color: #F6F6F6; }
+    .s-reviews__content-star svg {
+      width: 20px;
+      height: 20px; }
   .s-reviews__content-text {
     font-size: 1.75em;
     max-width: 25em;

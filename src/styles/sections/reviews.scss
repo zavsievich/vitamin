@@ -1,6 +1,6 @@
 .s-reviews {
   text-align: center;
-  padding: 6rem 1.25rem;
+  padding: 6rem 1.25rem 8rem;
 
   &__content {
     &-wrap {
@@ -16,10 +16,17 @@
     &-assessment {
       font-size: 1.4em;
       padding-bottom: .6em;
+    }
 
+    &-assessment[data-filled="4"] .s-reviews__content-star:nth-child(1),
+    &-assessment[data-filled="4"] .s-reviews__content-star:nth-child(2),
+    &-assessment[data-filled="4"] .s-reviews__content-star:nth-child(3),
+    &-assessment[data-filled="4"] .s-reviews__content-star:nth-child(4) {
+      color: $c-gold;
     }
 
     &-star {
+      color: $c-gray;
       svg {
         width: 20px;
         height: 20px;
@@ -36,6 +43,7 @@
 
   &__btn {
     display: none;
+
     &-wrap {
       display: flex;
       justify-content: center;
