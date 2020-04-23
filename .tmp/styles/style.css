@@ -1692,7 +1692,7 @@ img {
         -webkit-border-radius: 0.5rem;
                 border-radius: 0.5rem; }
     .s-article__item-title {
-      font-size: 2.125em;
+      font-size: 1.25rem;
       color: #FFFFFF;
       max-width: 9em;
       text-align: center;
@@ -1717,7 +1717,7 @@ img {
     .s-article__item:focus-within a:focus {
       text-decoration: none; }
     .s-article__item-sub {
-      font-size: 1.375em;
+      font-size: 1rem;
       color: #FFFFFF;
       z-index: 2; }
   @media screen and (min-width: 650px) {
@@ -1739,7 +1739,11 @@ img {
               flex-wrap: nowrap; }
       .s-article__item {
         margin: 1em;
-        max-width: 100%; } }
+        max-width: 100%; }
+        .s-article__item-title {
+          font-size: 2.125rem; }
+        .s-article__item-sub {
+          font-size: 1.375rem; } }
 
 .s-instagram {
   display: block;

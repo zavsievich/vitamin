@@ -67,7 +67,7 @@
     }
 
     &-title {
-      font-size: 2.125em;
+      font-size: 1.25rem;
       color: $c-white;
       max-width: 9em;
       text-align: center;
@@ -92,7 +92,7 @@
       }
     }
 
-    &:focus-within,&:hover {
+    &:focus-within, &:hover {
       box-shadow: 0 0 0 0.2rem $c-brand;
     }
 
@@ -101,7 +101,7 @@
     }
 
     &-sub {
-      font-size: 1.375em;
+      font-size: 1rem;
       color: $c-white;
       z-index: 2;
     }
@@ -119,6 +119,14 @@
     &__item {
       margin: 1em;
       max-width: 100%;
+
+      &-title {
+        font-size: 2.125rem;
+      }
+
+      &-sub {
+        font-size: 1.375rem;
+      }
     }
   }
 }
