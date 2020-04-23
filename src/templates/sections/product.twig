@@ -1,5 +1,5 @@
 {% if not args %}
-{% set args = {
+    {% set args = {
         info :[
             {
                 title : 'Marine Colagen',
@@ -45,17 +45,19 @@
         } %}
         <div class="s-product__carousel js-product-carousel">
             {% for item in args.info %}
-            <article class="s-product__slide">
-                <div class="el-wysiwg">
-                    <h3>{{ item.title }}</h3>
-                    <p>{{ item.text }}</p>
-                </div>
-                <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-product__slide-img">
-            </article>
+                <article class="s-product__slide">
+                    <div class="el-wysiwg">
+                        <h3>{{ item.title }}</h3>
+                        <p>{{ item.text }}</p>
+                    </div>
+{#                    <div class="s-product__slide-img-wrap">#}
+                        <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-product__slide-img">
+{#                    </div>#}
+                </article>
             {% endfor %}
         </div>
         <div class="s-product__btn-wrap js-product-dots">
-           <button class="s-product__btn js-product-dot"></button>
+            <button class="s-product__btn js-product-dot"></button>
         </div>
     </div>
     {% include "../components/button.twig" with {

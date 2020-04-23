@@ -3,6 +3,12 @@
   padding: 0 1.25rem 2rem;
   text-align: center;
 
+  &__carousel {
+    max-width: 1480px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+
   &__wrap {
     padding-top: 3rem;
     padding-bottom: 1rem;
@@ -17,9 +23,14 @@
     text-align: start;
 
     &-img {
-      border-radius: 0.8rem;
+      border-radius: 0.2rem;
       box-shadow: $c-shadow-img;
-      width: 77%;
+      object-fit: cover;
+
+      &-wrap {
+        height: 0;
+        padding-bottom: 100%;
+      }
     }
   }
 
@@ -56,12 +67,15 @@
     }
   }
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(lg) {
     &__slide {
       flex-direction: row;
 
       &-img {
         width: 55%;
+        height: 100%;
+        padding-bottom: 0;
+        border-radius: 0.8rem;
       }
     }
 
@@ -71,4 +85,24 @@
       }
     }
   }
+
+  /*@include media-breakpoint-up(xl) {
+    &__slide {
+      flex-direction: row;
+
+      &-img {
+        &-wrap {
+          width: 55%;
+          height: 100%;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &__btn {
+      &-wrap {
+        display: inline-block;
+      }
+    }
+  }*/
 }

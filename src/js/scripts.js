@@ -41,17 +41,43 @@ function menuWrap() {
 menuWrap();
 
 function sliders() {
-    $('.js-product-carousel').slick({
-        arrows: false,
-        dots: true,
-        appendDots: $('.js-product-dots'),
-    });
+    function productSlider() {
+        /*window.addEventListener("resize", function () {
+            if (window.innerWidth <= 900) {
+                $('.js-product-carousel').slick('unslick');
+            } else {
+                $('.js-product-carousel').slick({
+                    arrows: false,
+                    dots: true,
+                    appendDots: $('.js-product-dots'),
+                });
+            }
+        });*/
 
-    $('.js-reviews-carousel').slick({
-        arrows: false,
-        dots: true,
-        appendDots: $('.js-reviews-dots'),
-    });
+        $('.js-product-carousel').slick({
+            arrows: false,
+            dots: true,
+            appendDots: $('.js-product-dots'),
+            responsive: [
+                {
+                    breakpoint: 900,
+                    settings: "unslick"
+                }
+            ]
+        });
+    }
+
+    productSlider();
+
+    function reviewsSlider() {
+        $('.js-reviews-carousel').slick({
+            arrows: false,
+            dots: true,
+            appendDots: $('.js-reviews-dots'),
+        });
+    }
+
+    reviewsSlider();
 }
 
 sliders();
