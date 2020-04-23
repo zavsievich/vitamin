@@ -2,6 +2,7 @@ function menuWrap() {
     const menuList = document.querySelector('.js-menu');
     const btnMenu = document.querySelector('.js-toggle');
     const header = document.querySelector('.js-header');
+    const objRef = document.body;
     const activeClass = 'is-active';
 
     function headerFix() {
@@ -24,6 +25,7 @@ function menuWrap() {
         function toggleMenu() {
             btnMenu.classList.toggle(activeClass);
             menuList.classList.toggle(activeClass);
+            objRef.classList.toggle(activeClass);
 
             if (header.classList.contains(activeClass)) {
                 header.classList.remove(activeClass);
