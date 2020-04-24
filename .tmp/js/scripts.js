@@ -53,15 +53,28 @@ function sliders() {
             });
         }
     });*/
-    $('.js-product-carousel').slick({
-      arrows: false,
-      dots: true,
-      appendDots: $('.js-product-dots'),
-      responsive: [{
-        breakpoint: 900,
-        settings: "unslick"
-      }]
-    });
+    var productCarousel = document.querySelector('.js-product-carousel');
+    window.addEventListener('resize', checkWidthAndInitializeSlider);
+
+    function checkWidthAndInitializeSlider() {
+      if (window.innerWidth > 900 && !productCarousel.classList.contains('slick-initialized')) {
+        InitializeProductSlider();
+      }
+    }
+
+    function InitializeProductSlider() {
+      $(productCarousel).slick({
+        arrows: false,
+        dots: true,
+        appendDots: $('.js-product-dots'),
+        responsive: [{
+          breakpoint: 900,
+          settings: "unslick"
+        }]
+      });
+    }
+
+    InitializeProductSlider();
   }
 
   productSlider();
