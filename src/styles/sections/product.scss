@@ -34,7 +34,7 @@
     min-width: 90%;
 
     &-description {
-      padding: 5% 5%;
+      padding: 11% 5% 11% 11%;
       background-color: $c-white;
       width: 95%;
       flex: 0 0 45%;
@@ -96,6 +96,10 @@
     &__slide {
       flex-direction: row;
       min-width: 0;
+
+      &-description {
+        padding: 5% 5%;
+      }
 
       &-img {
         width: 55%;

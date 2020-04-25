@@ -1293,7 +1293,7 @@ img {
     text-align: start;
     min-width: 90%; }
     .s-product__slide-description {
-      padding: 5% 5%;
+      padding: 11% 5% 11% 11%;
       background-color: #FFFFFF;
       width: 95%;
       -webkit-box-flex: 0;
@@ -1349,6 +1349,8 @@ img {
           -ms-flex-direction: row;
               flex-direction: row;
       min-width: 0; }
+      .s-product__slide-description {
+        padding: 5% 5%; }
       .s-product__slide-img {
         width: 55%;
         height: 100%;
