@@ -1197,10 +1197,6 @@ img {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-      .s-offers__poster-info .el-btn {
-        -webkit-align-self: center;
-            -ms-flex-item-align: center;
-                align-self: center; }
     .s-offers__poster-title {
       font-size: 1.4em;
       font-weight: 700;
@@ -1213,6 +1209,10 @@ img {
       font-size: 1.4rem;
       max-width: 17em;
       margin: 0.5em 0 2rem; }
+  .s-offers__btn {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
   @media screen and (min-width: 900px) {
     .s-offers__wrap {
       padding-bottom: 8rem; }
