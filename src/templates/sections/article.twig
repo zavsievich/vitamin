@@ -19,14 +19,16 @@
 {% endif %}
 
 <section class="s-article">
-    {% for item in args.cards %}
-        <article class="s-article__item" style="background-image: url({{ item.bgImage }})">
-            <div class="s-article__item-wrap">
-                <h2 class="s-article__item-title">
-                    <a class="s-article__item-link" href="{{item.titleLink}}">{{ item.title }}</a>
-                </h2>
-                <p class="s-article__item-sub">{{ item.subTitle }}</p>
-            </div>
-        </article>
-    {% endfor %}
+    <div class="s-article__wrap">
+        {% for item in args.cards %}
+            <article class="s-article__item" style="background-image: url({{ item.bgImage }})">
+                <div class="s-article__item-wrap">
+                    <h2 class="s-article__item-title">
+                        <a class="s-article__item-link" href="{{ item.titleLink }}">{{ item.title }}</a>
+                    </h2>
+                    <p class="s-article__item-sub">{{ item.subTitle }}</p>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
 </section>

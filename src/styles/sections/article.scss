@@ -1,13 +1,16 @@
 .s-article {
-  display: flex;
-  padding: 3rem 0;
+  display: block;
+  padding: 3rem 1.25rem;
   max-width: 1488px;
   margin: 0 auto;
-  flex-direction: row;
-  overflow: auto;
   margin-top: 5rem;
-  align-items: center;
   position: relative;
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+  }
 
   &__item {
     background-repeat: no-repeat;
@@ -26,7 +29,6 @@
 
     min-height: 340px;
     min-width: 279px;
-    max-width: 279px;
     margin: 1rem;
     z-index: 2;
 
@@ -34,7 +36,6 @@
       content: "";
       display: block;
       padding-top: 100%;
-
     }
 
     &-wrap {
