@@ -1,6 +1,6 @@
 .s-advantages{
   background-color: $c-gray;
-  padding: 8rem 1.25rem;
+  padding: 3rem 1.25rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -40,14 +40,18 @@
       padding: 1em 0;
     }
 
-    &-text {
+    &-description {
       font-size: 1.25em;
-      max-width: 16em;
+      max-width: 18em;
       text-align: center;
     }
   }
 
   @include media-breakpoint-up(md) {
+
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+
     &__list {
       display: flex;
       flex-wrap: wrap;
