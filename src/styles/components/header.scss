@@ -20,14 +20,26 @@
 
       .header__nav-link {
         color: $c-black;
+
+        &:hover,&:focus {
+          color: $c-blue;
+        }
       }
 
       .header__logo {
         color: $c-brand;
+
+        &:hover,&:focus {
+          color: $c-blue;
+        }
       }
 
       .header__basket {
         color: $c-black;
+
+        &:hover,&:focus {
+          color: $c-blue;
+        }
       }
 
       .header__btn-lines,
