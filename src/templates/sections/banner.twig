@@ -1,10 +1,10 @@
 {% if not args %}
     {% set args = {
-        bannerBackgroundImage : 'images/hero-bg.jpg',
+        bannerImage : 'images/hero-bg.jpg',
         bannerTitle : 'Uniquely natural supplements designed for you, delivered to you.',
     } %}
 {% endif %}
 
-<section class="banner" style="background-image: url({{ args.bannerBackgroundImage }})">
+<section class="banner" style="background-image: url({{ args.bannerImage }})">
     <h1 class="banner__title">{{ args.bannerTitle }}</h1>
 </section>

@@ -1132,16 +1132,6 @@ img {
   .s-offers__wrap {
     padding-top: 3rem;
     padding-bottom: 2rem; }
-  .s-offers__heading {
-    text-align: center; }
-    .s-offers__heading-title {
-      font-size: 2em;
-      color: #000000;
-      font-weight: 700;
-      padding: 0.5rem 1rem; }
-    .s-offers__heading-sub-title {
-      font-size: 1.4em;
-      padding: 0.5rem 1rem; }
   .s-offers__poster {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1178,18 +1168,14 @@ img {
       background: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
       width: 100%;
       margin: 0; }
-      .s-offers__poster-product-img {
-        height: 16rem;
-        -webkit-transform: translateY(24%);
-            -ms-transform: translateY(24%);
-                transform: translateY(24%); }
+    .s-offers__poster-img {
+      height: 16rem;
+      -webkit-transform: translateY(24%);
+          -ms-transform: translateY(24%);
+              transform: translateY(24%); }
     .s-offers__poster-info {
       margin-top: 1.5rem;
       padding: 1rem;
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 0 10%;
-          -ms-flex: 1 0 10%;
-              flex: 1 0 10%;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1200,13 +1186,13 @@ img {
           -ms-flex-direction: column;
               flex-direction: column; }
     .s-offers__poster-title {
-      font-size: 1.4em;
+      font-size: 1.4rem;
       font-weight: 700;
       margin: 0.5em 0;
       margin-bottom: 0.1rem; }
     .s-offers__poster-cost {
-      font-size: 1.4em;
-      margin: 0.1em 0; }
+      font-size: 1.4rem;
+      margin: 0.4em 0 0.8em; }
     .s-offers__poster-description {
       font-size: 1.4rem;
       max-width: 17em;
@@ -1230,11 +1216,11 @@ img {
             -ms-flex: 1 0 14%;
                 flex: 1 0 14%;
         height: 25rem; }
-        .s-offers__poster-product-img {
-          height: 22rem;
-          -webkit-transform: translateY(29%);
-              -ms-transform: translateY(29%);
-                  transform: translateY(29%); }
+      .s-offers__poster-img {
+        height: 22rem;
+        -webkit-transform: translateY(29%);
+            -ms-transform: translateY(29%);
+                transform: translateY(29%); }
       .s-offers__poster-info {
         padding-left: 2rem;
         -webkit-box-flex: 1;
@@ -1243,13 +1229,6 @@ img {
                 flex: 1 0 10%;
         margin-top: 0;
         display: block; }
-      .s-offers__poster-title {
-        font-size: 1.4em;
-        font-weight: 700;
-        margin: 0.5em 0; }
-      .s-offers__poster-cost {
-        font-size: 1.4em;
-        margin: 0.5em 0; }
       .s-offers__poster-description {
         font-size: 1.4rem;
         max-width: 17em;
