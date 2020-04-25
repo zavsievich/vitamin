@@ -96,7 +96,11 @@
                name="search" placeholder="Your email">
         <button class="footer__search-btn" type="submit">{{ args.btn }}</button>
     </form>
-    <p class="footer__text">{{ args.text }}</p>
+    <div class="footer__description">
+        <div class="el-wysiwg">
+            <p>{{ args.text }}</p>
+        </div>
+    </div>
     <ul class="footer__nav-list">
         {% for item in args.nav %}
             <li class="footer__nav-item">

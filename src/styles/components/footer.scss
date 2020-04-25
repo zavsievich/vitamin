@@ -59,11 +59,10 @@
     }
   }
 
-  &__text {
-    line-height: 1.375;
+  &__description {
     color: $c-text-grey;
     max-width: 23em;
-    margin-bottom: 1.5em;
+    font-size: 1rem;
   }
 
   &__nav {

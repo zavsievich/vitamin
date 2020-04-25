@@ -47,9 +47,9 @@
             <div class="s-product__carousel js-product-carousel">
                 {% for item in args.info %}
                     <article class="s-product__slide">
-                        <div class="s-product__slide-description">
+                        <div class="s-product__description">
+                            <h3 class="s-product__description-title">{{ item.title }}</h3>
                             <div class="el-wysiwg">
-                                <h3>{{ item.title }}</h3>
                                 <p>{{ item.text }}</p>
                             </div>
                         </div>
