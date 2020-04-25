@@ -53,9 +53,12 @@
                                 <p>{{ item.text }}</p>
                             </div>
                         </div>
-                        {#                    <div class="s-product__slide-img-wrap">#}
-                        <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-product__slide-img">
-                        {#                    </div>#}
+                        <div class="s-product__picture">
+                            <div class="s-product__picture-wrap">
+                                <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-product__picture-img">
+                            </div>
+                        </div>
+
                     </article>
                 {% endfor %}
             </div>
