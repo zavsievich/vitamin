@@ -3,7 +3,7 @@
 
   &__wrap {
     padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
   }
 
   &__heading {
@@ -77,6 +77,11 @@
   }
 
   @include media-breakpoint-up(lg) {
+
+    &__wrap {
+      padding-bottom: 8rem;
+    }
+
     &__poster {
       flex-direction: row;
 
@@ -111,7 +116,7 @@
       &-description {
         font-size: 1.4rem;
         max-width: 17em;
-        margin: 0.5em 0 3rem;
+        margin: 0.5em 0 2rem;
         line-height: 1.7;
       }
     }

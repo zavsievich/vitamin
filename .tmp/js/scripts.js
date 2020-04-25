@@ -42,17 +42,6 @@ menuWrap();
 
 function sliders() {
   function productSlider() {
-    /*window.addEventListener("resize", function () {
-        if (window.innerWidth <= 900) {
-            $('.js-product-carousel').slick('unslick');
-        } else {
-            $('.js-product-carousel').slick({
-                arrows: false,
-                dots: true,
-                appendDots: $('.js-product-dots'),
-            });
-        }
-    });*/
     var productCarousel = document.querySelector('.js-product-carousel');
     window.addEventListener('resize', checkWidthAndInitializeSlider);
 

@@ -35,7 +35,10 @@
                     </svg>
                 </div>
                 <h2 class="s-advantages__content-title">{{ item.title }}</h2>
-                <p class="s-advantages__content-text">{{ item.text }}</p>
+                <div class="el-wysiwg">
+                    <p>{{ item.text }}</p>
+                </div>
+                {#                <p class="s-advantages__content-text">{{ item.text }}</p>#}
             </li>
         {% endfor %}
     </ul>

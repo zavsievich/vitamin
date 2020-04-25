@@ -38,30 +38,34 @@
     } %}
 {% endif %}
 <section class="s-product">
-    <div class="s-product__wrap">
-        {% include "../components/heading.twig" with {
-            title : 'Too much copy supplied',
-            subTitle : 'Needs to be 2 lineas max',
-        } %}
-        <div class="s-product__carousel js-product-carousel">
-            {% for item in args.info %}
-                <article class="s-product__slide">
-                    <div class="el-wysiwg">
-                        <h3>{{ item.title }}</h3>
-                        <p>{{ item.text }}</p>
-                    </div>
-{#                    <div class="s-product__slide-img-wrap">#}
+    <div class="s-product__content-wrap">
+        <div class="s-product__wrap">
+            {% include "../components/heading.twig" with {
+                title : 'Too much copy supplied',
+                subTitle : 'Needs to be 2 lineas max',
+            } %}
+            <div class="s-product__carousel js-product-carousel">
+                {% for item in args.info %}
+                    <article class="s-product__slide">
+                        <div class="s-product__slide-description">
+                            <div class="el-wysiwg">
+                                <h3>{{ item.title }}</h3>
+                                <p>{{ item.text }}</p>
+                            </div>
+                        </div>
+                        {#                    <div class="s-product__slide-img-wrap">#}
                         <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-product__slide-img">
-{#                    </div>#}
-                </article>
-            {% endfor %}
+                        {#                    </div>#}
+                    </article>
+                {% endfor %}
+            </div>
+            <div class="s-product__btn-wrap js-product-dots">
+                <button class="s-product__btn js-product-dot"></button>
+            </div>
         </div>
-        <div class="s-product__btn-wrap js-product-dots">
-            <button class="s-product__btn js-product-dot"></button>
-        </div>
+        {% include "../components/button.twig" with {
+            content : 'View skin glow',
+            link: '#'
+        } %}
     </div>
-    {% include "../components/button.twig" with {
-        content : 'View skin glow',
-        link: '#'
-    } %}
 </section>

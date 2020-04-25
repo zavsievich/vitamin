@@ -18,7 +18,11 @@
             <div class="s-offers__poster-info">
                 <h3 class="s-offers__poster-title">{{ args.posterInfoTitle }}</h3>
                 <p class="s-offers__poster-cost">{{ args.posterInfoCost }}</p>
-                <p class="s-offers__poster-description">{{ args.posterInfoDescr }}</p>
+                <div class="s-offers__poster-description">
+                    <div class="el-wysiwg">
+                        <p>{{ args.posterInfoDescr }}</p>
+                    </div>
+                </div>
                 {% include "../components/button.twig" with {
                     content : 'View detalis',
                     link : '#',
