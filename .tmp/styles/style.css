@@ -1384,11 +1384,11 @@ img {
         -ms-flex-align: center;
             align-items: center; }
   .s-reviews__content-name {
-    font-size: 1.4em;
-    padding-bottom: .6em; }
+    font-size: 1.4rem;
+    padding-bottom: 0.6em; }
   .s-reviews__content-assessment {
-    font-size: 1.4em;
-    padding-bottom: .6em; }
+    font-size: 1.4rem;
+    padding-bottom: 0.6em; }
   .s-reviews__content-assessment[data-filled="1"] .s-reviews__content-star:nth-child(1) {
     color: #ed8702; }
   .s-reviews__content-assessment[data-filled="2"] .s-reviews__content-star:nth-child(1),
