@@ -12,47 +12,47 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 3rem;
+  }
 
-    &-product {
-      display: flex;
-      justify-content: center;
-      height: 17rem;
-      border-radius: 0.8rem;
-      background: $c-pink-gradintTitle;
-      width: 100%;
-      margin: 0;
-    }
+  &__product {
+    display: flex;
+    justify-content: center;
+    height: 17rem;
+    border-radius: 0.8rem;
+    background: $c-pink-gradintTitle;
+    width: 100%;
+    margin: 0;
+  }
 
-    &-img {
-      height: 16rem;
-      transform: translateY(24%);
-    }
+  &__img {
+    height: 16rem;
+    transform: translateY(24%);
+  }
 
-    &-info {
-      margin-top: 1.5rem;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-    }
+  &__info {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
 
-    &-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin: 0.5em 0;
-      margin-bottom: 0.1rem;
-    }
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0.5em 0;
+    margin-bottom: 0.1rem;
+  }
 
-    &-cost {
-      font-size: 1.4rem;
-      margin: 0.4em 0 0.8em;
+  &__cost {
+    font-size: 1.4rem;
+    margin: 0.4em 0 0.8em;
 
-    }
+  }
 
-    &-description {
-      font-size: 1.4rem;
-      max-width: 17em;
-      margin: 0.5em 0 2rem;
-    }
+  &__description {
+    font-size: 1.4rem;
+    max-width: 17em;
+    margin: 0.5em 0 2rem;
   }
 
   &__btn {
@@ -67,30 +67,30 @@
 
     &__poster {
       flex-direction: row;
+    }
 
-      &-product {
-        flex: 1 0 14%;
-        height: 25rem;
-      }
+    &__product {
+      flex: 1 0 14%;
+      height: 25rem;
+    }
 
-      &-img {
-        height: 22rem;
-        transform: translateY(29%);
-      }
+    &__img {
+      height: 22rem;
+      transform: translateY(29%);
+    }
 
-      &-info {
-        padding-left: 2rem;
-        flex: 1 0 10%;
-        margin-top: 0;
-        display: block;
-      }
+    &__info {
+      padding-left: 2rem;
+      flex: 1 0 10%;
+      margin-top: 0;
+      display: block;
+    }
 
-      &-description {
-        font-size: 1.4rem;
-        max-width: 17em;
-        margin: 0.5em 0 2rem;
-        line-height: 1.7;
-      }
+    &__description {
+      font-size: 1.4rem;
+      max-width: 17em;
+      margin: 0.5em 0 2rem;
+      line-height: 1.7;
     }
 
   }

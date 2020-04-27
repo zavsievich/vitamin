@@ -12,16 +12,14 @@
             subTitle : 'Needs to be 2 lines max',
         } %}
         <div class="s-offers__poster container">
-            <div class="s-offers__poster-product">
-                <img src="images/cream.png" alt="cream" class="s-offers__poster-img">
+            <div class="s-offers__product">
+                <img src="images/cream.png" alt="cream" class="s-offers__img">
             </div>
-            <div class="s-offers__poster-info">
-                <h3 class="s-offers__poster-title">{{ args.posterInfoTitle }}</h3>
-                <p class="s-offers__poster-cost">{{ args.posterInfoCost }}</p>
-                <div class="s-offers__poster-description">
-                    <div class="el-wysiwg">
-                        <p>{{ args.posterInfoDescr }}</p>
-                    </div>
+            <div class="s-offers__info">
+                <h3 class="s-offers__title">{{ args.posterInfoTitle }}</h3>
+                <p class="s-offers__cost">{{ args.posterInfoCost }}</p>
+                <div class="s-offers__description el-wysiwyg">
+                    <p>{{ args.posterInfoDescr }}</p>
                 </div>
                 {% include "../components/button.twig" with {
                     content : 'View detalis',
