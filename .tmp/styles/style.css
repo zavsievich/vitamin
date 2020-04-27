@@ -1707,21 +1707,21 @@ img {
       .s-article__item-wrap::after {
         content: "";
         position: absolute;
-        background-color: black;
+        background-color: #000000;
         opacity: 0.5;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
         -webkit-border-radius: 0.5rem;
-                border-radius: 0.5rem; }
+                border-radius: 0.5rem;
+        z-index: -1; }
     .s-article__item-title {
       font-size: 1.25rem;
       color: #FFFFFF;
       max-width: 9em;
       text-align: center;
-      margin: 1em;
-      z-index: 2; }
+      margin: 1em; }
     .s-article__item-link {
       color: #FFFFFF;
       outline: none;
@@ -1733,8 +1733,7 @@ img {
         bottom: 0;
         right: 0;
         left: 0;
-        cursor: pointer;
-        z-index: 2; }
+        cursor: pointer; }
     .s-article__item:focus-within, .s-article__item:hover {
       -webkit-box-shadow: 0 0 0 0.2rem #FF1F9E;
               box-shadow: 0 0 0 0.2rem #FF1F9E; }
@@ -1742,8 +1741,7 @@ img {
       text-decoration: none; }
     .s-article__item-sub {
       font-size: 1rem;
-      color: #FFFFFF;
-      z-index: 2; }
+      color: #FFFFFF; }
   @media screen and (min-width: 650px) {
     .s-article {
       padding: 3rem 1.25rem;
