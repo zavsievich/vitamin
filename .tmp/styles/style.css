@@ -508,7 +508,7 @@ html, body {
 body.is-active {
   overflow: hidden; }
 
-.container {
+.container, .s-offers__container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px; }
@@ -1153,7 +1153,7 @@ img {
   .s-offers__wrap {
     padding-top: 3rem;
     padding-bottom: 2rem; }
-  .s-offers__poster {
+  .s-offers__container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1225,7 +1225,7 @@ img {
   @media screen and (min-width: 900px) {
     .s-offers__wrap {
       padding-bottom: 8rem; }
-    .s-offers__poster {
+    .s-offers__container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;

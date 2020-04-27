@@ -6,7 +6,9 @@
     padding-bottom: 2rem;
   }
 
-  &__poster {
+  &__container {
+    @extend .container;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +67,7 @@
       padding-bottom: 8rem;
     }
 
-    &__poster {
+    &__container {
       flex-direction: row;
     }
 
