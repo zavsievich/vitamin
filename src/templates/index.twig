@@ -1,7 +1,9 @@
 {% extends "./base.twig" %}
 
 {% block header %}
-    {% include 'components/header.twig' %}
+    {% include 'components/header.twig' with {
+        state : 'is-active',
+    } %}
 {% endblock %}
 
 {% block content %}

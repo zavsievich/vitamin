@@ -7,11 +7,9 @@ function menuWrap() {
   var objRef = document.body;
   var activeClass = 'is-active';
 
-  function headerFix() {
+  function headerChange() {
     window.onscroll = function showHeader() {
-      if (header.classList.contains('no-change')) {
-        header.classList.add('activeClass');
-      } else if (window.pageYOffset > 50 && !menuList.classList.contains(activeClass)) {
+      if (!menuList.classList.contains(activeClass) && window.pageYOffset < 50) {
         header.classList.add(activeClass);
       } else {
         header.classList.remove(activeClass);
@@ -19,7 +17,7 @@ function menuWrap() {
     };
   }
 
-  headerFix();
+  headerChange();
 
   function openMenu() {
     btnMenu.addEventListener('click', toggleMenu);
@@ -31,8 +29,8 @@ function menuWrap() {
 
       if (header.classList.contains(activeClass)) {
         header.classList.remove(activeClass);
-      } else if (window.pageYOffset > 50) {
-        header.classList.add(activeClass);
+      } else {
+        header.classList.toggle(activeClass);
       }
     }
   }
