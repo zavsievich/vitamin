@@ -1,0 +1,38 @@
+.s-magazine {
+  background-position: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1.25rem;
+  justify-content: flex-end;
+  min-height: 472px;
+
+  &__content {
+    &-wrap {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+
+  .c-heading--magazine {
+    color: $c-white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(md) {
+    min-height: 540px;
+    justify-content: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 900px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    min-height: 1034px;
+  }
+}

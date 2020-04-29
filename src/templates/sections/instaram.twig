@@ -1,0 +1,43 @@
+{% if not args %}
+    {% set args = {
+        title : 'Follow us on instagram',
+        text : 'Show us your results #Vitami',
+        img :
+        [
+            {
+                imgUrl : 'images/runner.jpg',
+                imgAlt : 'runner',
+                imgLink : '#',
+            },
+            {
+                imgUrl : 'images/yoga.jpg',
+                imgAlt : 'yoga',
+                imgLink : '#',
+            },
+            {
+                imgUrl : 'images/fitness.jpg',
+                imgAlt : 'fitness',
+                imgLink : '#',
+            },
+            {
+                imgUrl : 'images/bike.jpg',
+                imgAlt : 'bike',
+                imgLink : '#',
+            },
+        ]
+
+    } %}
+{% endif %}
+<section class="s-instagram">
+    {% include "../components/heading.twig" with {
+        title : 'Follow us on instagram',
+        subTitle : 'Show us your results #Vitami',
+    } %}
+    <div class="s-instagram__img-wrap">
+        {% for item in args.img %}
+            <a href="{{ item.imgLink }}" class="s-instagram__img-link">
+                <img src="{{ item.imgUrl }}" alt="{{ item/imgAlt }}" class="s-instagram__img">
+            </a>
+        {% endfor %}
+    </div>
+</section>

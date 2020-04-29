@@ -1,3 +1,112 @@
+{% if not args %}
+    {% set args = {
+        nav : [
+            {
+                title : 'Skin glow',
+                titleLink : '#',
+            },
+            {
+                title : 'FAQs',
+                titleLink : '#',
+            },
+            {
+                title : 'Blog',
+                titleLink : '#',
+            },
+            {
+                title : 'Contact',
+                titleLink : '#',
+            },
+        ],
+        headerLogoAlt : 'Vitami',
+        logoLink : '/',
+        basketTitle : 'Basket',
+    } %}
+{% endif %}
 <header class="header">
-    Header
+    <nav class="header__menu js-menu">
+        <ul class="header__menu-list">
+            {% for item in args.nav %}
+                <li class="header__menu-item">
+                    <a href="{{ item.titleLink }}"
+                       class="header__menu-link">{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% include 'components/social.twig' with
+            {
+                communication :
+                [
+                    {
+                        icon : 'facebook',
+                        iconLink : '#',
+
+                        descr : 'facebook',
+                    },
+                    {
+                        icon : 'instagram',
+                        iconLink : '#',
+                        descr : 'instagram',
+                    },
+                    {
+                        icon : 'twitter',
+                        iconLink : '#',
+                        descr : 'twitter',
+                    },
+
+                ]
+            } %}
+    </nav>
+    <div class="header__wrap js-header">
+        <div class="header__btn-wrap">
+            <button class="header__btn js-toggle">
+                <span class="header__btn-lines">Menu</span>
+            </button>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                {% for item in args.nav %}
+                    <li class="header__nav-item">
+                        <a href="{{ item.titleLink }}"
+                           class="header__nav-link">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <a href="{{ args.logoLink }}" class="header__logo">
+            <svg width="235" height="73" viewBox="0 0 235 73" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M212.406 70.6774H223.596V24.0664H212.406V70.6774Z"
+                      fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M209.095 70.6774V43.7554C209.095 29.7884 202.533 22.9734 190.249 22.9734C183.687 22.9734 179.059 25.1614 175.274 30.2084C172.076 25.1614 167.953 22.9734 161.559 22.9734C156.603 22.9734 153.373 24.2184 150.37 27.3944V24.0664H149.444H139.18V36.3334V37.3704L135.084 42.0494L130.42 47.3734L122.632 56.2644C120.41 58.8014 116.923 61.1984 112.789 61.5324C112.236 61.5774 111.677 61.6314 111.109 61.6314C103.234 61.6314 96.8507 55.2474 96.8507 47.3734C96.8507 39.4994 103.234 33.1154 111.109 33.1154C118.983 33.1154 125.366 39.4994 125.366 47.3734V47.3934V47.4124V47.4324V47.4524V47.4724C125.364 47.8644 125.343 48.2514 125.31 48.6344L125.366 48.5694L126.414 47.3734L132.877 39.9924L135.664 36.8174V24.0664H125.891V27.7654C121.779 24.6594 116.659 22.8184 111.109 22.8184C97.5457 22.8184 86.5527 33.8114 86.5527 47.3734C86.5527 60.4994 96.8517 71.2184 109.807 71.8944C110.238 71.9164 110.672 71.9104 111.109 71.9284C116.579 72.1484 122.896 69.7434 127.692 64.2794L136.88 53.8094L136.891 53.9594L139.18 51.3514L149.127 40.0174L151.468 37.3504C153.754 34.7404 155.894 33.2374 159.456 33.2374C165.345 33.2374 168.542 35.9304 168.542 45.1004V70.6774H179.733V47.7094C179.733 36.6034 182.93 33.2374 189.156 33.2374C194.372 33.2374 197.906 35.7614 197.906 45.1004V70.6774H209.095ZM126.083 70.6774H135.664V59.7624L126.083 70.6774ZM139.18 55.9184V70.6774H150.37V47.7094C150.37 45.9214 150.439 44.3344 150.581 42.9284L139.18 55.9184Z"
+                      fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M86.1566 34.247V24.066H79.4266V8.50195H68.2366V24.066H62.7676V34.247H68.2366V70.677H79.4266V34.247H86.1566Z"
+                      fill="currentColor"/>
+                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="1" width="235" height="71">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 71.942H234.355V1H0V71.942Z"
+                          fill="currentColor"/>
+                </mask>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M48.6953 70.6774H59.8853V24.0664H48.6953V70.6774Z"
+                      fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M46.442 24.0664H33.822L23.221 52.9564L12.451 24.0664H0L18.761 70.6774H27.68L46.442 24.0664Z"
+                      fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M201.811 3.26593C205.996 3.19593 210.203 4.75692 213.396 7.94992C216.588 11.1429 218.15 15.3489 218.08 19.5349C213.895 19.6049 209.688 18.0439 206.495 14.8509C203.301 11.6579 201.742 7.45092 201.811 3.26593Z"
+                      fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M234.353 2.26391C230.168 2.19491 225.961 3.75491 222.769 6.94791C219.576 10.1409 218.015 14.3479 218.084 18.5329C222.27 18.6029 226.477 17.0419 229.669 13.8489C232.863 10.6559 234.423 6.44991 234.353 2.26391Z"
+                      fill="currentColor"/>
+            </svg>
+        </a>
+        <div class="header__basket-wrap">
+            <button class="header__basket">
+                <p class="header__basket-title">{{ args.basketTitle }}</p>
+                <svg class="el-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 </header>

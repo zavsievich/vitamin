@@ -1,11 +1,17 @@
 // Colors
 $c-white: #FFFFFF;
 $c-black: #000000;
-$c-gray: #B8B8B8;
+$c-gold: #ed8702;
+$c-gray: #F6F6F6;
+$c-blue: #00d6ff;
+$c-gray-btnSlidePassive: #DEDEDE;
+$c-btnReviewsSlider: #F1F1F1;
+$c-btnReviewsSlider-active: linear-gradient(130.38deg, #D369D6 7.15%, #EB0A3C 94.53%);
+$c-btnSearch:linear-gradient(130.38deg, #D369D6 7.15%, #EB0A3C 94.53%);
 
-$c-brand: #E51E25;
+$c-brand: #FF1F9E;;
 $c-brand-light: #FF6D72;
-$c-brand-focus: #D1282E;
+$c-brand-focus: #a02b78;
 
 $c-accent: #FAAD1C;
 $c-accent-light: #FFC85F;
@@ -15,11 +21,19 @@ $c-accent-border: #fac863;
 $c-text: #212B36;
 $c-text-accent: #637381;
 $c-text-light: #787993;
+$c-text-grey: #464646;
 
 $c-background: #F6F6F6;
 $c-background-dark: #47433b;
+$c-pink-gradintTitle: linear-gradient(146.81deg, #C6489A 20.71%, #91206A 91.21%);
+$c-pink-gradient: linear-gradient(167.93deg, #D369D6 7.15%, #EB0A3C 91.07%);
+$c-pink-gradientHover: linear-gradient(-20.07deg, #D369D6 7.15%, #EB0A3C 50.07%);
+$c-pink-gradient :  linear-gradient(8.99deg, #D369D6 6.71%, #EB0A3C 94.09%);
+$c-color-btnSlideActive: linear-gradient(169.67deg, #D369D6 7.15%, #EB0A3C 94.53%);
+$c-color-star: linear-gradient(130.7deg, #F0B200 7.15%, #EB6204 94.53%);
 
 $c-shadow: #25265E;
+$c-shadow-img:  0 14px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 $c-border: #D8D8D8;
 $c-border-accent: #E3E3E3;
 $c-line: #DFDFDF;

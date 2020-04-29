@@ -1,0 +1,69 @@
+{% if not args %}
+    {% set args = {
+        info :[
+            {
+                title : 'Marine Colagen',
+                text : 'This fibrous protein is extracted from fish, cod and salmon as they have the
+                 best quality! we’ve made sure it only comes from those fish. It has antioxidant properties
+                 and is used in skin-care products to prevent or even repair the damage of environmental factors,
+                 as well as damage associated with the bodies built in the ageing process. So let’s say you want
+                 to stay young well, we wouldnt advise chasing salmon up and down the rivers of Scotland. But we
+                 would definitely try to take Vitami Skin Glow every morning and watch the magic happening!',
+                imgUrl : 'images/grass.jpg',
+                alt : 'grass',
+            },
+            {
+                title : 'Marine Colagen',
+                text : 'This fibrous protein is extracted from fish, cod and salmon as they have the
+                 best quality! we’ve made sure it only comes from those fish. It has antioxidant properties
+                 and is used in skin-care products to prevent or even repair the damage of environmental factors,
+                 as well as damage associated with the bodies built in the ageing process. So let’s say you want
+                 to stay young well, we wouldnt advise chasing salmon up and down the rivers of Scotland.',
+                imgUrl : 'images/grass.jpg',
+                alt : 'grass',
+            },
+            {
+                title : 'Marine Colagen',
+                text : 'This fibrous protein is extracted from fish, cod and salmon as they have the
+                 best quality! we’ve made sure it only comes from those fish. But we
+                 would definitely try to take Vitami Skin Glow every morning and watch the magic happening!',
+                imgUrl : 'images/grass.jpg',
+                alt : 'grass',
+            },
+        ]
+    } %}
+{% endif %}
+<section class="s-product">
+    <div class="s-product__content-wrap">
+        <div class="s-product__wrap">
+            {% include "../components/heading.twig" with {
+                title : 'Too much copy supplied',
+                subTitle : 'Needs to be 2 lineas max',
+            } %}
+            <div class="s-product__carousel js-product-carousel">
+                {% for item in args.info %}
+                    <article class="s-product__slide">
+                        <div class="s-product__description">
+                            <h3 class="s-product__description-title">{{ item.title }}</h3>
+                            <div class="el-wysiwyg">
+                                <p>{{ item.text }}</p>
+                            </div>
+                        </div>
+                        <div class="s-product__picture">
+                            <div class="s-product__picture-wrap">
+                                <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-product__picture-img">
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+            <div class="s-product__btn-wrap js-product-dots">
+                <button class="s-product__btn js-product-dot"></button>
+            </div>
+        </div>
+        {% include "../components/button.twig" with {
+            content : 'View skin glow',
+            link: '#'
+        } %}
+    </div>
+</section>

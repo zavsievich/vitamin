@@ -1,0 +1,100 @@
+.s-reviews {
+  text-align: center;
+  padding: 6rem 1.25rem 8rem;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  &__content {
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-name {
+      font-size: 1.4rem;
+      padding-bottom: 0.6em;
+    }
+
+    &-assessment {
+      font-size: 1.4rem;
+      padding-bottom: 0.6em;
+    }
+
+    &-assessment[data-filled="1"] .s-reviews__content-star:nth-child(1) {
+      color: $c-gold;
+    }
+
+    &-assessment[data-filled="2"] .s-reviews__content-star:nth-child(1),
+    &-assessment[data-filled="2"] .s-reviews__content-star:nth-child(2) {
+      color: $c-gold;
+    }
+
+    &-assessment[data-filled="3"] .s-reviews__content-star:nth-child(1),
+    &-assessment[data-filled="3"] .s-reviews__content-star:nth-child(2),
+    &-assessment[data-filled="3"] .s-reviews__content-star:nth-child(3) {
+      color: $c-gold;
+    }
+
+    &-assessment[data-filled="4"] .s-reviews__content-star:nth-child(1),
+    &-assessment[data-filled="4"] .s-reviews__content-star:nth-child(2),
+    &-assessment[data-filled="4"] .s-reviews__content-star:nth-child(3),
+    &-assessment[data-filled="4"] .s-reviews__content-star:nth-child(4) {
+      color: $c-gold;
+    }
+
+    &-assessment[data-filled="5"] .s-reviews__content-star:nth-child(1),
+    &-assessment[data-filled="5"] .s-reviews__content-star:nth-child(2),
+    &-assessment[data-filled="5"] .s-reviews__content-star:nth-child(3),
+    &-assessment[data-filled="5"] .s-reviews__content-star:nth-child(4),
+    &-assessment[data-filled="5"] .s-reviews__content-star:nth-child(5) {
+      color: $c-gold;
+    }
+
+    &-star {
+      color: $c-gray;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &-review {
+      font-size: 1.75rem;
+      max-width: 24em;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+
+      .slick-dots {
+        display: flex;
+
+        li {
+          list-style-type: none;
+          font-size: 0;
+
+          button {
+            border: none;
+            border-radius: 50%;
+            height: 1rem;
+            width: 1rem;
+            background-color: $c-btnReviewsSlider;
+            margin: 0.5rem;
+          }
+        }
+      }
+
+      .slick-dots .slick-active button {
+        background: $c-btnReviewsSlider-active;
+      }
+    }
+  }
+}

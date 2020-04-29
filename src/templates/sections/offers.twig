@@ -1,0 +1,34 @@
+{% if not args %}
+    {% set args = {
+        posterInfoTitle : 'Skin glow',
+        posterInfoCost : '£12.00',
+        posterInfoDescr : 'Natural blend of vitamins and minerals, specifically designed to improve the innate firmness and health of your skin.',
+    } %}
+{% endif %}
+<section class="s-offers">
+    <div class="s-offers__wrap">
+        {% include "../components/heading.twig" with {
+            title : 'Too much copy supplied',
+            subTitle : 'Needs to be 2 lines max',
+        } %}
+        <div class="s-offers__poster container">
+            <div class="s-offers__poster-product">
+                <img src="images/cream.png" alt="cream" class="s-offers__poster-img">
+            </div>
+            <div class="s-offers__poster-info">
+                <h3 class="s-offers__poster-title">{{ args.posterInfoTitle }}</h3>
+                <p class="s-offers__poster-cost">{{ args.posterInfoCost }}</p>
+                <div class="s-offers__poster-description">
+                    <div class="el-wysiwg">
+                        <p>{{ args.posterInfoDescr }}</p>
+                    </div>
+                </div>
+                {% include "../components/button.twig" with {
+                    content : 'View detalis',
+                    link : '#',
+                    section : 's-offers',
+                } %}
+            </div>
+        </div>
+    </div>
+</section>

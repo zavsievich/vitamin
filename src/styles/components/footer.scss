@@ -1,0 +1,180 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  margin-top: 8rem;
+  padding: 0 20px;
+
+  .el-social--footer {
+    svg {
+      color: $c-black;
+    }
+  }
+
+  &__logo {
+    &-img {
+      height: 1.8rem;
+      transition: 0.3s;
+
+      &:hover, &:focus {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__search {
+    display: flex;
+    position: relative;
+    margin: 1.5em 0 1.5em;
+    width: 100%;
+
+    &-input {
+      width: 100%;
+      position: relative;
+      line-height: 1.18;
+      color: $c-black;
+      border-radius: 0.3em;
+      border: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      transition: 0.3s;
+      font-size: 1em;
+      background-color: $c-gray;
+      padding: 1em 0 1em 2em;
+    }
+
+    &-btn {
+      background: $c-btnSearch;
+      border-radius: 0 5px 5px 0;
+      border: none;
+      color: $c-white;
+      cursor: pointer;
+      transition: 0.3s;
+      padding-left: 1em;
+      padding-right: 1em;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: $c-pink-gradientHover;
+        opacity: 0;
+        transition: 1s;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:focus::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__description {
+    color: $c-text-grey;
+    max-width: 23em;
+    font-size: 1rem;
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      margin-top: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      list-style-type: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0.2em;
+    }
+
+    &-link {
+      padding: 1.2em;
+      font-size: 0.75rem;
+      margin: 0;
+      transition: 0.3s;
+      color: $c-black;
+      text-decoration: none;
+
+
+      &:hover, &:focus {
+        color: $c-brand-focus;
+      }
+    }
+  }
+
+  &__rules {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      list-style-type: none;
+    }
+
+    &-link {
+      font-size: 0.75rem;
+      color: $c-black;
+      text-decoration: none;
+      padding: 0.4rem 0.7em;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+
+    &__logo {
+      &-img {
+        height: 3rem;
+      }
+    }
+
+    &__search {
+      margin: 1.5em 0 1.5em;
+
+      &-btn {
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+    }
+
+    &__nav {
+      &-link {
+        font-size: 1.125rem;
+        padding: 1.2em;
+      }
+    }
+
+    &__rules {
+      &-list {
+        flex-direction: row;
+      }
+
+      &-item {
+        padding: 0.4em 0;
+      }
+
+      &-link {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+

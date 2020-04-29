@@ -1,0 +1,298 @@
+.header {
+  margin: 0 auto;
+  height: 80px;
+  font-size: 1rem;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    position: fixed;
+    z-index: 21;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &.is-active {
+      background-color: $c-white;
+      padding-bottom: 1rem;
+
+      .header__nav-link {
+        color: $c-black;
+
+        &:hover,&:focus {
+          color: $c-blue;
+        }
+      }
+
+      .header__logo {
+        color: $c-brand;
+
+        &:hover,&:focus {
+          color: $c-blue;
+        }
+      }
+
+      .header__basket {
+        color: $c-black;
+
+        &:hover,&:focus {
+          color: $c-blue;
+        }
+      }
+
+      .header__btn-lines,
+      .header__btn-lines::before,
+      .header__btn-lines::after {
+        background-color: $c-black;
+      }
+    }
+  }
+
+  .header__btn {
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    position: relative;
+    width: 33px;
+    height: 21px;
+    z-index: 21;
+
+    &.is-active .header__btn-lines {
+      background-color: transparent;
+    }
+
+    &.is-active .header__btn-lines::before {
+      top: 0;
+      transform: rotate(45deg);
+      height: 4px;
+    }
+
+    &.is-active .header__btn-lines::after {
+      top: 0;
+      transform: rotate(-45deg);
+      height: 4px;
+    }
+
+    &-wrap {
+      flex: 0 0 20%;
+    }
+
+    &-lines,
+    &-lines::after,
+    &-lines::before {
+      position: absolute;
+      width: 100%;
+      height:2px;
+      background-color: $c-white;
+      left: 0;
+      transition: 0.3s;
+      font-size: 0;
+      border-radius: 4px;
+    }
+
+    &-lines::before {
+      content: '';
+      top: -8px;
+    }
+
+    &-lines::after {
+      content: '';
+      top: 8px;
+    }
+  }
+
+  &__menu {
+    padding-top: 80px;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    background: $c-pink-gradient;
+    left: -100%;
+    align-items: center;
+    transition: 0.3s;
+
+    &.is-active {
+      left: 0;
+    }
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      margin: 1rem;
+    }
+
+    &-link {
+      color: $c-white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 0.5em 1em;
+      white-space: nowrap;
+      transition: 0.3s;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover, &:focus {
+        color: $c-brand-focus;
+      }
+    }
+  }
+
+  &__nav {
+    flex: 1 0 auto;
+    display: none;
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+    }
+
+    &-link {
+      color: $c-white;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 0.5em 1em;
+      white-space: nowrap;
+      transition: 0.3s;
+      text-decoration: none;
+
+      &:hover, &:focus {
+        color: $c-brand-focus;
+      }
+    }
+  }
+
+  &__logo {
+    z-index: 21;
+    color: $c-white;
+
+    svg {
+      height: 2.8rem;
+      width: 7rem;
+      transition: 0.3s;
+    }
+
+    &:hover, &:focus {
+      color: $c-brand;
+    }
+  }
+
+  &__basket {
+    transition: 0.3s;
+    z-index: 21;
+    background: none;
+    border: none;
+    color: $c-white;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding-right: 1.9rem;
+    height: 1.3rem;
+
+    &-wrap {
+      flex: 0 0 20%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid $c-white;
+      background: $c-pink-gradient;
+      height: 10px;
+      width: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+
+    &-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      display: none;
+    }
+
+    svg {
+      width: 1.2rem;
+      height: 1.1rem;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    &:hover, &:focus {
+      color: $c-brand-focus;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__logo {
+      &-img {
+        height: 2rem;
+      }
+    }
+
+    &__basket {
+      &-item {
+        display: block;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__nav {
+      display: flex;
+      flex: 0 0 40%;
+    }
+
+    &__logo {
+      &-img {
+        height: 3rem;
+      }
+    }
+
+    &__basket {
+      &-title {
+        display: block;
+      }
+
+      &-wrap {
+        flex: 0 0 40%;
+      }
+    }
+
+    &__btn {
+      &-wrap {
+        display: none;
+      }
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__nav {
+      &-link {
+        padding: 0.5em 1.5em;
+      }
+    }
+  }
+}
+
+

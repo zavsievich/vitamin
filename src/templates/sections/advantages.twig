@@ -1,0 +1,46 @@
+{% if not args %}
+    {% set args = {
+        capabilities :
+        [
+            {
+                icon : 'box',
+                title : 'Free UK Shipping',
+                text : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam dignissim elit non lacus egestas maximus.',
+            },
+            {
+                icon : 'sale',
+                title : 'Monthly discount codes',
+                text : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam dignissim elit non lacus egestas maximus.',
+            },
+            {
+                icon : 'row',
+                title : 'Subscription',
+                text : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam dignissim elit non lacus egestas maximus.',
+            },
+        ],
+    } %}
+{% endif %}
+
+<section class="s-advantages">
+    <ul class="s-advantages__list container">
+        {% for item in args.capabilities %}
+            <li class="s-advantages__content">
+                <div class="s-advantages__content-img">
+                    <svg class="el-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                             xlink:href="#{{ item.icon }}"></use>
+                    </svg>
+                </div>
+                <h2 class="s-advantages__content-title">{{ item.title }}</h2>
+                <div class="s-advantages__content-description">
+                    <div class="el-wysiwyg">
+                        <p>{{ item.text }}</p>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</section>

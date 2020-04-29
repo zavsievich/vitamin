@@ -1,0 +1,109 @@
+{% if not args %}
+    {% set args = {
+        reviews :
+        [
+            {
+                name : 'Lishay Matvey',
+                assessment :
+                [
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                ],
+                stars : '5',
+                text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna. “',
+            },
+            {
+                name : 'Lishay Matvey',
+                assessment :
+                [
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                ],
+                stars : '3',
+                text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna. “',
+            },
+            {
+                name : 'Lishay Matvey',
+                assessment :
+                [
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                    {
+                        star: 'star',
+                    },
+                ],
+                stars : '4',
+                text : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna.Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Etiam vitae lacus magna.  “',
+            },
+        ],
+    } %}
+{% endif %}
+<section class="s-reviews container">
+    {% include "../components/heading.twig" with {
+        title : 'People have sald',
+    } %}
+    <div class="s-reviews__carousel js-reviews-carousel">
+        {% for item in args.reviews %}
+            <div class="s-reviews__content">
+                <div class="s-reviews__content-wrap">
+                    <p class="s-reviews__content-name">{{ item.name }}</p>
+                    <div class="s-reviews__content-assessment" data-filled="{{ item.stars }}">
+                        {% for star in item.assessment %}
+                            <span class="s-reviews__content-star">
+                        <svg class="el-icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xlink:href="#{{ star.star }}"></use>
+                        </svg>
+                    </span>
+                        {% endfor %}
+                    </div>
+                    <div class="s-reviews__content-review">
+                        <div class="el-wysiwyg">
+                            <blockquote>{{ item.text }}</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="s-reviews__btn-wrap js-reviews-dots">
+        <button class="s-reviews__btn"></button>
+    </div>
+</section>

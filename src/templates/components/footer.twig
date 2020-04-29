@@ -1,3 +1,118 @@
+{% if not args %}
+    {% set args = {
+        logo : 'images/svg_sprite_inline/VitamiOrange.svg',
+        logoLink : '#',
+        communication :
+        [
+            {
+                icon : 'facebook',
+                iconLink : '#',
+
+                descr : 'facebook',
+            },
+            {
+                icon : 'instagram',
+                iconLink : '#',
+                descr : 'instagram',
+            },
+            {
+                icon : 'twitter',
+                iconLink : '#',
+                descr : 'twitter',
+            },
+
+        ],
+        btn : 'Join',
+        text : 'Join our mailing list to stay up to date with the vitami news and offers.',
+        nav :
+        [
+            {
+                title : 'Shop',
+                titleLink : '#',
+            },
+            {
+                title : 'Faqs',
+                titleLink : '#',
+            },
+            {
+                title : 'Blog',
+                titleLink : '#',
+            },
+            {
+                title : 'Contact',
+                titleLink : '#',
+            },
+        ],
+        rules :
+        [
+            {
+                title : 'Terms & Conditions',
+                titleLink : '#',
+            },
+            {
+                title : 'Privacy Policy',
+                titleLink : '#',
+            },
+            {
+                title : 'Cookie Policy',
+                titleLink : '#',
+            },
+
+        ],
+    } %}
+{% endif %}
 <footer class="footer">
-    Footer
+    <div class="footer__logo-wrap">
+        <a href="{{ args.logoLink }}" class="footer__logo">
+            <img class="footer__logo-img" src="{{ args.logo }}" alt="{{ args.logoAlt }}">
+        </a>
+    </div>
+    {% include 'components/social.twig' with
+        {
+            mod : 'footer',
+            communication :
+            [
+                {
+                    icon : 'facebook',
+                    iconLink : '#',
+
+                    descr : 'facebook',
+                },
+                {
+                    icon : 'instagram',
+                    iconLink : '#',
+                    descr : 'instagram',
+                },
+                {
+                    icon : 'twitter',
+                    iconLink : '#',
+                    descr : 'twitter',
+                },
+
+            ]
+        } %}
+    <form class="footer__search" method="get">
+        <input type="search" class="footer__search-input" id="search"
+               name="search" placeholder="Your email">
+        <button class="footer__search-btn" type="submit">{{ args.btn }}</button>
+    </form>
+    <div class="footer__description">
+        <div class="el-wysiwyg">
+            <p>{{ args.text }}</p>
+        </div>
+    </div>
+    <ul class="footer__nav-list">
+        {% for item in args.nav %}
+            <li class="footer__nav-item">
+                <a href="{{ item.titleLink }}" class="footer__nav-link">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <ul class="footer__rules-list">
+        {% for item in args.rules %}
+            <li class="footer__rules-item">
+                <a href="{{ item.titleLink }}" class="footer__rules-link">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
 </footer>

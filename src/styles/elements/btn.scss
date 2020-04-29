@@ -1,0 +1,49 @@
+.el-btn  {
+  background: $c-pink-gradient;
+  font-size: 1rem;
+  color: $c-white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 1.5em;
+  padding: 1em 3em;
+  border: none;
+  max-width: 261px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border-radius: 1.5em;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background: $c-pink-gradientHover;
+    z-index: -1;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:active::before {
+    opacity: 1;
+  }
+
+  &:focus::before {
+    opacity: 1;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 261px;
+  }
+}

@@ -1,0 +1,39 @@
+.s-instagram {
+  display: block;
+  padding: 0 1.25rem;
+
+  &__img {
+    &-wrap {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      overflow-x: auto;
+      margin: 0 auto;
+      white-space: nowrap;
+      max-width: 1368px;
+    }
+
+    &-link {
+      min-width: 318px;
+      margin: 1%;
+    }
+
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__img {
+      &-wrap {
+        justify-content: flex-start;
+        overflow: initial;
+        flex-wrap: wrap;
+      }
+
+      &-link {
+        margin: 0.5%;
+        width: 24%;
+        min-width: 277px;
+      }
+    }
+  }
+}

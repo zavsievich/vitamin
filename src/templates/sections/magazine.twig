@@ -1,0 +1,16 @@
+{% if not args %}
+    {% set args = {
+        title : 'Our health journal',
+    } %}
+{% endif %}
+<section class="s-magazine" style="background-image: url(images/magazineBG.jpg)">
+    <div class="s-magazine__content-wrap">
+        {% include "../components/heading.twig" with {
+            title : 'Our headlth journal',
+            mod :'magazine',
+        } %}
+        {% include "../components/button.twig" with {
+            content : 'Go to journal',
+        } %}
+    </div>
+</section>

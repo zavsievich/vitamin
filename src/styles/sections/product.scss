@@ -1,0 +1,142 @@
+.s-product {
+  background-color: $c-gray;
+  padding: 0 1.25rem 3rem;
+  text-align: center;
+
+  &__content {
+    &-wrap {
+      max-width: 1480px;
+      margin: 0 auto;
+      position: relative;
+    }
+  }
+
+  &__carousel {
+    max-width: 1480px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  &__wrap {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__slide {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0.5rem;
+    text-align: start;
+    min-width: 90%;
+  }
+
+  &__description {
+    font-size: 1.375rem;
+    padding: 11% 5% 11% 11%;
+    background-color: $c-white;
+    width: 95%;
+    flex: 0 0 45%;
+
+    &-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.8em;
+    }
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+    }
+
+    &-wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.8rem;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    &-wrap {
+      margin-right: 1rem;
+      display: none;
+      position: absolute;
+      right: 0;
+
+      .slick-dots {
+        display: flex;
+
+        li {
+          list-style-type: none;
+          font-size: 0;
+
+          button {
+            width: 3rem;
+            height: 0.7rem;
+            background: $c-gray-btnSlidePassive;
+            border-radius: 0.3rem;
+            border: none;
+            margin: 0.3rem;
+          }
+        }
+      }
+
+      .slick-dots .slick-active button {
+        background: $c-color-btnSlideActive;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+
+    &__carousel {
+      display: block;
+    }
+
+    &__slide {
+      flex-direction: row;
+      min-width: 0;
+    }
+
+    &__description {
+      padding: 5% 5%;
+    }
+
+    &__picture {
+      &::before {
+        padding-top: 72%;
+      }
+    }
+
+    &__btn {
+      &-wrap {
+        display: inline-block;
+      }
+    }
+  }
+}

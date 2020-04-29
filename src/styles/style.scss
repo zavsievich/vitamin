@@ -11,6 +11,9 @@
 // Mixins
 @import "__mixins";
 
+// Libraries
+@import "libraries/slick";
+
 // Base
 @import "base/reset";
 @import "base/layout";
@@ -18,11 +21,24 @@
 
 // Elements
 @import "elements/element";
+@import "elements/btn";
+@import "elements/wysiwyg";
+@import "elements/social";
 
 // Components
 @import "components/component";
+@import "components/header";
+@import "components/footer";
+@import "components/heading";
 
 // Sections
 @import "sections/section";
-
+@import "sections/banner";
+@import "sections/offers";
+@import "sections/product";
+@import "sections/reviews";
+@import "sections/advantages";
+@import "sections/magazine";
+@import "sections/article";
+@import "sections/instagram";
 @import "__utilities";
