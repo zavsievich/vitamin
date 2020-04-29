@@ -1,8 +1,12 @@
 .s-reviews {
-  text-align: center;
   padding: 6rem 1.25rem 8rem;
-  max-width: 1080px;
-  margin: 0 auto;
+
+  &__container {
+    @extend .container;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
   &__content {
     &-wrap {
