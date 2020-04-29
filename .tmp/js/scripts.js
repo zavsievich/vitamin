@@ -9,7 +9,9 @@ function menuWrap() {
 
   function headerFix() {
     window.onscroll = function showHeader() {
-      if (window.pageYOffset > 50 && !menuList.classList.contains(activeClass)) {
+      if (header.classList.contains('no-change')) {
+        header.classList.add('activeClass');
+      } else if (window.pageYOffset > 50 && !menuList.classList.contains(activeClass)) {
         header.classList.add(activeClass);
       } else {
         header.classList.remove(activeClass);

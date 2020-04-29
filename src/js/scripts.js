@@ -7,9 +7,13 @@ function menuWrap() {
 
     function headerFix() {
         window.onscroll = function showHeader() {
+            if (header.classList.contains('no-change')) {
 
-            if (window.pageYOffset > 50 && !(menuList.classList.contains(activeClass))) {
+                header.classList.add('activeClass');
+
+            } else if (window.pageYOffset > 50 && !(menuList.classList.contains(activeClass))) {
                 header.classList.add(activeClass);
+
             } else {
                 header.classList.remove(activeClass);
             }
@@ -39,6 +43,7 @@ function menuWrap() {
 }
 
 menuWrap();
+
 
 function sliders() {
     function productSlider() {
