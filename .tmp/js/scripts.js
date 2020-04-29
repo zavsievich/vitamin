@@ -6,10 +6,13 @@ function menuWrap() {
   var header = document.querySelector('.js-header');
   var objRef = document.body;
   var activeClass = 'is-active';
+  var notChange = 'not-change';
 
   function headerChange() {
     window.onscroll = function showHeader() {
-      if (!menuList.classList.contains(activeClass) && window.pageYOffset < 50) {
+      if (header.classList.contains(notChange)) {
+        header.classList.remove(activeClass);
+      } else if (!menuList.classList.contains(activeClass) && window.pageYOffset < 50) {
         header.classList.add(activeClass);
       } else {
         header.classList.remove(activeClass);
@@ -27,10 +30,12 @@ function menuWrap() {
       menuList.classList.toggle(activeClass);
       objRef.classList.toggle(activeClass);
 
-      if (header.classList.contains(activeClass)) {
-        header.classList.remove(activeClass);
-      } else {
+      if (header.classList.contains(notChange)) {
         header.classList.toggle(activeClass);
+      } else if (window.pageYOffset < 50 || !header.classList.contains(activeClass)) {
+        header.classList.add(activeClass);
+      } else {
+        header.classList.remove(activeClass);
       }
     }
   }
