@@ -1,24 +1,30 @@
+const menuList = document.querySelector('.js-menu');
+const btnMenu = document.querySelector('.js-toggle');
+const header = document.querySelector('.js-header');
+const objRef = document.body;
+const activeClass = 'is-active';
+const notChange = 'not-change';
+const windowDistance = 50;
+
+
 let menu = {
-    change : function headerChange() {
+    showHeader: window.onscroll = function showHeader() {
         const menuList = document.querySelector('.js-menu');
         const header = document.querySelector('.js-header');
         const activeClass = 'is-active';
         const notChange = 'not-change';
         const windowDistance = 50;
+        if (header.classList.contains(notChange)) {
+            header.classList.remove(activeClass);
+        } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
+            header.classList.add(activeClass);
 
-        window.onscroll = function showHeader() {
-            if (header.classList.contains(notChange)) {
-                header.classList.remove(activeClass);
-            } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
-                header.classList.add(activeClass);
-
-            } else {
-                header.classList.remove(activeClass);
-            }
-        };
+        } else {
+            header.classList.remove(activeClass);
+        }
     },
 
-    open : function openMenu() {
+    toggleMenu: btnMenu.addEventListener('click', function toggleMenu() {
         const menuList = document.querySelector('.js-menu');
         const btnMenu = document.querySelector('.js-toggle');
         const header = document.querySelector('.js-header');
@@ -27,26 +33,24 @@ let menu = {
         const notChange = 'not-change';
         const windowDistance = 50;
 
-        btnMenu.addEventListener('click', toggleMenu);
+        btnMenu.classList.toggle(activeClass);
+        menuList.classList.toggle(activeClass);
+        objRef.classList.toggle(activeClass);
+        console.log('click');
 
-        function toggleMenu() {
-            btnMenu.classList.toggle(activeClass);
-            menuList.classList.toggle(activeClass);
-            objRef.classList.toggle(activeClass);
-
-            if (header.classList.contains(notChange)) {
-                header.classList.toggle(activeClass)
-            } else if (window.pageYOffset < windowDistance || !(header.classList.contains(activeClass))) {
-                header.classList.add(activeClass);
-            } else {
-                header.classList.remove(activeClass);
-            }
+        if (header.classList.contains(notChange)) {
+            header.classList.toggle(activeClass)
+        } else if (window.pageYOffset < windowDistance || !(header.classList.contains(activeClass))) {
+            header.classList.add(activeClass);
+        } else {
+            header.classList.remove(activeClass);
         }
-    }
+    })
+
 };
 
-menu.change();
-menu.open();
+menu.showHeader();
+menu.toggleMenu();
 
 /*
 function menuWrap() {
