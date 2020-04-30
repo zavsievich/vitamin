@@ -16,7 +16,7 @@
     background: $c-white;
     padding-bottom: 1rem;
 
-    &.is-active{
+    &.header__wrap--transparent{
       background: none;
 
       .header__nav-link {
@@ -262,7 +262,7 @@
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
 
-        &.is-active {
+        &.header__wrap--transparent {
           border-top: 7px solid #df3785;
         }
       }

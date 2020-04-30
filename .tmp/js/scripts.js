@@ -1,38 +1,59 @@
 "use strict";
 
-var menuWrap = function menuWrap() {
-  var menuList = document.querySelector('.js-menu');
-  var btnMenu = document.querySelector('.js-toggle');
-  var header = document.querySelector('.js-header');
-  var objRef = document.body;
-  var activeClass = 'is-active';
-  var notChange = 'not-change';
-  var windowDistance = 50;
-  window.addEventListener('scroll', function showHeader() {
-    if (header.classList.contains(notChange)) {
-      header.classList.remove(activeClass);
-    } else if (!menuList.classList.contains(activeClass) && window.pageYOffset < windowDistance) {
-      header.classList.add(activeClass);
-    } else {
-      header.classList.remove(activeClass);
-    }
-  });
-  btnMenu.addEventListener('click', function toggleMenu() {
-    btnMenu.classList.toggle(activeClass);
-    menuList.classList.toggle(activeClass);
-    objRef.classList.toggle(activeClass);
+var _menu;
 
-    if (header.classList.contains(notChange)) {
-      header.classList.toggle(activeClass);
-    } else if (window.pageYOffset < windowDistance || !header.classList.contains(activeClass)) {
-      header.classList.add(activeClass);
-    } else {
-      header.classList.remove(activeClass);
-    }
-  });
-};
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-menuWrap();
+var menu = (_menu = {
+  menuList: document.querySelector('.js-menu'),
+  btnMenu: document.querySelector('.js-toggle'),
+  header: document.querySelector('.js-header'),
+  windowDistance: 50,
+  isTransparent: null,
+  init: function init() {
+    this.isTransparent = this.isTransparent();
+    this.showHeader();
+    this.toggleMenu();
+  },
+  showHeader: function showHeader() {
+    var _this = this;
+
+    window.addEventListener('scroll', function () {
+      _this.toggleMenuState();
+    });
+  },
+  toggleMenu: function toggleMenu() {
+    var _this2 = this;
+
+    this.btnMenu.addEventListener('click', function () {
+      _this2.btnMenu.classList.toggle('is-active');
+
+      _this2.menuList.classList.toggle('is-active');
+
+      document.body.classList.toggle('is-active');
+
+      if (document.body.classList.contains('is-active')) {
+        _this2.makeHeaderTransparent();
+      } else {
+        _this2.toggleMenuState();
+      }
+    });
+  },
+  toggleMenuState: function toggleMenuState() {
+    if (window.pageYOffset < this.windowDistance && this.isTransparent) {
+      this.makeHeaderTransparent();
+    } else {
+      this.makeHeaderSolid();
+    }
+  }
+}, _defineProperty(_menu, "isTransparent", function isTransparent() {
+  return this.header.classList.contains('header__wrap--transparent');
+}), _defineProperty(_menu, "makeHeaderSolid", function makeHeaderSolid() {
+  this.header.classList.remove('header__wrap--transparent');
+}), _defineProperty(_menu, "makeHeaderTransparent", function makeHeaderTransparent() {
+  this.header.classList.add('header__wrap--transparent');
+}), _menu);
+menu.init();
 
 var accordionWrap = function accordionWrap() {
   var activeClass = 'is-active';
