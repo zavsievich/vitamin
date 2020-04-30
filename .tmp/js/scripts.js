@@ -46,6 +46,21 @@ function menuWrap() {
 
 menuWrap();
 
+function accordeonWrap() {
+  var activeClass = 'is-active';
+  var accord = Array.prototype.slice.call(document.querySelectorAll('.js-accord'));
+  accord.forEach(function (item) {
+    item.addEventListener('click', function openContent() {
+      console.log('click');
+      var activeAccord = document.querySelector('.js-accord.' + activeClass);
+      activeAccord.classList.remove(activeClass);
+      item.classList.add(activeClass);
+    });
+  });
+}
+
+accordeonWrap();
+
 function sliders() {
   function productSlider() {
     var productCarousel = document.querySelector('.js-product-carousel');
