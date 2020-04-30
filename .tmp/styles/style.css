@@ -1841,7 +1841,7 @@ img {
       font-size: 1.5rem;
       margin-top: 1.5rem;
       margin-left: 2rem; }
-  .questions__accordeon-wrap {
+  .questions__accordion-wrap {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     margin-top: 2rem;
@@ -1855,7 +1855,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     list-style-type: none; }
-  .questions__accordeon-section {
+  .questions__accordion-section {
     border: none;
     background: none;
     -webkit-transition: 0.3s;
@@ -1863,15 +1863,15 @@ img {
     transition: 0.3s;
     margin: 0.5rem 0;
     background: #FFFFFF; }
-    .questions__accordeon-section.is-active .questions__accordeon-body {
+    .questions__accordion-section.is-active .questions__accordion-body {
       visibility: visible;
       opacity: 1;
       height: 230px; }
-    .questions__accordeon-section.is-active .questions__accordeon-icon {
+    .questions__accordion-section.is-active .questions__accordion-icon {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
-  .questions__accordeon-header {
+  .questions__accordion-header {
     position: relative;
     padding: 1.4rem 2rem 1.4rem 2rem;
     display: -webkit-box;
@@ -1886,12 +1886,12 @@ img {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .questions__accordeon-icon {
+  .questions__accordion-icon {
     color: #FFFFFF;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-  .questions__accordeon-btn {
+  .questions__accordion-btn {
     border: none;
     background: none;
     font-size: 0;
@@ -1902,10 +1902,10 @@ img {
     left: 0;
     width: 100%;
     height: 100%; }
-  .questions__accordeon-title {
+  .questions__accordion-title {
     font-size: 1.375rem;
     font-weight: 600; }
-  .questions__accordeon-body {
+  .questions__accordion-body {
     height: 0;
     visibility: hidden;
     opacity: 0;
@@ -1914,7 +1914,7 @@ img {
     transition: height 0.3s, visibility 0s, opacity 0.5s linear;
     font-size: 1.25rem;
     line-height: 1.5; }
-  .questions__accordeon-content {
+  .questions__accordion-content {
     margin: 0 0.5rem 1.5rem 2rem;
     max-width: 1060px; }
 

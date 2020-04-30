@@ -22,7 +22,7 @@
     }
   }
 
-  &__accordeon {
+  &__accordion {
     &-wrap {
       border-radius: 5px;
       margin-top: 2rem;
@@ -39,13 +39,13 @@
       background: $c-white;
 
       &.is-active {
-        .questions__accordeon-body {
+        .questions__accordion-body {
           visibility: visible;
           opacity: 1;
           height: 230px; //высоту задал только временно для анимации
         }
 
-        .questions__accordeon-icon {
+        .questions__accordion-icon {
           transform: rotate(180deg);
         }
       }

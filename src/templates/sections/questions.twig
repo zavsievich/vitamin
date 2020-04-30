@@ -2,7 +2,7 @@
     {% set args = {
         questionsTitle : 'FAQs',
         questionsTetx : 'The product:',
-        accordeon : [
+        accordion : [
             {
                 activeClass : 'is-active',
                 title : 'Is Vitami allergen free?',
@@ -76,13 +76,13 @@
     <div class="questions__container">
         <h2 class="questions__title">{{ args.questionsTitle }}</h2>
         <h3 class="questions__title-sub">{{ args.questionsTetx }}</h3>
-        <ul class="questions__accordeon-wrap">
-            {% for item in args.accordeon %}
-                <li class="questions__accordeon-section js-accord {{ item.activeClass }}">
-                    <div class="questions__accordeon-header">
-                        <button class="questions__accordeon-btn">open list</button>
-                        <h3 class="questions__accordeon-title">{{ item.title }}</h3>
-                        <div class="questions__accordeon-icon">
+        <ul class="questions__accordion-wrap">
+            {% for item in args.accordion %}
+                <li class="questions__accordion-section js-accord {{ item.activeClass }}">
+                    <div class="questions__accordion-header">
+                        <button class="questions__accordion-btn">open list</button>
+                        <h3 class="questions__accordion-title">{{ item.title }}</h3>
+                        <div class="questions__accordion-icon">
                             <svg width="22" height="10" viewBox="0 0 22 10" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 8L11 2L2 8" stroke="url(#paint0_linear)" stroke-width="3.5"
@@ -97,8 +97,8 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="questions__accordeon-body">
-                        <div class="questions__accordeon-content el-wysiwyg">
+                    <div class="questions__accordion-body">
+                        <div class="questions__accordion-content el-wysiwyg">
                             <p>{{ item.content }}</p>
                         </div>
                     </div>
