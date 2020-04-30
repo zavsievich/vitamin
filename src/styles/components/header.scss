@@ -258,6 +258,14 @@
     &__nav {
       display: flex;
       flex: 0 0 40%;
+      &-link {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        &.is-active {
+          border-top: 7px solid #df3785;
+        }
+      }
     }
 
     &__logo {
@@ -290,7 +298,8 @@
   @include media-breakpoint-up(xl) {
     &__nav {
       &-link {
-        padding: 0.5em 1.5em;
+        padding-right:1.5em;
+        padding-left: 1.5em;
       }
     }
   }

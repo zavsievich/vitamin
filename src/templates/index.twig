@@ -3,6 +3,24 @@
 {% block header %}
     {% include 'components/header.twig' with {
         state : 'is-active',
+        nav : [
+            {
+                title : 'Skin glow',
+                titleLink : '#',
+            },
+            {
+                title : 'FAQs',
+                titleLink : 'faqs.html',
+            },
+            {
+                title : 'Blog',
+                titleLink : '#',
+            },
+            {
+                title : 'Contact',
+                titleLink : '#',
+            },
+        ],
     } %}
 {% endblock %}
 

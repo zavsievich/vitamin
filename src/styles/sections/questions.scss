@@ -42,7 +42,7 @@
         .questions__accordeon-body {
           visibility: visible;
           opacity: 1;
-          max-height: 1000px;
+          height: 230px; //высоту задал только временно для анимации
         }
 
         .questions__accordeon-icon {
@@ -86,10 +86,10 @@
     }
 
     &-body {
-      max-height: 0;
+      height: 0;
       visibility: hidden;
       opacity: 0;
-      transition: visibility 0s, opacity 0.5s linear;
+      transition: height 0.3s, visibility 0s, opacity 0.5s linear;
       font-size: 1.25rem;
       line-height: 1.5;
     }

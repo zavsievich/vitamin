@@ -1,8 +1,27 @@
 {% extends "./base.twig" %}
 
 {% block header %}
-    {% include 'components/header.twig' with {
+    {% include 'components/header.twig'  with {
         state : 'not-change',
+        nav : [
+            {
+                title : 'Skin glow',
+                titleLink : '#',
+            },
+            {
+                title : 'FAQs',
+                titleLink : 'faqs.html',
+                activeLink : 'is-active',
+            },
+            {
+                title : 'Blog',
+                titleLink : '#',
+            },
+            {
+                title : 'Contact',
+                titleLink : '#',
+            },
+        ],
     } %}
 {% endblock %}
 

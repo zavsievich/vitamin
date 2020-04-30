@@ -1,23 +1,5 @@
 {% if not args %}
     {% set args = {
-        nav : [
-            {
-                title : 'Skin glow',
-                titleLink : '#',
-            },
-            {
-                title : 'FAQs',
-                titleLink : 'faqs.html',
-            },
-            {
-                title : 'Blog',
-                titleLink : '#',
-            },
-            {
-                title : 'Contact',
-                titleLink : '#',
-            },
-        ],
         headerLogoAlt : 'Vitami',
         logoLink : '/',
         basketTitle : 'Basket',
@@ -26,7 +8,7 @@
 <header class="header">
     <nav class="header__menu js-menu">
         <ul class="header__menu-list">
-            {% for item in args.nav %}
+            {% for item in nav %}
                 <li class="header__menu-item">
                     <a href="{{ item.titleLink }}"
                        class="header__menu-link">{{ item.title }}</a>
@@ -65,10 +47,10 @@
         </div>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                {% for item in args.nav %}
+                {% for item in nav %}
                     <li class="header__nav-item">
                         <a href="{{ item.titleLink }}"
-                           class="header__nav-link">{{ item.title }}</a>
+                           class="header__nav-link {{ item.activeLink }}">{{ item.title }}</a>
                     </li>
                 {% endfor %}
             </ul>
