@@ -71,7 +71,7 @@ const menu = {
 };
 */
 // Second version
-function menuWrap() {
+var menuWrap = function menuWrap() {
   var menuList = document.querySelector('.js-menu');
   var btnMenu = document.querySelector('.js-toggle');
   var header = document.querySelector('.js-header');
@@ -79,8 +79,7 @@ function menuWrap() {
   var activeClass = 'is-active';
   var notChange = 'not-change';
   var windowDistance = 50;
-
-  window.onscroll = function showHeader() {
+  window.addEventListener('scroll', function showHeader() {
     if (header.classList.contains(notChange)) {
       header.classList.remove(activeClass);
     } else if (!menuList.classList.contains(activeClass) && window.pageYOffset < windowDistance) {
@@ -88,8 +87,7 @@ function menuWrap() {
     } else {
       header.classList.remove(activeClass);
     }
-  };
-
+  });
   btnMenu.addEventListener('click', function toggleMenu() {
     btnMenu.classList.toggle(activeClass);
     menuList.classList.toggle(activeClass);
@@ -103,7 +101,7 @@ function menuWrap() {
       header.classList.remove(activeClass);
     }
   });
-}
+};
 
 menuWrap();
 /*

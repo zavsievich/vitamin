@@ -71,41 +71,41 @@ const menu = {
 
 
 // Second version
-function menuWrap() {
-   const menuList = document.querySelector('.js-menu');
-   const btnMenu = document.querySelector('.js-toggle');
-   const header = document.querySelector('.js-header');
-   const objRef = document.body;
-   const activeClass = 'is-active';
-   const notChange = 'not-change';
-   const windowDistance = 50;
+const menuWrap = function () {
+    const menuList = document.querySelector('.js-menu');
+    const btnMenu = document.querySelector('.js-toggle');
+    const header = document.querySelector('.js-header');
+    const objRef = document.body;
+    const activeClass = 'is-active';
+    const notChange = 'not-change';
+    const windowDistance = 50;
 
-   window.onscroll = function showHeader() {
-       if (header.classList.contains(notChange)) {
-           header.classList.remove(activeClass);
-       } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
-           header.classList.add(activeClass);
+    window.addEventListener('scroll', function showHeader() {
+        if (header.classList.contains(notChange)) {
+            header.classList.remove(activeClass);
+        } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
+            header.classList.add(activeClass);
 
-       } else {
-           header.classList.remove(activeClass);
-       }
-   };
+        } else {
+            header.classList.remove(activeClass);
+        }
+    });
 
 
-   btnMenu.addEventListener('click', function toggleMenu() {
-       btnMenu.classList.toggle(activeClass);
-       menuList.classList.toggle(activeClass);
-       objRef.classList.toggle(activeClass);
+    btnMenu.addEventListener('click', function toggleMenu() {
+        btnMenu.classList.toggle(activeClass);
+        menuList.classList.toggle(activeClass);
+        objRef.classList.toggle(activeClass);
 
-       if (header.classList.contains(notChange)) {
-           header.classList.toggle(activeClass)
-       } else if (window.pageYOffset < windowDistance || !(header.classList.contains(activeClass))) {
-           header.classList.add(activeClass);
-       } else {
-           header.classList.remove(activeClass);
-       }
-   });
-}
+        if (header.classList.contains(notChange)) {
+            header.classList.toggle(activeClass)
+        } else if (window.pageYOffset < windowDistance || !(header.classList.contains(activeClass))) {
+            header.classList.add(activeClass);
+        } else {
+            header.classList.remove(activeClass);
+        }
+    });
+};
 
 menuWrap();
 
