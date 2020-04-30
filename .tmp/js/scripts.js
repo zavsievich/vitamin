@@ -1,76 +1,5 @@
 "use strict";
 
-/*
-const menuList = document.querySelector('.js-menu');
-const btnMenu = document.querySelector('.js-toggle');
-const header = document.querySelector('.js-header');
-const objRef = document.body;
-const activeClass = 'is-active';
-const notChange = 'not-change';
-const windowDistance = 50;
-
-
- first version
-const menu = {
-    showHeader: window.onscroll = function showHeader() {
-        const menuList = document.querySelector('.js-menu');
-        const header = document.querySelector('.js-header');
-        const activeClass = 'is-active';
-        const notChange = 'not-change';
-        const windowDistance = 50;
-        if (header.classList.contains(notChange)) {
-            header.classList.remove(activeClass);
-        } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
-            header.classList.add(activeClass);
-
-        } else {
-            header.classList.remove(activeClass);
-        }
-    },
-    scroll: window.addEventListener('scroll', menu.showHeader),
-    showHeader: function () {
-        const menuList = document.querySelector('.js-menu');
-        const header = document.querySelector('.js-header');
-        const activeClass = 'is-active';
-        const notChange = 'not-change';
-        const windowDistance = 50;
-        if (header.classList.contains(notChange)) {
-            header.classList.remove(activeClass);
-        } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
-            header.classList.add(activeClass);
-
-        } else {
-            header.classList.remove(activeClass);
-        }
-    },
-
-    toggleMenu: btnMenu.addEventListener('click', function toggleMenu() {
-        const menuList = document.querySelector('.js-menu');
-        const btnMenu = document.querySelector('.js-toggle');
-        const header = document.querySelector('.js-header');
-        const objRef = document.body;
-        const activeClass = 'is-active';
-        const notChange = 'not-change';
-        const windowDistance = 50;
-
-        btnMenu.classList.toggle(activeClass);
-        menuList.classList.toggle(activeClass);
-        objRef.classList.toggle(activeClass);
-        console.log('click');
-        console.log(menu);
-
-        if (header.classList.contains(notChange)) {
-            header.classList.toggle(activeClass)
-        } else if (window.pageYOffset < windowDistance || !(header.classList.contains(activeClass))) {
-            header.classList.add(activeClass);
-        } else {
-            header.classList.remove(activeClass);
-        }
-    })
-
-};
-*/
-// Second version
 var menuWrap = function menuWrap() {
   var menuList = document.querySelector('.js-menu');
   var btnMenu = document.querySelector('.js-toggle');
@@ -104,59 +33,8 @@ var menuWrap = function menuWrap() {
 };
 
 menuWrap();
-/*
-third version
-function menuWrap() {
-    const menuList = document.querySelector('.js-menu');
-    const btnMenu = document.querySelector('.js-toggle');
-    const header = document.querySelector('.js-header');
-    const objRef = document.body;
-    const activeClass = 'is-active';
-    const notChange = 'not-change';
-    const windowDistance = 50;
 
-    function headerChange() {
-        window.onscroll = function showHeader() {
-            if (header.classList.contains(notChange)) {
-                header.classList.remove(activeClass);
-            } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
-                header.classList.add(activeClass);
-
-            } else {
-                header.classList.remove(activeClass);
-            }
-        };
-    }
-
-    headerChange();
-
-    function openMenu() {
-
-        btnMenu.addEventListener('click', toggleMenu);
-
-        function toggleMenu() {
-            btnMenu.classList.toggle(activeClass);
-            menuList.classList.toggle(activeClass);
-            objRef.classList.toggle(activeClass);
-
-            if (header.classList.contains(notChange)) {
-                header.classList.toggle(activeClass)
-            } else if (window.pageYOffset < windowDistance || !(header.classList.contains(activeClass))) {
-                header.classList.add(activeClass);
-            } else {
-                header.classList.remove(activeClass);
-            }
-        }
-    }
-
-    openMenu();
-
-}
-
-menuWrap();
-*/
-
-function accordionWrap() {
+var accordionWrap = function accordionWrap() {
   var activeClass = 'is-active';
   var accord = Array.prototype.slice.call(document.querySelectorAll('.js-accord'));
   accord.forEach(function (item) {
@@ -167,11 +45,11 @@ function accordionWrap() {
       item.classList.add(activeClass);
     });
   });
-}
+};
 
 accordionWrap();
 
-function sliders() {
+var sliders = function sliders() {
   function productSlider() {
     var productCarousel = document.querySelector('.js-product-carousel');
     window.addEventListener('resize', checkWidthAndInitializeSlider);
@@ -208,6 +86,6 @@ function sliders() {
   }
 
   reviewsSlider();
-}
+};
 
 sliders();

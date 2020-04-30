@@ -1866,7 +1866,7 @@ img {
     .questions__accordion-section.is-active .questions__accordion-body {
       visibility: visible;
       opacity: 1;
-      height: 230px; }
+      height: 100%; }
     .questions__accordion-section.is-active .questions__accordion-icon {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
@@ -1909,9 +1909,9 @@ img {
     height: 0;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: height 0.3s, visibility 0s, opacity 0.5s linear;
-    -o-transition: height 0.3s, visibility 0s, opacity 0.5s linear;
-    transition: height 0.3s, visibility 0s, opacity 0.5s linear;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    -o-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
     font-size: 1.25rem;
     line-height: 1.5; }
   .questions__accordion-content {
