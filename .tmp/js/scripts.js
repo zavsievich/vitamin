@@ -1,15 +1,13 @@
 "use strict";
 
-function menuWrap() {
-  var menuList = document.querySelector('.js-menu');
-  var btnMenu = document.querySelector('.js-toggle');
-  var header = document.querySelector('.js-header');
-  var objRef = document.body;
-  var activeClass = 'is-active';
-  var notChange = 'not-change';
-  var windowDistance = 50;
+var menu = {
+  change: function headerChange() {
+    var menuList = document.querySelector('.js-menu');
+    var header = document.querySelector('.js-header');
+    var activeClass = 'is-active';
+    var notChange = 'not-change';
+    var windowDistance = 50;
 
-  function headerChange() {
     window.onscroll = function showHeader() {
       if (header.classList.contains(notChange)) {
         header.classList.remove(activeClass);
@@ -19,11 +17,15 @@ function menuWrap() {
         header.classList.remove(activeClass);
       }
     };
-  }
-
-  headerChange();
-
-  function openMenu() {
+  },
+  open: function openMenu() {
+    var menuList = document.querySelector('.js-menu');
+    var btnMenu = document.querySelector('.js-toggle');
+    var header = document.querySelector('.js-header');
+    var objRef = document.body;
+    var activeClass = 'is-active';
+    var notChange = 'not-change';
+    var windowDistance = 50;
     btnMenu.addEventListener('click', toggleMenu);
 
     function toggleMenu() {
@@ -40,11 +42,59 @@ function menuWrap() {
       }
     }
   }
+};
+menu.change();
+menu.open();
+/*
+function menuWrap() {
+    const menuList = document.querySelector('.js-menu');
+    const btnMenu = document.querySelector('.js-toggle');
+    const header = document.querySelector('.js-header');
+    const objRef = document.body;
+    const activeClass = 'is-active';
+    const notChange = 'not-change';
+    const windowDistance = 50;
 
-  openMenu();
+    function headerChange() {
+        window.onscroll = function showHeader() {
+            if (header.classList.contains(notChange)) {
+                header.classList.remove(activeClass);
+            } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
+                header.classList.add(activeClass);
+
+            } else {
+                header.classList.remove(activeClass);
+            }
+        };
+    }
+
+    headerChange();
+
+    function openMenu() {
+
+        btnMenu.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            btnMenu.classList.toggle(activeClass);
+            menuList.classList.toggle(activeClass);
+            objRef.classList.toggle(activeClass);
+
+            if (header.classList.contains(notChange)) {
+                header.classList.toggle(activeClass)
+            } else if (window.pageYOffset < windowDistance || !(header.classList.contains(activeClass))) {
+                header.classList.add(activeClass);
+            } else {
+                header.classList.remove(activeClass);
+            }
+        }
+    }
+
+    openMenu();
+
 }
 
 menuWrap();
+*/
 
 function accordeonWrap() {
   var activeClass = 'is-active';

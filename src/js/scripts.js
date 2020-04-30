@@ -1,3 +1,54 @@
+let menu = {
+    change : function headerChange() {
+        const menuList = document.querySelector('.js-menu');
+        const header = document.querySelector('.js-header');
+        const activeClass = 'is-active';
+        const notChange = 'not-change';
+        const windowDistance = 50;
+
+        window.onscroll = function showHeader() {
+            if (header.classList.contains(notChange)) {
+                header.classList.remove(activeClass);
+            } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
+                header.classList.add(activeClass);
+
+            } else {
+                header.classList.remove(activeClass);
+            }
+        };
+    },
+
+    open : function openMenu() {
+        const menuList = document.querySelector('.js-menu');
+        const btnMenu = document.querySelector('.js-toggle');
+        const header = document.querySelector('.js-header');
+        const objRef = document.body;
+        const activeClass = 'is-active';
+        const notChange = 'not-change';
+        const windowDistance = 50;
+
+        btnMenu.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            btnMenu.classList.toggle(activeClass);
+            menuList.classList.toggle(activeClass);
+            objRef.classList.toggle(activeClass);
+
+            if (header.classList.contains(notChange)) {
+                header.classList.toggle(activeClass)
+            } else if (window.pageYOffset < windowDistance || !(header.classList.contains(activeClass))) {
+                header.classList.add(activeClass);
+            } else {
+                header.classList.remove(activeClass);
+            }
+        }
+    }
+};
+
+menu.change();
+menu.open();
+
+/*
 function menuWrap() {
     const menuList = document.querySelector('.js-menu');
     const btnMenu = document.querySelector('.js-toggle');
@@ -5,7 +56,6 @@ function menuWrap() {
     const objRef = document.body;
     const activeClass = 'is-active';
     const notChange = 'not-change';
-
     const windowDistance = 50;
 
     function headerChange() {
@@ -47,6 +97,7 @@ function menuWrap() {
 }
 
 menuWrap();
+*/
 
 
 function accordeonWrap() {
