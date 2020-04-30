@@ -6,11 +6,13 @@ function menuWrap() {
     const activeClass = 'is-active';
     const notChange = 'not-change';
 
+    const windowDistance = 50;
+
     function headerChange() {
         window.onscroll = function showHeader() {
             if (header.classList.contains(notChange)) {
                 header.classList.remove(activeClass);
-            } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < 50) {
+            } else if (!(menuList.classList.contains(activeClass)) && window.pageYOffset < windowDistance) {
                 header.classList.add(activeClass);
 
             } else {
@@ -32,7 +34,7 @@ function menuWrap() {
 
             if (header.classList.contains(notChange)) {
                 header.classList.toggle(activeClass)
-            } else if (window.pageYOffset < 50 || !(header.classList.contains(activeClass))) {
+            } else if (window.pageYOffset < windowDistance || !(header.classList.contains(activeClass))) {
                 header.classList.add(activeClass);
             } else {
                 header.classList.remove(activeClass);

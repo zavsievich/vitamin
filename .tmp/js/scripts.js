@@ -7,12 +7,13 @@ function menuWrap() {
   var objRef = document.body;
   var activeClass = 'is-active';
   var notChange = 'not-change';
+  var windowDistance = 50;
 
   function headerChange() {
     window.onscroll = function showHeader() {
       if (header.classList.contains(notChange)) {
         header.classList.remove(activeClass);
-      } else if (!menuList.classList.contains(activeClass) && window.pageYOffset < 50) {
+      } else if (!menuList.classList.contains(activeClass) && window.pageYOffset < windowDistance) {
         header.classList.add(activeClass);
       } else {
         header.classList.remove(activeClass);
@@ -32,7 +33,7 @@ function menuWrap() {
 
       if (header.classList.contains(notChange)) {
         header.classList.toggle(activeClass);
-      } else if (window.pageYOffset < 50 || !header.classList.contains(activeClass)) {
+      } else if (window.pageYOffset < windowDistance || !header.classList.contains(activeClass)) {
         header.classList.add(activeClass);
       } else {
         header.classList.remove(activeClass);
