@@ -1858,7 +1858,9 @@ img {
     margin: 0.5rem 0;
     background: #FFFFFF; }
     .questions__accordeon-section.is-active .questions__accordeon-body {
-      display: block; }
+      visibility: visible;
+      opacity: 1;
+      max-height: 1000px; }
     .questions__accordeon-section.is-active .questions__accordeon-icon {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
@@ -1898,7 +1900,12 @@ img {
     font-size: 1.375rem;
     font-weight: 600; }
   .questions__accordeon-body {
-    display: none;
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    -o-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
     font-size: 1.25rem;
     line-height: 1.5; }
   .questions__accordeon-content {

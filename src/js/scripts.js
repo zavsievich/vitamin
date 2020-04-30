@@ -49,27 +49,23 @@ function menuWrap() {
 menuWrap();
 
 
-
 function accordeonWrap() {
-   const activeClass = 'is-active';
-   const accord = Array.prototype.slice.call(document.querySelectorAll('.js-accord'));
-   
-  accord.forEach(function (item) {
-      item.addEventListener('click', function openContent() {
-          console.log('click');
-          const activeAccord = document.querySelector('.js-accord.' + activeClass);
+    const activeClass = 'is-active';
+    const accord = Array.prototype.slice.call(document.querySelectorAll('.js-accord'));
 
-          activeAccord.classList.remove(activeClass);
-          item.classList.add(activeClass);
-      })
+    accord.forEach(function (item) {
+        item.addEventListener('click', function openContent() {
+            console.log('click');
+            const activeAccord = document.querySelector('.js-accord.' + activeClass);
 
-  })
+            activeAccord.classList.remove(activeClass);
+            item.classList.add(activeClass);
+        })
+
+    })
 }
 
 accordeonWrap();
-
-
-
 
 
 function sliders() {

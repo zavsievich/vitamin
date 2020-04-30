@@ -40,7 +40,9 @@
 
       &.is-active {
         .questions__accordeon-body {
-          display: block;
+          visibility: visible;
+          opacity: 1;
+          max-height: 1000px;
         }
 
         .questions__accordeon-icon {
@@ -60,6 +62,7 @@
     &-icon {
       color: $c-white;
       transition: 0.3s;
+
       svg {
       }
     }
@@ -83,7 +86,10 @@
     }
 
     &-body {
-      display: none;
+      max-height: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
       font-size: 1.25rem;
       line-height: 1.5;
     }
