@@ -2,6 +2,7 @@
   background: $c-gray;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  min-height: 1800px;
 
   &__container {
     @extend .container;
@@ -98,5 +99,13 @@
       margin: 0 0.5rem 1.5rem 2rem;
       max-width: 1060px;
     }
+  }
+
+  @include media-breakpoint-up(md) {
+    min-height: 1347px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 1200px;
   }
 }

@@ -1818,7 +1818,8 @@ img {
 .questions {
   background: #F6F6F6;
   padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  min-height: 1800px; }
   .questions__container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1919,6 +1920,12 @@ img {
   .questions__accordion-content {
     margin: 0 0.5rem 1.5rem 2rem;
     max-width: 1060px; }
+  @media screen and (min-width: 650px) {
+    .questions {
+      min-height: 1347px; } }
+  @media screen and (min-width: 900px) {
+    .questions {
+      min-height: 1200px; } }
 
 .visible {
   visibility: visible !important; }
