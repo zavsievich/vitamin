@@ -62,16 +62,21 @@ const accordionList = {
 
     init: function () {
         this.sortItems();
+        this.openItem();
     },
 
     sortItems: function () {
         this.items.forEach((item) => {
-            item.addEventListener('click', () => {
-                const activeItem = document.querySelector('.js-accord.is-active');
-                activeItem.classList.remove('is-active');
-                item.classList.add('is-active');
-            })
+            this.openItem(item);
         });
+    },
+
+    openItem : function (item) {
+        item.addEventListener('click', () => {
+            const activeItem = document.querySelector('.js-accord.is-active');
+            activeItem.classList.remove('is-active');
+            item.classList.add('is-active');
+        })
     },
 };
 

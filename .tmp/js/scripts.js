@@ -59,14 +59,20 @@ var accordionList = {
   item: document.querySelector('.js-accord'),
   init: function init() {
     this.sortItems();
+    this.openItem();
   },
   sortItems: function sortItems() {
+    var _this3 = this;
+
     this.items.forEach(function (item) {
-      item.addEventListener('click', function () {
-        var activeItem = document.querySelector('.js-accord.is-active');
-        activeItem.classList.remove('is-active');
-        item.classList.add('is-active');
-      });
+      _this3.openItem(item);
+    });
+  },
+  openItem: function openItem(item) {
+    item.addEventListener('click', function () {
+      var activeItem = document.querySelector('.js-accord.is-active');
+      activeItem.classList.remove('is-active');
+      item.classList.add('is-active');
     });
   }
 };
