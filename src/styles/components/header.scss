@@ -118,11 +118,13 @@
     overflow-y: auto;
     background: $c-pink-gradient;
     left: -100%;
+    visibility: hidden;
     align-items: center;
     transition: 0.3s;
 
-    &.is-active {
+    &.is-open {
       left: 0;
+      visibility: visible;
     }
 
     &-list {
@@ -262,7 +264,7 @@
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
 
-        &.header__wrap--transparent {
+        &.is-active {
           border-top: 7px solid #df3785;
         }
       }

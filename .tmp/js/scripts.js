@@ -12,10 +12,10 @@ var menu = (_menu = {
   isTransparent: null,
   init: function init() {
     this.isTransparent = this.isTransparent();
-    this.showHeader();
+    this.scrollListner();
     this.toggleMenu();
   },
-  showHeader: function showHeader() {
+  scrollListner: function scrollListner() {
     var _this = this;
 
     window.addEventListener('scroll', function () {
@@ -28,11 +28,11 @@ var menu = (_menu = {
     this.btnMenu.addEventListener('click', function () {
       _this2.btnMenu.classList.toggle('is-active');
 
-      _this2.menuList.classList.toggle('is-active');
+      _this2.menuList.classList.toggle('is-open');
 
-      document.body.classList.toggle('is-active');
+      document.body.classList.toggle('is-hidden');
 
-      if (document.body.classList.contains('is-active')) {
+      if (_this2.menuList.classList.contains('is-open')) {
         _this2.makeHeaderTransparent();
       } else {
         _this2.toggleMenuState();

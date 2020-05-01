@@ -7,11 +7,11 @@ const menu = {
 
     init: function () {
         this.isTransparent = this.isTransparent();
-        this.showHeader();
+        this.scrollListner();
         this.toggleMenu();
     },
 
-    showHeader: function () {
+    scrollListner: function () {
         window.addEventListener('scroll', () => {
             this.toggleMenuState();
         })
@@ -21,10 +21,10 @@ const menu = {
         this.btnMenu.addEventListener('click', () => {
 
             this.btnMenu.classList.toggle('is-active');
-            this.menuList.classList.toggle('is-active');
-            document.body.classList.toggle('is-active');
+            this.menuList.classList.toggle('is-open');
+            document.body.classList.toggle('is-hidden');
 
-            if (document.body.classList.contains('is-active')) {
+            if (this.menuList.classList.contains('is-open')) {
                 this.makeHeaderTransparent();
             } else {
                 this.toggleMenuState();
@@ -54,9 +54,7 @@ const menu = {
     },
 };
 
-
 menu.init();
-
 
 const accordionWrap = function () {
     const activeClass = 'is-active';

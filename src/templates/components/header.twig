@@ -6,39 +6,6 @@
     } %}
 {% endif %}
 <header class="header">
-    <nav class="header__menu js-menu">
-        <ul class="header__menu-list">
-            {% for item in nav %}
-                <li class="header__menu-item">
-                    <a href="{{ item.titleLink }}"
-                       class="header__menu-link">{{ item.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-        {% include 'components/social.twig' with
-            {
-                communication :
-                [
-                    {
-                        icon : 'facebook',
-                        iconLink : '#',
-
-                        descr : 'facebook',
-                    },
-                    {
-                        icon : 'instagram',
-                        iconLink : '#',
-                        descr : 'instagram',
-                    },
-                    {
-                        icon : 'twitter',
-                        iconLink : '#',
-                        descr : 'twitter',
-                    },
-
-                ]
-            } %}
-    </nav>
     <div class="header__wrap js-header {{ state }} ">
         <div class="header__btn-wrap">
             <button class="header__btn js-toggle">
@@ -91,4 +58,37 @@
             </button>
         </div>
     </div>
+    <nav class="header__menu js-menu">
+        <ul class="header__menu-list">
+            {% for item in nav %}
+                <li class="header__menu-item">
+                    <a href="{{ item.titleLink }}"
+                       class="header__menu-link">{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% include 'components/social.twig' with
+            {
+                communication :
+                [
+                    {
+                        icon : 'facebook',
+                        iconLink : '#',
+
+                        descr : 'facebook',
+                    },
+                    {
+                        icon : 'instagram',
+                        iconLink : '#',
+                        descr : 'instagram',
+                    },
+                    {
+                        icon : 'twitter',
+                        iconLink : '#',
+                        descr : 'twitter',
+                    },
+
+                ]
+            } %}
+    </nav>
 </header>
