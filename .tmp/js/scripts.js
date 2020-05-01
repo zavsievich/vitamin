@@ -54,21 +54,23 @@ var menu = (_menu = {
   this.header.classList.add('header__wrap--transparent');
 }), _menu);
 menu.init();
-
-var accordionWrap = function accordionWrap() {
-  var activeClass = 'is-active';
-  var accord = Array.prototype.slice.call(document.querySelectorAll('.js-accord'));
-  accord.forEach(function (item) {
-    item.addEventListener('click', function openContent() {
-      console.log('click');
-      var activeAccord = document.querySelector('.js-accord.' + activeClass);
-      activeAccord.classList.remove(activeClass);
-      item.classList.add(activeClass);
+var accordionList = {
+  items: document.querySelectorAll('.js-accord'),
+  item: document.querySelector('.js-accord'),
+  init: function init() {
+    this.sortItems();
+  },
+  sortItems: function sortItems() {
+    this.items.forEach(function (item) {
+      item.addEventListener('click', function () {
+        var activeItem = document.querySelector('.js-accord.is-active');
+        activeItem.classList.remove('is-active');
+        item.classList.add('is-active');
+      });
     });
-  });
+  }
 };
-
-accordionWrap();
+accordionList.init();
 
 var sliders = function sliders() {
   function productSlider() {

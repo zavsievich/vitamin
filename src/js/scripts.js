@@ -56,23 +56,26 @@ const menu = {
 
 menu.init();
 
-const accordionWrap = function () {
-    const activeClass = 'is-active';
-    const accord = Array.prototype.slice.call(document.querySelectorAll('.js-accord'));
+const accordionList = {
+    items: document.querySelectorAll('.js-accord'),
+    item: document.querySelector('.js-accord'),
 
-    accord.forEach(function (item) {
-        item.addEventListener('click', function openContent() {
-            console.log('click');
-            const activeAccord = document.querySelector('.js-accord.' + activeClass);
+    init: function () {
+        this.sortItems();
+    },
 
-            activeAccord.classList.remove(activeClass);
-            item.classList.add(activeClass);
-        })
-
-    })
+    sortItems: function () {
+        this.items.forEach((item) => {
+            item.addEventListener('click', () => {
+                const activeItem = document.querySelector('.js-accord.is-active');
+                activeItem.classList.remove('is-active');
+                item.classList.add('is-active');
+            })
+        });
+    },
 };
 
-accordionWrap();
+accordionList.init();
 
 const sliders = function () {
     function productSlider() {
