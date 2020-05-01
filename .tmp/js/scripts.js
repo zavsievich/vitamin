@@ -59,7 +59,6 @@ var accordionList = {
   item: document.querySelector('.js-accord'),
   init: function init() {
     this.sortItems();
-    this.openItem();
   },
   sortItems: function sortItems() {
     var _this3 = this;

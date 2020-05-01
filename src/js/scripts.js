@@ -56,13 +56,13 @@ const menu = {
 
 menu.init();
 
+
 const accordionList = {
     items: document.querySelectorAll('.js-accord'),
     item: document.querySelector('.js-accord'),
 
     init: function () {
         this.sortItems();
-        this.openItem();
     },
 
     sortItems: function () {
@@ -71,7 +71,7 @@ const accordionList = {
         });
     },
 
-    openItem : function (item) {
+    openItem: function (item) {
         item.addEventListener('click', () => {
             const activeItem = document.querySelector('.js-accord.is-active');
             activeItem.classList.remove('is-active');
@@ -81,6 +81,7 @@ const accordionList = {
 };
 
 accordionList.init();
+
 
 const sliders = function () {
     function productSlider() {
