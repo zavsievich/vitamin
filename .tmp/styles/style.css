@@ -1893,7 +1893,8 @@ img {
     color: #FFFFFF;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    margin-top: 1rem; }
   .questions__accordion-btn {
     border: none;
     background: none;
