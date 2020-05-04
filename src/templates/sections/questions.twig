@@ -80,8 +80,9 @@
             {% for item in args.accordion %}
                 <li class="questions__accordion-section js-accord {{ item.activeClass }}">
                     <div class="questions__accordion-header">
-                        <button class="questions__accordion-btn">open list</button>
-                        <h3 class="questions__accordion-title">{{ item.title }}</h3>
+                        <h3 class="questions__accordion-title">
+                            <button class="questions__accordion-btn">{{ item.title }}</button>
+                        </h3>
                         <div class="questions__accordion-icon">
                             <svg width="22" height="10" viewBox="0 0 22 10" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">

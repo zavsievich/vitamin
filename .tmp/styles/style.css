@@ -1875,7 +1875,6 @@ img {
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
   .questions__accordion-header {
-    position: relative;
     padding: 1.4rem 2rem 1.4rem 2rem;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1898,12 +1897,8 @@ img {
   .questions__accordion-btn {
     border: none;
     background: none;
-    font-size: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    font-size: inherit;
+    font-weight: inherit;
     width: 100%;
     height: 100%; }
   .questions__accordion-title {
