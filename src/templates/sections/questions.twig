@@ -5,7 +5,13 @@
         accordion : [
             {
                 activeClass : 'is-active',
+                hidden : '',
                 title : 'Is Vitami allergen free?',
+                isExpanded : 'true',
+                btnControlsId : 'section1',
+                contentControlsId : 'section1',
+                contentLabelledby : 'accordion1id',
+                btnLabelledby : 'accordion1id',
                 content : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
                 eligendi est excepturi fugiat laudantium maiores molestias, nam necessitatibus nisi omnis optio
                 perferendis quam repellat tempore vel. Atque, nobis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
@@ -16,12 +22,24 @@
             },
             {
                 title : 'Is Vitami Vegan-Friendly? ',
+                hidden : 'hidden',
+                isExpanded : 'false',
+                btnControlsId : 'section2',
+                contentControlsId : 'section2',
+                contentLabelledby : 'accordion2id',
+                btnLabelledby : 'accordion2id',
                 content : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
                 eligendi est excepturi fugiat laudantium maiores molestias, nam necessitatibus nisi omnis optio
                 perferendis quam repellat tempore vel. Atque, nobis.',
             },
             {
                 title : 'Is Vitami Gluten free? ',
+                hidden : 'hidden',
+                isExpanded : 'false',
+                btnControlsId : 'section3',
+                contentControlsId : 'section3',
+                contentLabelledby : 'accordion3id',
+                btnLabelledby : 'accordion3id',
                 content : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
                 eligendi est excepturi fugiat laudantium maiores molestias, nam necessitatibus nisi omnis optio
                 perferendis quam repellat tempore vel. Atque, nobis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
@@ -30,6 +48,12 @@
             },
             {
                 title : 'Is Vitami Sugar free?',
+                hidden : 'hidden',
+                isExpanded : 'false',
+                btnControlsId : 'section4',
+                contentControlsId : 'section4',
+                contentLabelledby : 'accordion4id',
+                btnLabelledby : 'accordion4id',
                 content : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
                 eligendi est excepturi fugiat laudantium maiores molestias, nam necessitatibus nisi omnis optio
                 perferendis quam repellat tempore vel. Atque, nobis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
@@ -40,6 +64,12 @@
             },
             {
                 title : 'Is Vitami Organic?',
+                hidden : 'hidden',
+                isExpanded : 'false',
+                btnControlsId : 'section5',
+                contentControlsId : 'section5',
+                contentLabelledby : 'accordion5id',
+                btnLabelledby : 'accordion5id',
                 content : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
                 eligendi est excepturi fugiat laudantium maiores molestias, nam necessitatibus nisi omnis optio
                 perferendis quam repellat tempore vel. Atque, nobis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
@@ -48,12 +78,24 @@
             },
             {
                 title : 'What is our production process?',
+                hidden : 'hidden',
+                isExpanded : 'false',
+                btnControlsId : 'section6',
+                contentControlsId : 'section6',
+                contentLabelledby : 'accordion6id',
+                btnLabelledby : 'accordion6id',
                 content : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
                 eligendi est excepturi fugiat laudantium maiores molestias, nam necessitatibus nisi omnis optio
                 p.',
             },
             {
                 title : 'What is the Vitami dosage?  When should I drink it? ',
+                hidden : 'hidden',
+                isExpanded : 'false',
+                btnControlsId : 'section7',
+                contentControlsId : 'section7',
+                contentLabelledby : 'accordion7id',
+                btnLabelledby : 'accordion7id',
                 content : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
                 eligendi est excepturi fugiat laudantium maiores molestias, nam necessitatibus nisi omnis optio
                 perferendis quam repellat tempore vel. Atque, nobis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
@@ -61,6 +103,12 @@
             },
             {
                 title : 'Where can I buy it? ',
+                hidden : 'hidden',
+                isExpanded : 'false',
+                btnControlsId : 'section8',
+                contentControlsId : 'section8',
+                contentLabelledby : 'accordion8id',
+                btnLabelledby : 'accordion8id',
                 content : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
                 eligendi est excepturi fugiat laudantium maiores molestias, nam necessitatibus nisi omnis optio
                 perferendis quam repellat tempore vel. Atque, nobis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque
@@ -78,10 +126,11 @@
         <h3 class="questions__title-sub">{{ args.questionsTetx }}</h3>
         <ul class="questions__accordion-wrap">
             {% for item in args.accordion %}
-                <li class="questions__accordion-section js-accord {{ item.activeClass }}">
+                <li class="questions__accordion-section js-accord">
                     <div class="questions__accordion-header">
                         <h3 class="questions__accordion-title">
-                            <button class="questions__accordion-btn">
+                            <button class="questions__accordion-btn" id="{{ item.btnLabelledby }}"
+                                    aria-expanded="{{ item.isExpanded }}" aria-controls="{{ item.btnControlsId }}">
                                 {{ item.title }}
                                 <div class="questions__accordion-icon">
                                     <svg width="22" height="10" viewBox="0 0 22 10" fill="none"
@@ -100,7 +149,8 @@
                             </button>
                         </h3>
                     </div>
-                    <div class="questions__accordion-body">
+                    <div class="questions__accordion-body js-accord-body" id="{{ item.contentControlsId }}" role="region"
+                         aria-labelledby="{{ item.contentLabelledby }}" {{ item.hidden }}>
                         <div class="questions__accordion-content el-wysiwyg">
                             <p>{{ item.content }}</p>
                         </div>
@@ -108,233 +158,5 @@
                 </li>
             {% endfor %}
         </ul>
-    </div>
-
-
-    <div class="demo-block">
-        <!-- Accordion Configuration Options
-
-        data-allow-toggle
-          Allow for each toggle to both open and close its section. Makes it possible for all sections to be closed. Assumes only one section may be open.
-
-        data-allow-multiple
-          Allow for multiple accordion sections to be expanded at the same time. Assumes data-allow-toggle otherwise the toggle on open sections would be disabled.
-        __________
-
-        Ex:
-          <div id="accordionGroup" class="Accordion" data-allow-multiple>
-
-          <div id="accordionGroup" class="Accordion" data-allow-toggle>
-        -->
-        <div id="accordionGroup" class="Accordion">
-            <h3>
-                <button aria-expanded="true"
-                        class="Accordion-trigger"
-                        aria-controls="sect1"
-                        id="accordion1id">
-        <span class="Accordion-title">
-          Personal Information
-          <span class="Accordion-icon"></span>
-        </span>
-                </button>
-            </h3>
-            <div id="sect1"
-                 role="region"
-                 aria-labelledby="accordion1id"
-                 class="Accordion-panel">
-                <div>
-                    <!-- Variable content within section, may include any type of markup or interactive widgets. -->
-                    <fieldset>
-                        <p>
-                            <label for="cufc1">
-                                Name
-                                <span aria-hidden="true">
-                *
-              </span>
-                                :
-                            </label>
-                            <input type="text"
-                                   value=""
-                                   name="Name"
-                                   id="cufc1"
-                                   class="required"
-                                   aria-required="true">
-                        </p>
-                        <p>
-                            <label for="cufc2">
-                                Email
-                                <span aria-hidden="true">
-                *
-              </span>
-                                :
-                            </label>
-                            <input type="text"
-                                   value=""
-                                   name="Email"
-                                   id="cufc2"
-                                   aria-required="true">
-                        </p>
-                        <p>
-                            <label for="cufc3">
-                                Phone:
-                            </label>
-                            <input type="text"
-                                   value=""
-                                   name="Phone"
-                                   id="cufc3">
-                        </p>
-                        <p>
-                            <label for="cufc4">
-                                Extension:
-                            </label>
-                            <input type="text"
-                                   value=""
-                                   name="Ext"
-                                   id="cufc4">
-                        </p>
-                        <p>
-                            <label for="cufc5">
-                                Country:
-                            </label>
-                            <input type="text"
-                                   value=""
-                                   name="Country"
-                                   id="cufc5">
-                        </p>
-                        <p>
-                            <label for="cufc6">
-                                City/Province:
-                            </label>
-                            <input type="text"
-                                   value=""
-                                   name="City_Province"
-                                   id="cufc6">
-                        </p>
-                    </fieldset>
-                </div>
-            </div>
-            <h3>
-                <button aria-expanded="false"
-                        class="Accordion-trigger"
-                        aria-controls="sect2"
-                        id="accordion2id">
-        <span class="Accordion-title">
-          Billing Address
-          <span class="Accordion-icon"></span>
-        </span>
-                </button>
-            </h3>
-            <div id="sect2"
-                 role="region"
-                 aria-labelledby="accordion2id"
-                 class="Accordion-panel"
-                 hidden="">
-                <div>
-                    <fieldset>
-                        <p>
-                            <label for="b-add1">
-                                Address 1:
-                            </label>
-                            <input type="text"
-                                   name="b-add1"
-                                   id="b-add1">
-                        </p>
-                        <p>
-                            <label for="b-add2">
-                                Address 2:
-                            </label>
-                            <input type="text"
-                                   name="b-add2"
-                                   id="b-add2">
-                        </p>
-                        <p>
-                            <label for="b-city">
-                                City:
-                            </label>
-                            <input type="text"
-                                   name="b-city"
-                                   id="b-city">
-                        </p>
-                        <p>
-                            <label for="b-state">
-                                State:
-                            </label>
-                            <input type="text"
-                                   name="b-state"
-                                   id="b-state">
-                        </p>
-                        <p>
-                            <label for="b-zip">
-                                Zip Code:
-                            </label>
-                            <input type="text"
-                                   name="b-zip"
-                                   id="b-zip">
-                        </p>
-                    </fieldset>
-                </div>
-            </div>
-            <h3>
-                <button aria-expanded="false"
-                        class="Accordion-trigger"
-                        aria-controls="sect3"
-                        id="accordion3id">
-        <span class="Accordion-title">
-          Shipping Address
-          <span class="Accordion-icon"></span>
-        </span>
-                </button>
-            </h3>
-            <div id="sect3"
-                 role="region"
-                 aria-labelledby="accordion3id"
-                 class="Accordion-panel"
-                 hidden="">
-                <div>
-                    <fieldset>
-                        <p>
-                            <label for="m-add1">
-                                Address 1:
-                            </label>
-                            <input type="text"
-                                   name="m-add1"
-                                   id="m-add1">
-                        </p>
-                        <p>
-                            <label for="m-add2">
-                                Address 2:
-                            </label>
-                            <input type="text"
-                                   name="m-add2"
-                                   id="m-add2">
-                        </p>
-                        <p>
-                            <label for="m-city">
-                                City:
-                            </label>
-                            <input type="text"
-                                   name="m-city"
-                                   id="m-city">
-                        </p>
-                        <p>
-                            <label for="m-state">
-                                State:
-                            </label>
-                            <input type="text"
-                                   name="m-state"
-                                   id="m-state">
-                        </p>
-                        <p>
-                            <label for="m-zip">
-                                Zip Code:
-                            </label>
-                            <input type="text"
-                                   name="m-zip"
-                                   id="m-zip">
-                        </p>
-                    </fieldset>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
