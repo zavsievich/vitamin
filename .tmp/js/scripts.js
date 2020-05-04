@@ -65,7 +65,7 @@ var accordionList = {
     var _this3 = this;
 
     this.items.forEach(function (item) {
-      item.querySelector("button").addEventListener('click', function (event) {
+      item.querySelector(".js-btn").addEventListener('click', function (event) {
         _this3.openItem(item, event.target);
       });
     });
