@@ -59,6 +59,7 @@ menu.init();
 
 const accordionList = {
     items: Array.prototype.slice.call(document.querySelectorAll('.js-accord')),
+    btns: Array.prototype.slice.call(document.querySelectorAll('.js-btn')),
     active: null,
 
     init: function () {
@@ -70,8 +71,42 @@ const accordionList = {
         this.items.forEach((item) => {
             item.querySelector(".js-btn").addEventListener('click', (event) => {
                 this.openItem(item, event.target);
+            });
+
+            item.addEventListener('keydown', function (event) {
+                let triggers = Array.prototype.slice.call(document.querySelectorAll('.js-btn'));
+                let target = event.target;
+                let key = event.which.toString();
+                let ctrlModifier = (event.ctrlKey && key.match(/33|34/));
+                if (target.classList.contains('js-btn')) {
+
+                    if (key.match(/38|40/) || ctrlModifier) {
+                        let index = triggers.indexOf(target);
+                        console.log(index);
+                        let direction = (key.match(/34|40/)) ? 1 : -1;
+                        let length = triggers.length;
+                        let newIndex = (index + length + direction) % length;
+
+                        triggers[newIndex].focus();
+                        event.preventDefault();
+                    } else if (key.match(/37|39/)) {
+                        switch (key) {
+                            case '37':
+                                triggers[0].focus();
+                                break;
+                            case '39':
+                                triggers[triggers.length - 1].focus();
+                                break;
+                        }
+                        event.preventDefault();
+                    }
+                }
             })
         });
+    },
+
+    initPress: function () {
+
     },
 
     openItem: function (root, item) {
@@ -144,4 +179,3 @@ const sliders = function () {
 };
 
 sliders();
-
