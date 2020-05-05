@@ -82,6 +82,7 @@ const accordionList = {
         const triggers = Array.prototype.slice.call(document.querySelectorAll('.js-accord-btn'));
         const target = event.target;
         const key = event.which.toString();
+        console.log(key);
         const ctrlModifier = (event.ctrlKey && key.match(/33|34/));
         if (target.classList.contains('js-accord-btn')) {
 
@@ -93,12 +94,12 @@ const accordionList = {
 
                 triggers[newIndex].focus();
                 event.preventDefault();
-            } else if (key.match(/37|39/)) {
+            } else if (key.match(/36|35/)) {
                 switch (key) {
-                    case '37':
+                    case '36':
                         triggers[0].focus();
                         break;
-                    case '39':
+                    case '35':
                         triggers[triggers.length - 1].focus();
                         break;
                 }
