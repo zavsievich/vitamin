@@ -76,30 +76,33 @@ var accordionList = {
   initPress: function initPress(event) {
     var triggers = Array.prototype.slice.call(document.querySelectorAll('.js-accord-btn'));
     var target = event.target;
+    var index = triggers.indexOf(target);
     var key = event.which.toString();
-    console.log(key);
-    var ctrlModifier = event.ctrlKey && key.match(/33|34/);
+    var length = triggers.length;
+    var lastChild = length - 1;
 
     if (target.classList.contains('js-accord-btn')) {
-      if (key.match(/38|40/) || ctrlModifier) {
-        var index = triggers.indexOf(target);
-        var direction = key.match(/34|40/) ? 1 : -1;
-        var length = triggers.length;
-        var newIndex = (index + length + direction) % length;
-        triggers[newIndex].focus();
-        event.preventDefault();
-      } else if (key.match(/36|35/)) {
-        switch (key) {
-          case '36':
-            triggers[0].focus();
-            break;
-
-          case '35':
-            triggers[triggers.length - 1].focus();
-            break;
+      if (key === '38') {
+        if (index === 0) {
+          console.log(lastChild);
+          triggers[lastChild].focus();
+        } else {
+          var newIndex = index - 1;
+          triggers[newIndex].focus();
         }
+      } else if (key === '40') {
+        if (index === length - 1) {
+          console.log(lastChild);
+          triggers[0].focus();
+        } else {
+          var _newIndex = index + 1;
 
-        event.preventDefault();
+          triggers[_newIndex].focus();
+        }
+      } else if (key === '36') {
+        triggers[0].focus();
+      } else if (key === '35') {
+        triggers[lastChild].focus();
       }
     }
   },
