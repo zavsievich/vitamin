@@ -70,38 +70,39 @@ var accordionList = {
         _this3.openItem(item, event.target);
       });
       item.addEventListener('keydown', function (event) {
-        var triggers = Array.prototype.slice.call(document.querySelectorAll('.js-btn'));
-        var target = event.target;
-        var key = event.which.toString();
-        var ctrlModifier = event.ctrlKey && key.match(/33|34/);
-
-        if (target.classList.contains('js-btn')) {
-          if (key.match(/38|40/) || ctrlModifier) {
-            var index = triggers.indexOf(target);
-            console.log(index);
-            var direction = key.match(/34|40/) ? 1 : -1;
-            var length = triggers.length;
-            var newIndex = (index + length + direction) % length;
-            triggers[newIndex].focus();
-            event.preventDefault();
-          } else if (key.match(/37|39/)) {
-            switch (key) {
-              case '37':
-                triggers[0].focus();
-                break;
-
-              case '39':
-                triggers[triggers.length - 1].focus();
-                break;
-            }
-
-            event.preventDefault();
-          }
-        }
+        _this3.initPress(event);
       });
     });
   },
-  initPress: function initPress() {},
+  initPress: function initPress(event) {
+    var triggers = Array.prototype.slice.call(document.querySelectorAll('.js-btn'));
+    var target = event.target;
+    var key = event.which.toString();
+    var ctrlModifier = event.ctrlKey && key.match(/33|34/);
+
+    if (target.classList.contains('js-btn')) {
+      if (key.match(/38|40/) || ctrlModifier) {
+        var index = triggers.indexOf(target);
+        var direction = key.match(/34|40/) ? 1 : -1;
+        var length = triggers.length;
+        var newIndex = (index + length + direction) % length;
+        triggers[newIndex].focus();
+        event.preventDefault();
+      } else if (key.match(/37|39/)) {
+        switch (key) {
+          case '37':
+            triggers[0].focus();
+            break;
+
+          case '39':
+            triggers[triggers.length - 1].focus();
+            break;
+        }
+
+        event.preventDefault();
+      }
+    }
+  },
   openItem: function openItem(root, item) {
     this.shrink();
     this.expand(item);
