@@ -74,6 +74,32 @@ var accordionList = {
     });
   },
   initPress: function initPress(event) {
+    /*const triggers = Array.prototype.slice.call(document.querySelectorAll('.js-accord-btn'));
+    const target = event.target;
+    const key = event.which.toString();
+    console.log(key);
+    const ctrlModifier = (event.ctrlKey && key.match(/33|34/));
+    if (target.classList.contains('js-accord-btn')) {
+          if (key.match(/38|40/) || ctrlModifier) {
+            const index = triggers.indexOf(target);
+            const direction = (key.match(/34|40/)) ? 1 : -1;
+            const length = triggers.length;
+            const newIndex = (index + length + direction) % length;
+              triggers[newIndex].focus();
+            event.preventDefault();
+        } else if (key.match(/36|35/)) {
+            switch (key) {
+                case '36':
+                    triggers[0].focus();
+                    break;
+                case '35':
+                    triggers[triggers.length - 1].focus();
+                    break;
+            }
+            event.preventDefault();
+        }
+    }
+    */
     var triggers = Array.prototype.slice.call(document.querySelectorAll('.js-accord-btn'));
     var target = event.target;
     var index = triggers.indexOf(target);
@@ -86,23 +112,30 @@ var accordionList = {
         if (index === 0) {
           console.log(lastChild);
           triggers[lastChild].focus();
+          event.preventDefault();
         } else {
           var newIndex = index - 1;
           triggers[newIndex].focus();
+          event.preventDefault();
         }
       } else if (key === '40') {
         if (index === length - 1) {
           console.log(lastChild);
           triggers[0].focus();
+          event.preventDefault();
         } else {
           var _newIndex = index + 1;
 
           triggers[_newIndex].focus();
+
+          event.preventDefault();
         }
       } else if (key === '36') {
         triggers[0].focus();
+        event.preventDefault();
       } else if (key === '35') {
         triggers[lastChild].focus();
+        event.preventDefault();
       }
     }
   },
