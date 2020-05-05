@@ -56,7 +56,6 @@ var menu = (_menu = {
 menu.init();
 var accordionList = {
   items: Array.prototype.slice.call(document.querySelectorAll('.js-accord')),
-  btns: Array.prototype.slice.call(document.querySelectorAll('.js-btn')),
   active: null,
   init: function init() {
     this.active = this.items[0];
@@ -75,7 +74,7 @@ var accordionList = {
     });
   },
   initPress: function initPress(event) {
-    var triggers = Array.prototype.slice.call(document.querySelectorAll('.js-btn'));
+    var triggers = Array.prototype.slice.call(document.querySelectorAll('.js-accord-btn'));
     var target = event.target;
     var key = event.which.toString();
     var ctrlModifier = event.ctrlKey && key.match(/33|34/);

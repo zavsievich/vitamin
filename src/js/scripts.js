@@ -59,7 +59,6 @@ menu.init();
 
 const accordionList = {
     items: Array.prototype.slice.call(document.querySelectorAll('.js-accord')),
-    btns: Array.prototype.slice.call(document.querySelectorAll('.js-btn')),
     active: null,
 
     init: function () {
@@ -80,17 +79,17 @@ const accordionList = {
     },
 
     initPress: function (event) {
-        let triggers = Array.prototype.slice.call(document.querySelectorAll('.js-btn'));
-        let target = event.target;
-        let key = event.which.toString();
-        let ctrlModifier = (event.ctrlKey && key.match(/33|34/));
+        const triggers = Array.prototype.slice.call(document.querySelectorAll('.js-accord-btn'));
+        const target = event.target;
+        const key = event.which.toString();
+        const ctrlModifier = (event.ctrlKey && key.match(/33|34/));
         if (target.classList.contains('js-btn')) {
 
             if (key.match(/38|40/) || ctrlModifier) {
-                let index = triggers.indexOf(target);
-                let direction = (key.match(/34|40/)) ? 1 : -1;
-                let length = triggers.length;
-                let newIndex = (index + length + direction) % length;
+                const index = triggers.indexOf(target);
+                const direction = (key.match(/34|40/)) ? 1 : -1;
+                const length = triggers.length;
+                const newIndex = (index + length + direction) % length;
 
                 triggers[newIndex].focus();
                 event.preventDefault();
