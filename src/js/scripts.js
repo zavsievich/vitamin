@@ -68,7 +68,7 @@ const accordionList = {
 
     initClick: function () {
         this.items.forEach((item) => {
-            item.querySelector(".js-btn").addEventListener('click', (event) => {
+            item.querySelector(".js-accord-btn").addEventListener('click', (event) => {
                 this.openItem(item, event.target);
             });
 
@@ -83,7 +83,7 @@ const accordionList = {
         const target = event.target;
         const key = event.which.toString();
         const ctrlModifier = (event.ctrlKey && key.match(/33|34/));
-        if (target.classList.contains('js-btn')) {
+        if (target.classList.contains('js-accord-btn')) {
 
             if (key.match(/38|40/) || ctrlModifier) {
                 const index = triggers.indexOf(target);
