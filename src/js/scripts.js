@@ -3,10 +3,10 @@ class NewMenu {
     btnMenu = document.querySelector('.js-toggle');
     header = document.querySelector('.js-header');
     windowDistance = 50;
-    isTransparent = null;
+    Transparent = null;
 
     init() {
-        this.isTransparent = this.isTransparente();
+        this.Transparent = this.isTransparent();
         this.scrollListner();
         this.toggleMenu();
     }
@@ -34,14 +34,14 @@ class NewMenu {
     }
 
     toggleMenuState() {
-        if (window.pageYOffset < this.windowDistance && this.isTransparent) {
+        if (window.pageYOffset < this.windowDistance && this.Transparent) {
             this.makeHeaderTransparent();
         } else {
             this.makeHeaderSolid();
         }
     }
 
-    isTransparente() {
+    isTransparent() {
         return this.header.classList.contains('header__wrap--transparent');
     }
 
@@ -57,16 +57,16 @@ class NewMenu {
 const newMenu = new NewMenu();
 newMenu.init();
 
-const accordionList = {
-    items: Array.prototype.slice.call(document.querySelectorAll('.js-accord')),
-    active: null,
+class AccordionList {
+    items = Array.prototype.slice.call(document.querySelectorAll('.js-accord'));
+    active = null;
 
-    init: function () {
+    init() {
         this.active = this.items[0];
         this.initClick();
-    },
+    }
 
-    initClick: function () {
+    initClick() {
         this.items.forEach((item) => {
             item.querySelector(".js-accord-btn").addEventListener('click', (event) => {
                 this.openItem(item, event.target);
@@ -76,9 +76,9 @@ const accordionList = {
                 this.initPress(event);
             })
         });
-    },
+    }
 
-    initPress: function (event) {
+    initPress(event) {
         const triggers = Array.prototype.slice.call(document.querySelectorAll('.js-accord-btn'));
         const target = event.target;
         const index = triggers.indexOf(target);
@@ -116,32 +116,33 @@ const accordionList = {
                 event.preventDefault();
             }
         }
-    },
+    }
 
-    openItem: function (root, item) {
+    openItem(root, item) {
         this.shrink();
         this.expand(item);
         this.controls(item);
         this.active = root;
-    },
+    }
 
-    expand: function (item) {
+    expand(item) {
         const expanded = document.querySelector('[aria-expanded="true"]');
         expanded.setAttribute('aria-expanded', 'false');
         item.setAttribute('aria-expanded', 'true');
-    },
+    }
 
-    shrink: function () {
+    shrink() {
         this.active.querySelector('.js-accord-body').setAttribute('hidden', true);
-    },
+    }
 
-    controls: function (item) {
+    controls(item) {
         const btnControlsId = item.getAttribute('aria-controls');
         const openList = document.getElementById(btnControlsId);
         openList.removeAttribute('hidden');
-    },
-};
+    }
+}
 
+const accordionList = new AccordionList();
 accordionList.init();
 
 const sliders = function () {
