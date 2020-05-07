@@ -1,23 +1,23 @@
-const menu = {
-    menuList: document.querySelector('.js-menu'),
-    btnMenu: document.querySelector('.js-toggle'),
-    header: document.querySelector('.js-header'),
-    windowDistance: 50,
-    isTransparent: null,
+class NewMenu {
+    menuList = document.querySelector('.js-menu');
+    btnMenu = document.querySelector('.js-toggle');
+    header = document.querySelector('.js-header');
+    windowDistance = 50;
+    isTransparent = null;
 
-    init: function () {
-        this.isTransparent = this.isTransparent();
+    init() {
+        this.isTransparent = this.isTransparente();
         this.scrollListner();
         this.toggleMenu();
-    },
+    }
 
-    scrollListner: function () {
+    scrollListner() {
         window.addEventListener('scroll', () => {
             this.toggleMenuState();
         })
-    },
+    }
 
-    toggleMenu: function () {
+    toggleMenu() {
         this.btnMenu.addEventListener('click', () => {
 
             this.btnMenu.classList.toggle('is-active');
@@ -31,31 +31,31 @@ const menu = {
             }
 
         });
-    },
+    }
 
-    toggleMenuState: function () {
+    toggleMenuState() {
         if (window.pageYOffset < this.windowDistance && this.isTransparent) {
             this.makeHeaderTransparent();
         } else {
             this.makeHeaderSolid();
         }
-    },
+    }
 
-    isTransparent: function () {
+    isTransparente() {
         return this.header.classList.contains('header__wrap--transparent');
-    },
+    }
 
-    makeHeaderSolid: function () {
+    makeHeaderSolid() {
         this.header.classList.remove('header__wrap--transparent');
-    },
+    }
 
-    makeHeaderTransparent: function () {
+    makeHeaderTransparent() {
         this.header.classList.add('header__wrap--transparent');
-    },
-};
+    }
+}
 
-menu.init();
-
+const newMenu = new NewMenu();
+newMenu.init();
 
 const accordionList = {
     items: Array.prototype.slice.call(document.querySelectorAll('.js-accord')),
@@ -79,34 +79,6 @@ const accordionList = {
     },
 
     initPress: function (event) {
-        /*const triggers = Array.prototype.slice.call(document.querySelectorAll('.js-accord-btn'));
-        const target = event.target;
-        const key = event.which.toString();
-        console.log(key);
-        const ctrlModifier = (event.ctrlKey && key.match(/33|34/));
-        if (target.classList.contains('js-accord-btn')) {
-
-            if (key.match(/38|40/) || ctrlModifier) {
-                const index = triggers.indexOf(target);
-                const direction = (key.match(/34|40/)) ? 1 : -1;
-                const length = triggers.length;
-                const newIndex = (index + length + direction) % length;
-
-                triggers[newIndex].focus();
-                event.preventDefault();
-            } else if (key.match(/36|35/)) {
-                switch (key) {
-                    case '36':
-                        triggers[0].focus();
-                        break;
-                    case '35':
-                        triggers[triggers.length - 1].focus();
-                        break;
-                }
-                event.preventDefault();
-            }
-        }
-*/
         const triggers = Array.prototype.slice.call(document.querySelectorAll('.js-accord-btn'));
         const target = event.target;
         const index = triggers.indexOf(target);
@@ -216,3 +188,48 @@ const sliders = function () {
 };
 
 sliders();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
