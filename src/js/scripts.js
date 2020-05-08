@@ -1,11 +1,11 @@
-class NewMenu {
+class Menu {
     menuList = document.querySelector('.js-menu');
     btnMenu = document.querySelector('.js-toggle');
     header = document.querySelector('.js-header');
     windowDistance = 50;
     Transparent = null;
 
-    init() {
+    constructor () {
         this.Transparent = this.isTransparent();
         this.scrollListner();
         this.toggleMenu();
@@ -42,26 +42,25 @@ class NewMenu {
     }
 
     isTransparent() {
-        return this.header.classList.contains('header__wrap--transparent');
+        return this.header.classList.contains('is-transparent');
     }
 
     makeHeaderSolid() {
-        this.header.classList.remove('header__wrap--transparent');
+        this.header.classList.remove('is-transparent');
     }
 
     makeHeaderTransparent() {
-        this.header.classList.add('header__wrap--transparent');
+        this.header.classList.add('is-transparent');
     }
 }
 
-const newMenu = new NewMenu();
-newMenu.init();
+const menu = new Menu();
 
 class AccordionList {
     items = Array.prototype.slice.call(document.querySelectorAll('.js-accord'));
     active = null;
 
-    init() {
+    constructor () {
         this.active = this.items[0];
         this.initClick();
     }
@@ -143,7 +142,6 @@ class AccordionList {
 }
 
 const accordionList = new AccordionList();
-accordionList.init();
 
 const sliders = function () {
     function productSlider() {

@@ -656,23 +656,23 @@ img {
     padding-right: 1.5rem;
     background: #FFFFFF;
     padding-bottom: 1rem; }
-    .header__wrap.header__wrap--transparent {
+    .header__wrap.is-transparent {
       background: none; }
-      .header__wrap.header__wrap--transparent .header__nav-link {
+      .header__wrap.is-transparent .header__nav-link {
         color: #FFFFFF; }
-        .header__wrap.header__wrap--transparent .header__nav-link:hover, .header__wrap.header__wrap--transparent .header__nav-link:focus {
+        .header__wrap.is-transparent .header__nav-link:hover, .header__wrap.is-transparent .header__nav-link:focus {
           color: #00d6ff; }
-      .header__wrap.header__wrap--transparent .header__logo {
+      .header__wrap.is-transparent .header__logo {
         color: #FFFFFF; }
-        .header__wrap.header__wrap--transparent .header__logo:hover, .header__wrap.header__wrap--transparent .header__logo:focus {
+        .header__wrap.is-transparent .header__logo:hover, .header__wrap.is-transparent .header__logo:focus {
           color: #00d6ff; }
-      .header__wrap.header__wrap--transparent .header__basket {
+      .header__wrap.is-transparent .header__basket {
         color: #FFFFFF; }
-        .header__wrap.header__wrap--transparent .header__basket:hover, .header__wrap.header__wrap--transparent .header__basket:focus {
+        .header__wrap.is-transparent .header__basket:hover, .header__wrap.is-transparent .header__basket:focus {
           color: #00d6ff; }
-      .header__wrap.header__wrap--transparent .header__btn-lines,
-      .header__wrap.header__wrap--transparent .header__btn-lines::before,
-      .header__wrap.header__wrap--transparent .header__btn-lines::after {
+      .header__wrap.is-transparent .header__btn-lines,
+      .header__wrap.is-transparent .header__btn-lines::before,
+      .header__wrap.is-transparent .header__btn-lines::after {
         background-color: #FFFFFF; }
   .header .header__btn {
     display: inline-block;
