@@ -88,7 +88,6 @@ class AccordionList {
         if (target.classList.contains('js-accord-btn')) {
             if (key === '38') {
                 if (index === 0) {
-                    console.log(lastChild);
                     triggers[lastChild].focus();
                     event.preventDefault();
                 } else {
@@ -98,7 +97,6 @@ class AccordionList {
                 }
             } else if (key === '40') {
                 if (index === length - 1) {
-                    console.log(lastChild);
                     triggers[0].focus();
                     event.preventDefault();
                 } else {
